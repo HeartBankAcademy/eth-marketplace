@@ -3,15 +3,15 @@ pragma solidity ^0.4.23;
 // Adapted from:
 // https://github.com/zeppelinos/labs/blob/master/upgradeability_using_unstructured_storage/contracts/UpgradeabilityProxy.sol
 
-import "./Proxy.sol";
+import "./PausableProxy.sol";
 import "./IUpgradeableProxy.sol";
 import "../lib/openzeppelin/AddressUtils.sol";
 
 /**
-* @title UpgradeableProxy
-* @dev A proxy that allows the implementation address to be updated
+* @title UpgradeablePausableProxy
+* @dev A proxy that allows the implementation address to be updated and contract execution to be paused
 */
-contract UpgradeableProxy is Proxy, IUpgradeableProxy {
+contract UpgradeablePausableProxy is PausableProxy, IUpgradeableProxy {
 
   /**
   * @dev Upgraded event is emitted every time the implementation is updated
@@ -29,7 +29,7 @@ contract UpgradeableProxy is Proxy, IUpgradeableProxy {
   /**
   * @dev Constructor function
   */
-  constructor() public { }
+  constructor(address _aclAddress) PausableProxy(_aclAddress) public { }
 
   /**
   * @dev Returns the address of the current implementation
@@ -46,7 +46,7 @@ contract UpgradeableProxy is Proxy, IUpgradeableProxy {
   * @dev Sets the address of the current implementation
   * @param _newImplementation Address of the new implementation to be set
   */
-  function setImplementation(address _newImplementation) internal {
+  function setImplementation(address _newImplementation) internal whenNotPaused {
     require(AddressUtils.isContract(_newImplementation), "New implementation address is not a contract");
     
     bytes32 position = implementationStorePosition;
@@ -59,7 +59,7 @@ contract UpgradeableProxy is Proxy, IUpgradeableProxy {
   * @dev Upgrades the implementation address
   * @param _newImplementation Address of the new implementation to be set
   */
-  function _upgradeTo(address _newImplementation) internal {
+  function _upgradeTo(address _newImplementation) internal whenNotPaused {
     address currentImplementation = implementation();
     require(currentImplementation != _newImplementation, "New implementation address is the same as current address");
     setImplementation(_newImplementation);
@@ -70,12 +70,12 @@ contract UpgradeableProxy is Proxy, IUpgradeableProxy {
   * @dev Upgrades the implementation address
   * @notice Must be overwritten by implemening contracts to report contract version
   */
-  function upgradeTo(address _newImplementation) public {
+  function upgradeTo(address /* _newImplementation */) public {
     revert("Function not overwritten by implementing contract");
   }
 
   /**
-  * @dev Returns true for contracts that adhere to the UpgradeableProxy interface
+  * @dev Returns true for contracts that adhere to the UpgradeableProxy interface 
   * @return Always returns true for this contract
   */
   function isUpgradeable() public pure returns (bool) {

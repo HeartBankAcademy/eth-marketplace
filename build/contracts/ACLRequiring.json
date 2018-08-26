@@ -60,8 +60,8 @@
   ],
   "bytecode": "0x608060405234801561001057600080fd5b5060405160208061085f8339810180604052810190808051906020019092919050505061004b816100ac640100000000026401000000009004565b8073ffffffffffffffffffffffffffffffffffffffff16600073ffffffffffffffffffffffffffffffffffffffff167fd9c4a08818b5e0b58c0856ec8285d83c51f0654438a200ef0f9e0e968f583ca960405160405180910390a3506102ef565b60006100ca826102dc64010000000002610522176401000000009004565b1515610164576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260218152602001807f4e65772041434c2061646472657373206973206e6f74206120636f6e7472616381526020017f740000000000000000000000000000000000000000000000000000000000000081525060400191505060405180910390fd5b8173ffffffffffffffffffffffffffffffffffffffff1663a8218cd36040518163ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401602060405180830381600087803b1580156101c857600080fd5b505af11580156101dc573d6000803e3d6000fd5b505050506040513d60208110156101f257600080fd5b8101908080519060200190929190505050151561029d576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260328152602001807f4e65772041434c206164647265737320646f6573206e6f7420636f6e666f726d81526020017f20746f204941434c20696e74657266616365000000000000000000000000000081525060400191505060405180910390fd5b60405180807f636f6d2e6d61726b6574706c6163652e61636c726571756972696e672e61636c8152506020019050604051809103902090508181555050565b600080823b905060008111915050919050565b610561806102fe6000396000f30060806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806387a7066b14610051578063de28735914610094575b600080fd5b34801561005d57600080fd5b50610092600480360381019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506100eb565b005b3480156100a057600080fd5b506100a96102c2565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6000806100f66102c2565b90508073ffffffffffffffffffffffffffffffffffffffff1663bb6a4520336040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050602060405180830381600087803b15801561019357600080fd5b505af11580156101a7573d6000803e3d6000fd5b505050506040513d60208110156101bd57600080fd5b810190808051906020019092919050505015156101d957600080fd5b600073ffffffffffffffffffffffffffffffffffffffff168373ffffffffffffffffffffffffffffffffffffffff161415151561021557600080fd5b61021d6102c2565b91508173ffffffffffffffffffffffffffffffffffffffff168373ffffffffffffffffffffffffffffffffffffffff161415151561025a57600080fd5b61026383610305565b8273ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff167fd9c4a08818b5e0b58c0856ec8285d83c51f0654438a200ef0f9e0e968f583ca960405160405180910390a3505050565b60008060405180807f636f6d2e6d61726b6574706c6163652e61636c726571756972696e672e61636c815250602001905060405180910390209050805491505090565b600061031082610522565b15156103aa576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260218152602001807f4e65772041434c2061646472657373206973206e6f74206120636f6e7472616381526020017f740000000000000000000000000000000000000000000000000000000000000081525060400191505060405180910390fd5b8173ffffffffffffffffffffffffffffffffffffffff1663a8218cd36040518163ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401602060405180830381600087803b15801561040e57600080fd5b505af1158015610422573d6000803e3d6000fd5b505050506040513d602081101561043857600080fd5b810190808051906020019092919050505015156104e3576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260328152602001807f4e65772041434c206164647265737320646f6573206e6f7420636f6e666f726d81526020017f20746f204941434c20696e74657266616365000000000000000000000000000081525060400191505060405180910390fd5b60405180807f636f6d2e6d61726b6574706c6163652e61636c726571756972696e672e61636c8152506020019050604051809103902090508181555050565b600080823b9050600081119150509190505600a165627a7a72305820895cca1a1669123ca767cb07b83ae27c546290ece19b921c0a9d6399f509f8c90029",
   "deployedBytecode": "0x60806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806387a7066b14610051578063de28735914610094575b600080fd5b34801561005d57600080fd5b50610092600480360381019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506100eb565b005b3480156100a057600080fd5b506100a96102c2565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6000806100f66102c2565b90508073ffffffffffffffffffffffffffffffffffffffff1663bb6a4520336040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050602060405180830381600087803b15801561019357600080fd5b505af11580156101a7573d6000803e3d6000fd5b505050506040513d60208110156101bd57600080fd5b810190808051906020019092919050505015156101d957600080fd5b600073ffffffffffffffffffffffffffffffffffffffff168373ffffffffffffffffffffffffffffffffffffffff161415151561021557600080fd5b61021d6102c2565b91508173ffffffffffffffffffffffffffffffffffffffff168373ffffffffffffffffffffffffffffffffffffffff161415151561025a57600080fd5b61026383610305565b8273ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff167fd9c4a08818b5e0b58c0856ec8285d83c51f0654438a200ef0f9e0e968f583ca960405160405180910390a3505050565b60008060405180807f636f6d2e6d61726b6574706c6163652e61636c726571756972696e672e61636c815250602001905060405180910390209050805491505090565b600061031082610522565b15156103aa576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260218152602001807f4e65772041434c2061646472657373206973206e6f74206120636f6e7472616381526020017f740000000000000000000000000000000000000000000000000000000000000081525060400191505060405180910390fd5b8173ffffffffffffffffffffffffffffffffffffffff1663a8218cd36040518163ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401602060405180830381600087803b15801561040e57600080fd5b505af1158015610422573d6000803e3d6000fd5b505050506040513d602081101561043857600080fd5b810190808051906020019092919050505015156104e3576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260328152602001807f4e65772041434c206164647265737320646f6573206e6f7420636f6e666f726d81526020017f20746f204941434c20696e74657266616365000000000000000000000000000081525060400191505060405180910390fd5b60405180807f636f6d2e6d61726b6574706c6163652e61636c726571756972696e672e61636c8152506020019050604051809103902090508181555050565b600080823b9050600081119150509190505600a165627a7a72305820895cca1a1669123ca767cb07b83ae27c546290ece19b921c0a9d6399f509f8c90029",
-  "sourceMap": "224:2422:0:-;;;989:116;8:9:-1;5:2;;;30:1;27;20:12;5:2;989:116:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1035:19;1042:11;1035:6;;;:19;;;:::i;:::-;1088:11;1065:35;;1084:1;1065:35;;;;;;;;;;;;989:116;224:2422;;1954:315;2176:16;2009:32;2033:7;2009:23;;;;;:32;;;:::i;:::-;2001:78;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2098:7;2093:19;;;:21;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;2093:21:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;2093:21:0;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;2093:21:0;;;;;;;;;;;;;;;;2085:84;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;851:45;;;;;;;;;;;;;;;;;;;2176:35;;2251:7;2241:8;2234:25;2226:39;;:::o;438:568:3:-;495:4;507:12;922:4;910:17;902:25;;1000:1;993:4;:8;986:15;;438:568;;;;:::o;224:2422:0:-;;;;;;;",
-  "deployedSourceMap": "224:2422:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2391:252;;8:9:-1;5:2;;;30:1;27;20:12;5:2;2391:252:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;1578:147;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1578:147:0;;;;;;;;;;;;;;;;;;;;;;;;;;;2391:252;2501:18;1206:9;1223:5;:3;:5::i;:::-;1206:23;;1243:4;:19;;;1263:10;1243:31;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1243:31:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1243:31:0;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1243:31:0;;;;;;;;;;;;;;;;1235:40;;;;;;;;2492:1;2469:25;;:11;:25;;;;2461:34;;;;;;;;2522:5;:3;:5::i;:::-;2501:26;;2556:10;2541:25;;:11;:25;;;;2533:34;;;;;;;;2573:19;2580:11;2573:6;:19::i;:::-;2626:11;2603:35;;2614:10;2603:35;;;;;;;;;;;;2391:252;;;:::o;1578:147::-;1614:12;1634:16;851:45;;;;;;;;;;;;;;;;;;;1634:35;;1706:8;1700:15;1692:23;;1684:37;;:::o;1954:315::-;2176:16;2009:32;2033:7;2009:23;:32::i;:::-;2001:78;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2098:7;2093:19;;;:21;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;2093:21:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;2093:21:0;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;2093:21:0;;;;;;;;;;;;;;;;2085:84;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;851:45;;;;;;;;;;;;;;;;;;;2176:35;;2251:7;2241:8;2234:25;2226:39;;:::o;438:568:3:-;495:4;507:12;922:4;910:17;902:25;;1000:1;993:4;:8;986:15;;438:568;;;;:::o",
+  "sourceMap": "224:2422:0:-;;;989:116;8:9:-1;5:2;;;30:1;27;20:12;5:2;989:116:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1035:19;1042:11;1035:6;;;:19;;;:::i;:::-;1088:11;1065:35;;1084:1;1065:35;;;;;;;;;;;;989:116;224:2422;;1954:315;2176:16;2009:32;2033:7;2009:23;;;;;:32;;;:::i;:::-;2001:78;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2098:7;2093:19;;;:21;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;2093:21:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;2093:21:0;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;2093:21:0;;;;;;;;;;;;;;;;2085:84;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;851:45;;;;;;;;;;;;;;;;;;;2176:35;;2251:7;2241:8;2234:25;2226:39;;:::o;438:568:2:-;495:4;507:12;922:4;910:17;902:25;;1000:1;993:4;:8;986:15;;438:568;;;;:::o;224:2422:0:-;;;;;;;",
+  "deployedSourceMap": "224:2422:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2391:252;;8:9:-1;5:2;;;30:1;27;20:12;5:2;2391:252:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;1578:147;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1578:147:0;;;;;;;;;;;;;;;;;;;;;;;;;;;2391:252;2501:18;1206:9;1223:5;:3;:5::i;:::-;1206:23;;1243:4;:19;;;1263:10;1243:31;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1243:31:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1243:31:0;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1243:31:0;;;;;;;;;;;;;;;;1235:40;;;;;;;;2492:1;2469:25;;:11;:25;;;;2461:34;;;;;;;;2522:5;:3;:5::i;:::-;2501:26;;2556:10;2541:25;;:11;:25;;;;2533:34;;;;;;;;2573:19;2580:11;2573:6;:19::i;:::-;2626:11;2603:35;;2614:10;2603:35;;;;;;;;;;;;2391:252;;;:::o;1578:147::-;1614:12;1634:16;851:45;;;;;;;;;;;;;;;;;;;1634:35;;1706:8;1700:15;1692:23;;1684:37;;:::o;1954:315::-;2176:16;2009:32;2033:7;2009:23;:32::i;:::-;2001:78;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2098:7;2093:19;;;:21;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;2093:21:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;2093:21:0;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;2093:21:0;;;;;;;;;;;;;;;;2085:84;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;851:45;;;;;;;;;;;;;;;;;;;2176:35;;2251:7;2241:8;2234:25;2226:39;;:::o;438:568:2:-;495:4;507:12;922:4;910:17;902:25;;1000:1;993:4;:8;986:15;;438:568;;;;:::o",
   "source": "pragma solidity ^0.4.23;\n\nimport \"../lib/openzeppelin/AddressUtils.sol\";\nimport \"../acl/IACL.sol\";\n\n/**\n* @title ACLRequiring\n* @dev Requires an ACL contract and provides authorization modifiers for subclassing contracts\n*/\ncontract ACLRequiring {\n\n  /**\n  * @dev ACLUpdated event is emitted every time the ACL contract address is updated\n  * @param _oldAddress Old ACL contract address\n  * @param _newAddress New ACL contract address\n  */\n  event ACLUpdated(address indexed _oldAddress, address indexed _newAddress);\n\n  /**\n  * @dev The storage position in the contract storage where the implementation address will be stored\n  * @notice The implementation value is stored using the 'key-value' nature of the contract storage and\n  *         is thus not affected by the contract's state data layout\n  */\n  bytes32 private constant aclStorePosition = keccak256(\"com.marketplace.aclrequiring.acl\");\n\n  /**\n  * @dev Constructor function\n  * @param _aclAddress Address of ACL contract\n  */\n  constructor(address _aclAddress) public {\n    setACL(_aclAddress);\n    emit ACLUpdated(address(0), _aclAddress);\n  }\n\n  /**\n  * @dev Modifier restricts access to product owner\n  */\n  modifier onlyProductOwner() {\n    IACL _acl = IACL(acl());\n    require(_acl.isProductOwner(msg.sender));\n    _;\n  }\n\n  /**\n  * @dev Modifier restricts access to authorized accounts\n  */\n  modifier onlyAuthorized() {\n    IACL _acl = IACL(acl());\n    require(_acl.isAuthorized(msg.sender));\n    _;\n  }\n\n  /**\n  * @dev Returns the value set for the ACL contract\n  * @return Address of the ACL contract\n  */\n  function acl() public view returns (address _acl) {\n    bytes32 position = aclStorePosition;\n    assembly {\n      _acl := sload(position)\n    }\n  }\n\n  /**\n  * @dev Sets the address of the ACL contract\n  * @param _newACL Address of the ACL contract to be set\n  * @notice This function only verifies that the new address is a contract and conforms to the IACL interface \n  */\n  function setACL(address _newACL) private {\n    require(AddressUtils.isContract(_newACL), \"New ACL address is not a contract\");\n    require(IACL(_newACL).isACL(), \"New ACL address does not conform to IACL interface\");\n\n    bytes32 position = aclStorePosition;\n    assembly {\n      sstore(position, _newACL)\n    }\n  } \n\n  /**\n  * @dev Updates the address for the ACL contract\n  * @param _newAddress Address of the new ACL contract\n  **/\n  function updateACL(address _newAddress) public onlyProductOwner {\n    require(_newAddress != address(0));\n    address oldAddress = acl();\n    require(_newAddress != oldAddress);\n    setACL(_newAddress);\n    emit ACLUpdated(oldAddress, _newAddress);\n  }\n\n}",
   "sourcePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/acl/ACLRequiring.sol",
   "ast": {
@@ -91,7 +91,7 @@
         "id": 2,
         "nodeType": "ImportDirective",
         "scope": 146,
-        "sourceUnit": 347,
+        "sourceUnit": 187,
         "src": "26:46:0",
         "symbolAliases": [],
         "unitAlias": ""
@@ -102,7 +102,7 @@
         "id": 3,
         "nodeType": "ImportDirective",
         "scope": 146,
-        "sourceUnit": 328,
+        "sourceUnit": 168,
         "src": "73:25:0",
         "symbolAliases": [],
         "unitAlias": ""
@@ -245,7 +245,7 @@
                 "name": "keccak256",
                 "nodeType": "Identifier",
                 "overloadedDeclarations": [],
-                "referencedDeclaration": 503,
+                "referencedDeclaration": 1199,
                 "src": "851:9:0",
                 "typeDescriptions": {
                   "typeIdentifier": "t_function_sha3_pure$__$returns$_t_bytes32_$",
@@ -519,7 +519,7 @@
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IACL_$327",
+                        "typeIdentifier": "t_contract$_IACL_$167",
                         "typeString": "contract IACL"
                       },
                       "typeName": {
@@ -527,10 +527,10 @@
                         "id": 33,
                         "name": "IACL",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 327,
+                        "referencedDeclaration": 167,
                         "src": "1206:4:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IACL_$327",
+                          "typeIdentifier": "t_contract$_IACL_$167",
                           "typeString": "contract IACL"
                         }
                       },
@@ -584,10 +584,10 @@
                       "name": "IACL",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 327,
+                      "referencedDeclaration": 167,
                       "src": "1218:4:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_IACL_$327_$",
+                        "typeIdentifier": "t_type$_t_contract$_IACL_$167_$",
                         "typeString": "type(contract IACL)"
                       }
                     },
@@ -601,7 +601,7 @@
                     "nodeType": "FunctionCall",
                     "src": "1218:11:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IACL_$327",
+                      "typeIdentifier": "t_contract$_IACL_$167",
                       "typeString": "contract IACL"
                     }
                   },
@@ -623,7 +623,7 @@
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 509,
+                              "referencedDeclaration": 1205,
                               "src": "1263:3:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
@@ -661,7 +661,7 @@
                             "referencedDeclaration": 34,
                             "src": "1243:4:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_IACL_$327",
+                              "typeIdentifier": "t_contract$_IACL_$167",
                               "typeString": "contract IACL"
                             }
                           },
@@ -672,7 +672,7 @@
                           "lValueRequested": false,
                           "memberName": "isProductOwner",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 314,
+                          "referencedDeclaration": 154,
                           "src": "1243:19:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_bool_$",
@@ -705,10 +705,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        512,
-                        513
+                        1208,
+                        1209
                       ],
-                      "referencedDeclaration": 512,
+                      "referencedDeclaration": 1208,
                       "src": "1235:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -774,7 +774,7 @@
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IACL_$327",
+                        "typeIdentifier": "t_contract$_IACL_$167",
                         "typeString": "contract IACL"
                       },
                       "typeName": {
@@ -782,10 +782,10 @@
                         "id": 52,
                         "name": "IACL",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 327,
+                        "referencedDeclaration": 167,
                         "src": "1392:4:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IACL_$327",
+                          "typeIdentifier": "t_contract$_IACL_$167",
                           "typeString": "contract IACL"
                         }
                       },
@@ -839,10 +839,10 @@
                       "name": "IACL",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 327,
+                      "referencedDeclaration": 167,
                       "src": "1404:4:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_IACL_$327_$",
+                        "typeIdentifier": "t_type$_t_contract$_IACL_$167_$",
                         "typeString": "type(contract IACL)"
                       }
                     },
@@ -856,7 +856,7 @@
                     "nodeType": "FunctionCall",
                     "src": "1404:11:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IACL_$327",
+                      "typeIdentifier": "t_contract$_IACL_$167",
                       "typeString": "contract IACL"
                     }
                   },
@@ -878,7 +878,7 @@
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 509,
+                              "referencedDeclaration": 1205,
                               "src": "1447:3:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
@@ -916,7 +916,7 @@
                             "referencedDeclaration": 53,
                             "src": "1429:4:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_IACL_$327",
+                              "typeIdentifier": "t_contract$_IACL_$167",
                               "typeString": "contract IACL"
                             }
                           },
@@ -927,7 +927,7 @@
                           "lValueRequested": false,
                           "memberName": "isAuthorized",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 321,
+                          "referencedDeclaration": 161,
                           "src": "1429:17:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_bool_$",
@@ -960,10 +960,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        512,
-                        513
+                        1208,
+                        1209
                       ],
-                      "referencedDeclaration": 512,
+                      "referencedDeclaration": 1208,
                       "src": "1421:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -1185,10 +1185,10 @@
                             "name": "AddressUtils",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 346,
+                            "referencedDeclaration": 186,
                             "src": "2009:12:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_contract$_AddressUtils_$346_$",
+                              "typeIdentifier": "t_type$_t_contract$_AddressUtils_$186_$",
                               "typeString": "type(library AddressUtils)"
                             }
                           },
@@ -1199,7 +1199,7 @@
                           "lValueRequested": false,
                           "memberName": "isContract",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 345,
+                          "referencedDeclaration": 185,
                           "src": "2009:23:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_view$_t_address_$returns$_t_bool_$",
@@ -1254,10 +1254,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        512,
-                        513
+                        1208,
+                        1209
                       ],
-                      "referencedDeclaration": 513,
+                      "referencedDeclaration": 1209,
                       "src": "2001:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -1319,10 +1319,10 @@
                               "name": "IACL",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 327,
+                              "referencedDeclaration": 167,
                               "src": "2093:4:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_type$_t_contract$_IACL_$327_$",
+                                "typeIdentifier": "t_type$_t_contract$_IACL_$167_$",
                                 "typeString": "type(contract IACL)"
                               }
                             },
@@ -1336,7 +1336,7 @@
                             "nodeType": "FunctionCall",
                             "src": "2093:13:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_IACL_$327",
+                              "typeIdentifier": "t_contract$_IACL_$167",
                               "typeString": "contract IACL"
                             }
                           },
@@ -1347,7 +1347,7 @@
                           "lValueRequested": false,
                           "memberName": "isACL",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 326,
+                          "referencedDeclaration": 166,
                           "src": "2093:19:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_external_pure$__$returns$_t_bool_$",
@@ -1402,10 +1402,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        512,
-                        513
+                        1208,
+                        1209
                       ],
-                      "referencedDeclaration": 513,
+                      "referencedDeclaration": 1209,
                       "src": "2085:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -1671,10 +1671,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        512,
-                        513
+                        1208,
+                        1209
                       ],
-                      "referencedDeclaration": 512,
+                      "referencedDeclaration": 1208,
                       "src": "2461:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -1826,10 +1826,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        512,
-                        513
+                        1208,
+                        1209
                       ],
-                      "referencedDeclaration": 512,
+                      "referencedDeclaration": 1208,
                       "src": "2533:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -2089,7 +2089,7 @@
         "id": 2,
         "nodeType": "ImportDirective",
         "scope": 146,
-        "sourceUnit": 347,
+        "sourceUnit": 187,
         "src": "26:46:0",
         "symbolAliases": [],
         "unitAlias": ""
@@ -2100,7 +2100,7 @@
         "id": 3,
         "nodeType": "ImportDirective",
         "scope": 146,
-        "sourceUnit": 328,
+        "sourceUnit": 168,
         "src": "73:25:0",
         "symbolAliases": [],
         "unitAlias": ""
@@ -2243,7 +2243,7 @@
                 "name": "keccak256",
                 "nodeType": "Identifier",
                 "overloadedDeclarations": [],
-                "referencedDeclaration": 503,
+                "referencedDeclaration": 1199,
                 "src": "851:9:0",
                 "typeDescriptions": {
                   "typeIdentifier": "t_function_sha3_pure$__$returns$_t_bytes32_$",
@@ -2517,7 +2517,7 @@
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IACL_$327",
+                        "typeIdentifier": "t_contract$_IACL_$167",
                         "typeString": "contract IACL"
                       },
                       "typeName": {
@@ -2525,10 +2525,10 @@
                         "id": 33,
                         "name": "IACL",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 327,
+                        "referencedDeclaration": 167,
                         "src": "1206:4:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IACL_$327",
+                          "typeIdentifier": "t_contract$_IACL_$167",
                           "typeString": "contract IACL"
                         }
                       },
@@ -2582,10 +2582,10 @@
                       "name": "IACL",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 327,
+                      "referencedDeclaration": 167,
                       "src": "1218:4:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_IACL_$327_$",
+                        "typeIdentifier": "t_type$_t_contract$_IACL_$167_$",
                         "typeString": "type(contract IACL)"
                       }
                     },
@@ -2599,7 +2599,7 @@
                     "nodeType": "FunctionCall",
                     "src": "1218:11:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IACL_$327",
+                      "typeIdentifier": "t_contract$_IACL_$167",
                       "typeString": "contract IACL"
                     }
                   },
@@ -2621,7 +2621,7 @@
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 509,
+                              "referencedDeclaration": 1205,
                               "src": "1263:3:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
@@ -2659,7 +2659,7 @@
                             "referencedDeclaration": 34,
                             "src": "1243:4:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_IACL_$327",
+                              "typeIdentifier": "t_contract$_IACL_$167",
                               "typeString": "contract IACL"
                             }
                           },
@@ -2670,7 +2670,7 @@
                           "lValueRequested": false,
                           "memberName": "isProductOwner",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 314,
+                          "referencedDeclaration": 154,
                           "src": "1243:19:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_bool_$",
@@ -2703,10 +2703,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        512,
-                        513
+                        1208,
+                        1209
                       ],
-                      "referencedDeclaration": 512,
+                      "referencedDeclaration": 1208,
                       "src": "1235:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -2772,7 +2772,7 @@
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IACL_$327",
+                        "typeIdentifier": "t_contract$_IACL_$167",
                         "typeString": "contract IACL"
                       },
                       "typeName": {
@@ -2780,10 +2780,10 @@
                         "id": 52,
                         "name": "IACL",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 327,
+                        "referencedDeclaration": 167,
                         "src": "1392:4:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IACL_$327",
+                          "typeIdentifier": "t_contract$_IACL_$167",
                           "typeString": "contract IACL"
                         }
                       },
@@ -2837,10 +2837,10 @@
                       "name": "IACL",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 327,
+                      "referencedDeclaration": 167,
                       "src": "1404:4:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_IACL_$327_$",
+                        "typeIdentifier": "t_type$_t_contract$_IACL_$167_$",
                         "typeString": "type(contract IACL)"
                       }
                     },
@@ -2854,7 +2854,7 @@
                     "nodeType": "FunctionCall",
                     "src": "1404:11:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IACL_$327",
+                      "typeIdentifier": "t_contract$_IACL_$167",
                       "typeString": "contract IACL"
                     }
                   },
@@ -2876,7 +2876,7 @@
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 509,
+                              "referencedDeclaration": 1205,
                               "src": "1447:3:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
@@ -2914,7 +2914,7 @@
                             "referencedDeclaration": 53,
                             "src": "1429:4:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_IACL_$327",
+                              "typeIdentifier": "t_contract$_IACL_$167",
                               "typeString": "contract IACL"
                             }
                           },
@@ -2925,7 +2925,7 @@
                           "lValueRequested": false,
                           "memberName": "isAuthorized",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 321,
+                          "referencedDeclaration": 161,
                           "src": "1429:17:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_bool_$",
@@ -2958,10 +2958,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        512,
-                        513
+                        1208,
+                        1209
                       ],
-                      "referencedDeclaration": 512,
+                      "referencedDeclaration": 1208,
                       "src": "1421:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -3183,10 +3183,10 @@
                             "name": "AddressUtils",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 346,
+                            "referencedDeclaration": 186,
                             "src": "2009:12:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_contract$_AddressUtils_$346_$",
+                              "typeIdentifier": "t_type$_t_contract$_AddressUtils_$186_$",
                               "typeString": "type(library AddressUtils)"
                             }
                           },
@@ -3197,7 +3197,7 @@
                           "lValueRequested": false,
                           "memberName": "isContract",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 345,
+                          "referencedDeclaration": 185,
                           "src": "2009:23:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_view$_t_address_$returns$_t_bool_$",
@@ -3252,10 +3252,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        512,
-                        513
+                        1208,
+                        1209
                       ],
-                      "referencedDeclaration": 513,
+                      "referencedDeclaration": 1209,
                       "src": "2001:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -3317,10 +3317,10 @@
                               "name": "IACL",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 327,
+                              "referencedDeclaration": 167,
                               "src": "2093:4:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_type$_t_contract$_IACL_$327_$",
+                                "typeIdentifier": "t_type$_t_contract$_IACL_$167_$",
                                 "typeString": "type(contract IACL)"
                               }
                             },
@@ -3334,7 +3334,7 @@
                             "nodeType": "FunctionCall",
                             "src": "2093:13:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_IACL_$327",
+                              "typeIdentifier": "t_contract$_IACL_$167",
                               "typeString": "contract IACL"
                             }
                           },
@@ -3345,7 +3345,7 @@
                           "lValueRequested": false,
                           "memberName": "isACL",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 326,
+                          "referencedDeclaration": 166,
                           "src": "2093:19:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_external_pure$__$returns$_t_bool_$",
@@ -3400,10 +3400,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        512,
-                        513
+                        1208,
+                        1209
                       ],
-                      "referencedDeclaration": 513,
+                      "referencedDeclaration": 1209,
                       "src": "2085:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -3669,10 +3669,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        512,
-                        513
+                        1208,
+                        1209
                       ],
-                      "referencedDeclaration": 512,
+                      "referencedDeclaration": 1208,
                       "src": "2461:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -3824,10 +3824,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        512,
-                        513
+                        1208,
+                        1209
                       ],
-                      "referencedDeclaration": 512,
+                      "referencedDeclaration": 1208,
                       "src": "2533:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -4066,5 +4066,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.0",
-  "updatedAt": "2018-08-26T21:33:32.782Z"
+  "updatedAt": "2018-08-26T21:41:03.452Z"
 }

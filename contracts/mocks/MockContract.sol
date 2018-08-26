@@ -5,8 +5,6 @@ pragma solidity ^0.4.23;
 * @dev Generic mock contract used for testing
 */
 contract MockContract {
-  
-  string public someValue = "MockContract.someValue";
 
   /**
   * @dev Returns a string value
