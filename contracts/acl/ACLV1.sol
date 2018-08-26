@@ -35,7 +35,7 @@ contract ACLV1 is IACL {
   }
 
   /**
-  * @dev Modifier returns true if sender is product owner
+  * @dev Modifier restricts access to product owner
   */
   modifier onlyProductOwner() {
     require(msg.sender == productOwner);
@@ -43,7 +43,7 @@ contract ACLV1 is IACL {
   }
 
   /**
-  * @dev Modifier returns true if sender is registered as an authorized account
+  * @dev Modifier restricts access to authorized accounts
   */
   modifier onlyAuthorized() {
     require(isAuthorized(msg.sender));
