@@ -4,20 +4,6 @@
     {
       "constant": true,
       "inputs": [],
-      "name": "someValue",
-      "outputs": [
-        {
-          "name": "",
-          "type": "string"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "view",
-      "type": "function"
-    },
-    {
-      "constant": true,
-      "inputs": [],
       "name": "someString",
       "outputs": [
         {
@@ -44,24 +30,24 @@
       "type": "function"
     }
   ],
-  "bytecode": "0x60806040526040805190810160405280601681526020017f4d6f636b436f6e74726163742e736f6d6556616c7565000000000000000000008152506000908051906020019061004f929190610062565b5034801561005c57600080fd5b50610107565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106100a357805160ff19168380011785556100d1565b828001600101855582156100d1579182015b828111156100d05782518255916020019190600101906100b5565b5b5090506100de91906100e2565b5090565b61010491905b808211156101005760008160009055506001016100e8565b5090565b90565b6102bb806101166000396000f300608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806318f483d81461005c5780634a627e611461008b578063e7a96f6d1461011b575b600080fd5b34801561006857600080fd5b506100716101ab565b604051808215151515815260200191505060405180910390f35b34801561009757600080fd5b506100a06101b4565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156100e05780820151818401526020810190506100c5565b50505050905090810190601f16801561010d5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b34801561012757600080fd5b50610130610252565b6040518080602001828103825283818151815260200191508051906020019080838360005b83811015610170578082015181840152602081019050610155565b50505050905090810190601f16801561019d5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60006001905090565b60008054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561024a5780601f1061021f5761010080835404028352916020019161024a565b820191906000526020600020905b81548152906001019060200180831161022d57829003601f168201915b505050505081565b60606040805190810160405280600c81526020017f4d6f636b436f6e747261637400000000000000000000000000000000000000008152509050905600a165627a7a72305820ea1d266e0333d00bf679043072834b7734d9fe47aa914857f4a68a0c805227bb0029",
-  "deployedBytecode": "0x608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806318f483d81461005c5780634a627e611461008b578063e7a96f6d1461011b575b600080fd5b34801561006857600080fd5b506100716101ab565b604051808215151515815260200191505060405180910390f35b34801561009757600080fd5b506100a06101b4565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156100e05780820151818401526020810190506100c5565b50505050905090810190601f16801561010d5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b34801561012757600080fd5b50610130610252565b6040518080602001828103825283818151815260200191508051906020019080838360005b83811015610170578082015181840152602081019050610155565b50505050905090810190601f16801561019d5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60006001905090565b60008054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561024a5780601f1061021f5761010080835404028352916020019161024a565b820191906000526020600020905b81548152906001019060200180831161022d57829003601f168201915b505050505081565b60606040805190810160405280600c81526020017f4d6f636b436f6e747261637400000000000000000000000000000000000000008152509050905600a165627a7a72305820ea1d266e0333d00bf679043072834b7734d9fe47aa914857f4a68a0c805227bb0029",
-  "sourceMap": "101:415:64:-;;;130:50;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;101:415;8:9:-1;5:2;;;30:1;27;20:12;5:2;101:415:64;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
-  "deployedSourceMap": "101:415:64:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;439:74;;8:9:-1;5:2;;;30:1;27;20:12;5:2;439:74:64;;;;;;;;;;;;;;;;;;;;;;;;;;;130:50;;8:9:-1;5:2;;;30:1;27;20:12;5:2;130:50:64;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;130:50:64;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;280:82;;8:9:-1;5:2;;;30:1;27;20:12;5:2;280:82:64;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;280:82:64;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;439:74;485:4;504;497:11;;439:74;:::o;130:50::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;280:82::-;322:6;336:21;;;;;;;;;;;;;;;;;;;;280:82;:::o",
-  "source": "pragma solidity ^0.4.23;\n\n/**\n* @title MockContract\n* @dev Generic mock contract used for testing\n*/\ncontract MockContract {\n  \n  string public someValue = \"MockContract.someValue\";\n\n  /**\n  * @dev Returns a string value\n  * @return Always returns the value 'MockContract'\n  */\n  function someString() public pure returns(string) {\n    return \"MockContract\";\n  }\n\n  /**\n  * @dev Returns a bool value\n  * @return Always returns true\n  */\n  function isMockContract() public pure returns(bool) {\n    return true;\n  }\n\n}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610182806100206000396000f30060806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806318f483d814610051578063e7a96f6d14610080575b600080fd5b34801561005d57600080fd5b50610066610110565b604051808215151515815260200191505060405180910390f35b34801561008c57600080fd5b50610095610119565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156100d55780820151818401526020810190506100ba565b50505050905090810190601f1680156101025780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60006001905090565b60606040805190810160405280600c81526020017f4d6f636b436f6e747261637400000000000000000000000000000000000000008152509050905600a165627a7a7230582097955e2ab7d83048faff3055cdfcc95a4248f5b1478afd1134830ee6c0f31a130029",
+  "deployedBytecode": "0x60806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806318f483d814610051578063e7a96f6d14610080575b600080fd5b34801561005d57600080fd5b50610066610110565b604051808215151515815260200191505060405180910390f35b34801561008c57600080fd5b50610095610119565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156100d55780820151818401526020810190506100ba565b50505050905090810190601f1680156101025780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60006001905090565b60606040805190810160405280600c81526020017f4d6f636b436f6e747261637400000000000000000000000000000000000000008152509050905600a165627a7a7230582097955e2ab7d83048faff3055cdfcc95a4248f5b1478afd1134830ee6c0f31a130029",
+  "sourceMap": "101:358:12:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;101:358:12;;;;;;;",
+  "deployedSourceMap": "101:358:12:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;382:74;;8:9:-1;5:2;;;30:1;27;20:12;5:2;382:74:12;;;;;;;;;;;;;;;;;;;;;;;;;;;223:82;;8:9:-1;5:2;;;30:1;27;20:12;5:2;223:82:12;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;223:82:12;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;382:74;428:4;447;440:11;;382:74;:::o;223:82::-;265:6;279:21;;;;;;;;;;;;;;;;;;;;223:82;:::o",
+  "source": "pragma solidity ^0.4.23;\n\n/**\n* @title MockContract\n* @dev Generic mock contract used for testing\n*/\ncontract MockContract {\n\n  /**\n  * @dev Returns a string value\n  * @return Always returns the value 'MockContract'\n  */\n  function someString() public pure returns(string) {\n    return \"MockContract\";\n  }\n\n  /**\n  * @dev Returns a bool value\n  * @return Always returns true\n  */\n  function isMockContract() public pure returns(bool) {\n    return true;\n  }\n\n}",
   "sourcePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/mocks/MockContract.sol",
   "ast": {
     "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/mocks/MockContract.sol",
     "exportedSymbols": {
       "MockContract": [
-        6018
+        1030
       ]
     },
-    "id": 6019,
+    "id": 1031,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 5998,
+        "id": 1013,
         "literals": [
           "solidity",
           "^",
@@ -69,7 +55,7 @@
           ".23"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:64"
+        "src": "0:24:12"
       },
       {
         "baseContracts": [],
@@ -77,74 +63,31 @@
         "contractKind": "contract",
         "documentation": "@title MockContract\n@dev Generic mock contract used for testing",
         "fullyImplemented": true,
-        "id": 6018,
+        "id": 1030,
         "linearizedBaseContracts": [
-          6018
+          1030
         ],
         "name": "MockContract",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
-            "constant": false,
-            "id": 6001,
-            "name": "someValue",
-            "nodeType": "VariableDeclaration",
-            "scope": 6018,
-            "src": "130:50:64",
-            "stateVariable": true,
-            "storageLocation": "default",
-            "typeDescriptions": {
-              "typeIdentifier": "t_string_storage",
-              "typeString": "string"
-            },
-            "typeName": {
-              "id": 5999,
-              "name": "string",
-              "nodeType": "ElementaryTypeName",
-              "src": "130:6:64",
-              "typeDescriptions": {
-                "typeIdentifier": "t_string_storage_ptr",
-                "typeString": "string"
-              }
-            },
-            "value": {
-              "argumentTypes": null,
-              "hexValue": "4d6f636b436f6e74726163742e736f6d6556616c7565",
-              "id": 6000,
-              "isConstant": false,
-              "isLValue": false,
-              "isPure": true,
-              "kind": "string",
-              "lValueRequested": false,
-              "nodeType": "Literal",
-              "src": "156:24:64",
-              "subdenomination": null,
-              "typeDescriptions": {
-                "typeIdentifier": "t_stringliteral_b4c1c633aaa0ddfe38ac3d23cef5ebb93455c2e6cc7190463cac749b5b105c08",
-                "typeString": "literal_string \"MockContract.someValue\""
-              },
-              "value": "MockContract.someValue"
-            },
-            "visibility": "public"
-          },
-          {
             "body": {
-              "id": 6008,
+              "id": 1020,
               "nodeType": "Block",
-              "src": "330:32:64",
+              "src": "273:32:12",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "4d6f636b436f6e7472616374",
-                    "id": 6006,
+                    "id": 1018,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
                     "kind": "string",
                     "lValueRequested": false,
                     "nodeType": "Literal",
-                    "src": "343:14:64",
+                    "src": "286:14:12",
                     "subdenomination": null,
                     "typeDescriptions": {
                       "typeIdentifier": "t_stringliteral_9da07094516f5e59db0542932b4ab3609f82c1a51d952065777145d1206027de",
@@ -152,15 +95,15 @@
                     },
                     "value": "MockContract"
                   },
-                  "functionReturnParameters": 6005,
-                  "id": 6007,
+                  "functionReturnParameters": 1017,
+                  "id": 1019,
                   "nodeType": "Return",
-                  "src": "336:21:64"
+                  "src": "279:21:12"
                 }
               ]
             },
             "documentation": "@dev Returns a string value\n@return Always returns the value 'MockContract'",
-            "id": 6009,
+            "id": 1021,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -168,23 +111,23 @@
             "name": "someString",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6002,
+              "id": 1014,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "299:2:64"
+              "src": "242:2:12"
             },
             "payable": false,
             "returnParameters": {
-              "id": 6005,
+              "id": 1017,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6004,
+                  "id": 1016,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6009,
-                  "src": "322:6:64",
+                  "scope": 1021,
+                  "src": "265:6:12",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -192,10 +135,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 6003,
+                    "id": 1015,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "322:6:64",
+                    "src": "265:6:12",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -205,32 +148,32 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "321:8:64"
+              "src": "264:8:12"
             },
-            "scope": 6018,
-            "src": "280:82:64",
+            "scope": 1030,
+            "src": "223:82:12",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 6016,
+              "id": 1028,
               "nodeType": "Block",
-              "src": "491:22:64",
+              "src": "434:22:12",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "74727565",
-                    "id": 6014,
+                    "id": 1026,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
                     "kind": "bool",
                     "lValueRequested": false,
                     "nodeType": "Literal",
-                    "src": "504:4:64",
+                    "src": "447:4:12",
                     "subdenomination": null,
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
@@ -238,15 +181,15 @@
                     },
                     "value": "true"
                   },
-                  "functionReturnParameters": 6013,
-                  "id": 6015,
+                  "functionReturnParameters": 1025,
+                  "id": 1027,
                   "nodeType": "Return",
-                  "src": "497:11:64"
+                  "src": "440:11:12"
                 }
               ]
             },
             "documentation": "@dev Returns a bool value\n@return Always returns true",
-            "id": 6017,
+            "id": 1029,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -254,23 +197,23 @@
             "name": "isMockContract",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6010,
+              "id": 1022,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "462:2:64"
+              "src": "405:2:12"
             },
             "payable": false,
             "returnParameters": {
-              "id": 6013,
+              "id": 1025,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6012,
+                  "id": 1024,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6017,
-                  "src": "485:4:64",
+                  "scope": 1029,
+                  "src": "428:4:12",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -278,10 +221,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 6011,
+                    "id": 1023,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "485:4:64",
+                    "src": "428:4:12",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -291,33 +234,33 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "484:6:64"
+              "src": "427:6:12"
             },
-            "scope": 6018,
-            "src": "439:74:64",
+            "scope": 1030,
+            "src": "382:74:12",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 6019,
-        "src": "101:415:64"
+        "scope": 1031,
+        "src": "101:358:12"
       }
     ],
-    "src": "0:516:64"
+    "src": "0:459:12"
   },
   "legacyAST": {
     "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/mocks/MockContract.sol",
     "exportedSymbols": {
       "MockContract": [
-        6018
+        1030
       ]
     },
-    "id": 6019,
+    "id": 1031,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 5998,
+        "id": 1013,
         "literals": [
           "solidity",
           "^",
@@ -325,7 +268,7 @@
           ".23"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:64"
+        "src": "0:24:12"
       },
       {
         "baseContracts": [],
@@ -333,74 +276,31 @@
         "contractKind": "contract",
         "documentation": "@title MockContract\n@dev Generic mock contract used for testing",
         "fullyImplemented": true,
-        "id": 6018,
+        "id": 1030,
         "linearizedBaseContracts": [
-          6018
+          1030
         ],
         "name": "MockContract",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
-            "constant": false,
-            "id": 6001,
-            "name": "someValue",
-            "nodeType": "VariableDeclaration",
-            "scope": 6018,
-            "src": "130:50:64",
-            "stateVariable": true,
-            "storageLocation": "default",
-            "typeDescriptions": {
-              "typeIdentifier": "t_string_storage",
-              "typeString": "string"
-            },
-            "typeName": {
-              "id": 5999,
-              "name": "string",
-              "nodeType": "ElementaryTypeName",
-              "src": "130:6:64",
-              "typeDescriptions": {
-                "typeIdentifier": "t_string_storage_ptr",
-                "typeString": "string"
-              }
-            },
-            "value": {
-              "argumentTypes": null,
-              "hexValue": "4d6f636b436f6e74726163742e736f6d6556616c7565",
-              "id": 6000,
-              "isConstant": false,
-              "isLValue": false,
-              "isPure": true,
-              "kind": "string",
-              "lValueRequested": false,
-              "nodeType": "Literal",
-              "src": "156:24:64",
-              "subdenomination": null,
-              "typeDescriptions": {
-                "typeIdentifier": "t_stringliteral_b4c1c633aaa0ddfe38ac3d23cef5ebb93455c2e6cc7190463cac749b5b105c08",
-                "typeString": "literal_string \"MockContract.someValue\""
-              },
-              "value": "MockContract.someValue"
-            },
-            "visibility": "public"
-          },
-          {
             "body": {
-              "id": 6008,
+              "id": 1020,
               "nodeType": "Block",
-              "src": "330:32:64",
+              "src": "273:32:12",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "4d6f636b436f6e7472616374",
-                    "id": 6006,
+                    "id": 1018,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
                     "kind": "string",
                     "lValueRequested": false,
                     "nodeType": "Literal",
-                    "src": "343:14:64",
+                    "src": "286:14:12",
                     "subdenomination": null,
                     "typeDescriptions": {
                       "typeIdentifier": "t_stringliteral_9da07094516f5e59db0542932b4ab3609f82c1a51d952065777145d1206027de",
@@ -408,15 +308,15 @@
                     },
                     "value": "MockContract"
                   },
-                  "functionReturnParameters": 6005,
-                  "id": 6007,
+                  "functionReturnParameters": 1017,
+                  "id": 1019,
                   "nodeType": "Return",
-                  "src": "336:21:64"
+                  "src": "279:21:12"
                 }
               ]
             },
             "documentation": "@dev Returns a string value\n@return Always returns the value 'MockContract'",
-            "id": 6009,
+            "id": 1021,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -424,23 +324,23 @@
             "name": "someString",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6002,
+              "id": 1014,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "299:2:64"
+              "src": "242:2:12"
             },
             "payable": false,
             "returnParameters": {
-              "id": 6005,
+              "id": 1017,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6004,
+                  "id": 1016,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6009,
-                  "src": "322:6:64",
+                  "scope": 1021,
+                  "src": "265:6:12",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -448,10 +348,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 6003,
+                    "id": 1015,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "322:6:64",
+                    "src": "265:6:12",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -461,32 +361,32 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "321:8:64"
+              "src": "264:8:12"
             },
-            "scope": 6018,
-            "src": "280:82:64",
+            "scope": 1030,
+            "src": "223:82:12",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 6016,
+              "id": 1028,
               "nodeType": "Block",
-              "src": "491:22:64",
+              "src": "434:22:12",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "74727565",
-                    "id": 6014,
+                    "id": 1026,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
                     "kind": "bool",
                     "lValueRequested": false,
                     "nodeType": "Literal",
-                    "src": "504:4:64",
+                    "src": "447:4:12",
                     "subdenomination": null,
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
@@ -494,15 +394,15 @@
                     },
                     "value": "true"
                   },
-                  "functionReturnParameters": 6013,
-                  "id": 6015,
+                  "functionReturnParameters": 1025,
+                  "id": 1027,
                   "nodeType": "Return",
-                  "src": "497:11:64"
+                  "src": "440:11:12"
                 }
               ]
             },
             "documentation": "@dev Returns a bool value\n@return Always returns true",
-            "id": 6017,
+            "id": 1029,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -510,23 +410,23 @@
             "name": "isMockContract",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6010,
+              "id": 1022,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "462:2:64"
+              "src": "405:2:12"
             },
             "payable": false,
             "returnParameters": {
-              "id": 6013,
+              "id": 1025,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6012,
+                  "id": 1024,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6017,
-                  "src": "485:4:64",
+                  "scope": 1029,
+                  "src": "428:4:12",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -534,10 +434,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 6011,
+                    "id": 1023,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "485:4:64",
+                    "src": "428:4:12",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -547,20 +447,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "484:6:64"
+              "src": "427:6:12"
             },
-            "scope": 6018,
-            "src": "439:74:64",
+            "scope": 1030,
+            "src": "382:74:12",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 6019,
-        "src": "101:415:64"
+        "scope": 1031,
+        "src": "101:358:12"
       }
     ],
-    "src": "0:516:64"
+    "src": "0:459:12"
   },
   "compiler": {
     "name": "solc",
@@ -568,5 +468,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.0",
-  "updatedAt": "2018-08-26T19:45:30.916Z"
+  "updatedAt": "2018-08-26T22:53:56.916Z"
 }

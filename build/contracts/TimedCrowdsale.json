@@ -165,48 +165,48 @@
   "deployedBytecode": "0x",
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "pragma solidity ^0.4.21;\n\nimport \"../../math/SafeMath.sol\";\nimport \"../Crowdsale.sol\";\n\n\n/**\n * @title TimedCrowdsale\n * @dev Crowdsale accepting contributions only within a time frame.\n */\ncontract TimedCrowdsale is Crowdsale {\n  using SafeMath for uint256;\n\n  uint256 public openingTime;\n  uint256 public closingTime;\n\n  /**\n   * @dev Reverts if not in crowdsale time range.\n   */\n  modifier onlyWhileOpen {\n    // solium-disable-next-line security/no-block-members\n    require(block.timestamp >= openingTime && block.timestamp <= closingTime);\n    _;\n  }\n\n  /**\n   * @dev Constructor, takes crowdsale opening and closing times.\n   * @param _openingTime Crowdsale opening time\n   * @param _closingTime Crowdsale closing time\n   */\n  function TimedCrowdsale(uint256 _openingTime, uint256 _closingTime) public {\n    // solium-disable-next-line security/no-block-members\n    require(_openingTime >= block.timestamp);\n    require(_closingTime >= _openingTime);\n\n    openingTime = _openingTime;\n    closingTime = _closingTime;\n  }\n\n  /**\n   * @dev Checks whether the period in which the crowdsale is open has already elapsed.\n   * @return Whether crowdsale period has elapsed\n   */\n  function hasClosed() public view returns (bool) {\n    // solium-disable-next-line security/no-block-members\n    return block.timestamp > closingTime;\n  }\n\n  /**\n   * @dev Extend parent behavior requiring to be within contributing period\n   * @param _beneficiary Token purchaser\n   * @param _weiAmount Amount of wei contributed\n   */\n  function _preValidatePurchase(address _beneficiary, uint256 _weiAmount) internal onlyWhileOpen {\n    super._preValidatePurchase(_beneficiary, _weiAmount);\n  }\n\n}\n",
+  "source": "pragma solidity ^0.4.24;\n\nimport \"../../math/SafeMath.sol\";\nimport \"../Crowdsale.sol\";\n\n\n/**\n * @title TimedCrowdsale\n * @dev Crowdsale accepting contributions only within a time frame.\n */\ncontract TimedCrowdsale is Crowdsale {\n  using SafeMath for uint256;\n\n  uint256 public openingTime;\n  uint256 public closingTime;\n\n  /**\n   * @dev Reverts if not in crowdsale time range.\n   */\n  modifier onlyWhileOpen {\n    // solium-disable-next-line security/no-block-members\n    require(block.timestamp >= openingTime && block.timestamp <= closingTime);\n    _;\n  }\n\n  /**\n   * @dev Constructor, takes crowdsale opening and closing times.\n   * @param _openingTime Crowdsale opening time\n   * @param _closingTime Crowdsale closing time\n   */\n  constructor(uint256 _openingTime, uint256 _closingTime) public {\n    // solium-disable-next-line security/no-block-members\n    require(_openingTime >= block.timestamp);\n    require(_closingTime >= _openingTime);\n\n    openingTime = _openingTime;\n    closingTime = _closingTime;\n  }\n\n  /**\n   * @dev Checks whether the period in which the crowdsale is open has already elapsed.\n   * @return Whether crowdsale period has elapsed\n   */\n  function hasClosed() public view returns (bool) {\n    // solium-disable-next-line security/no-block-members\n    return block.timestamp > closingTime;\n  }\n\n  /**\n   * @dev Extend parent behavior requiring to be within contributing period\n   * @param _beneficiary Token purchaser\n   * @param _weiAmount Amount of wei contributed\n   */\n  function _preValidatePurchase(\n    address _beneficiary,\n    uint256 _weiAmount\n  )\n    internal\n    onlyWhileOpen\n  {\n    super._preValidatePurchase(_beneficiary, _weiAmount);\n  }\n\n}\n",
   "sourcePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/lib/openzeppelin/crowdsale/validation/TimedCrowdsale.sol",
   "ast": {
     "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/lib/openzeppelin/crowdsale/validation/TimedCrowdsale.sol",
     "exportedSymbols": {
       "TimedCrowdsale": [
-        1692
+        816
       ]
     },
-    "id": 1693,
+    "id": 817,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1607,
+        "id": 731,
         "literals": [
           "solidity",
           "^",
           "0.4",
-          ".21"
+          ".24"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:19"
+        "src": "0:24:8"
       },
       {
         "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/lib/openzeppelin/math/SafeMath.sol",
         "file": "../../math/SafeMath.sol",
-        "id": 1608,
+        "id": 732,
         "nodeType": "ImportDirective",
-        "scope": 1693,
-        "sourceUnit": 2110,
-        "src": "26:33:19",
+        "scope": 817,
+        "sourceUnit": 1059,
+        "src": "26:33:8",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
         "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/lib/openzeppelin/crowdsale/Crowdsale.sol",
         "file": "../Crowdsale.sol",
-        "id": 1609,
+        "id": 733,
         "nodeType": "ImportDirective",
-        "scope": 1693,
-        "sourceUnit": 819,
-        "src": "60:26:19",
+        "scope": 817,
+        "sourceUnit": 568,
+        "src": "60:26:8",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -216,56 +216,56 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 1610,
+              "id": 734,
               "name": "Crowdsale",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 818,
-              "src": "217:9:19",
+              "referencedDeclaration": 567,
+              "src": "217:9:8",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Crowdsale_$818",
+                "typeIdentifier": "t_contract$_Crowdsale_$567",
                 "typeString": "contract Crowdsale"
               }
             },
-            "id": 1611,
+            "id": 735,
             "nodeType": "InheritanceSpecifier",
-            "src": "217:9:19"
+            "src": "217:9:8"
           }
         ],
         "contractDependencies": [
-          818
+          567
         ],
         "contractKind": "contract",
         "documentation": "@title TimedCrowdsale\n@dev Crowdsale accepting contributions only within a time frame.",
         "fullyImplemented": false,
-        "id": 1692,
+        "id": 816,
         "linearizedBaseContracts": [
-          1692,
-          818
+          816,
+          567
         ],
         "name": "TimedCrowdsale",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
-            "id": 1614,
+            "id": 738,
             "libraryName": {
               "contractScope": null,
-              "id": 1612,
+              "id": 736,
               "name": "SafeMath",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 2109,
-              "src": "237:8:19",
+              "referencedDeclaration": 1058,
+              "src": "237:8:8",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_SafeMath_$2109",
+                "typeIdentifier": "t_contract$_SafeMath_$1058",
                 "typeString": "library SafeMath"
               }
             },
             "nodeType": "UsingForDirective",
-            "src": "231:27:19",
+            "src": "231:27:8",
             "typeName": {
-              "id": 1613,
+              "id": 737,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
-              "src": "250:7:19",
+              "src": "250:7:8",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -274,11 +274,11 @@
           },
           {
             "constant": false,
-            "id": 1616,
+            "id": 740,
             "name": "openingTime",
             "nodeType": "VariableDeclaration",
-            "scope": 1692,
-            "src": "262:26:19",
+            "scope": 816,
+            "src": "262:26:8",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -286,10 +286,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 1615,
+              "id": 739,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
-              "src": "262:7:19",
+              "src": "262:7:8",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -300,11 +300,11 @@
           },
           {
             "constant": false,
-            "id": 1618,
+            "id": 742,
             "name": "closingTime",
             "nodeType": "VariableDeclaration",
-            "scope": 1692,
-            "src": "292:26:19",
+            "scope": 816,
+            "src": "292:26:8",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -312,10 +312,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 1617,
+              "id": 741,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
-              "src": "292:7:19",
+              "src": "292:7:8",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -326,9 +326,9 @@
           },
           {
             "body": {
-              "id": 1633,
+              "id": 757,
               "nodeType": "Block",
-              "src": "408:149:19",
+              "src": "408:149:8",
               "statements": [
                 {
                   "expression": {
@@ -340,7 +340,7 @@
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
                         },
-                        "id": 1629,
+                        "id": 753,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -351,7 +351,7 @@
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
                           },
-                          "id": 1624,
+                          "id": 748,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -360,18 +360,18 @@
                             "argumentTypes": null,
                             "expression": {
                               "argumentTypes": null,
-                              "id": 1621,
+                              "id": 745,
                               "name": "block",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 6205,
-                              "src": "480:5:19",
+                              "referencedDeclaration": 3412,
+                              "src": "480:5:8",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_block",
                                 "typeString": "block"
                               }
                             },
-                            "id": 1622,
+                            "id": 746,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -379,7 +379,7 @@
                             "memberName": "timestamp",
                             "nodeType": "MemberAccess",
                             "referencedDeclaration": null,
-                            "src": "480:15:19",
+                            "src": "480:15:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
@@ -389,18 +389,18 @@
                           "operator": ">=",
                           "rightExpression": {
                             "argumentTypes": null,
-                            "id": 1623,
+                            "id": 747,
                             "name": "openingTime",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1616,
-                            "src": "499:11:19",
+                            "referencedDeclaration": 740,
+                            "src": "499:11:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
                             }
                           },
-                          "src": "480:30:19",
+                          "src": "480:30:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bool",
                             "typeString": "bool"
@@ -414,7 +414,7 @@
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
                           },
-                          "id": 1628,
+                          "id": 752,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -423,18 +423,18 @@
                             "argumentTypes": null,
                             "expression": {
                               "argumentTypes": null,
-                              "id": 1625,
+                              "id": 749,
                               "name": "block",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 6205,
-                              "src": "514:5:19",
+                              "referencedDeclaration": 3412,
+                              "src": "514:5:8",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_block",
                                 "typeString": "block"
                               }
                             },
-                            "id": 1626,
+                            "id": 750,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -442,7 +442,7 @@
                             "memberName": "timestamp",
                             "nodeType": "MemberAccess",
                             "referencedDeclaration": null,
-                            "src": "514:15:19",
+                            "src": "514:15:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
@@ -452,24 +452,24 @@
                           "operator": "<=",
                           "rightExpression": {
                             "argumentTypes": null,
-                            "id": 1627,
+                            "id": 751,
                             "name": "closingTime",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1618,
-                            "src": "533:11:19",
+                            "referencedDeclaration": 742,
+                            "src": "533:11:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
                             }
                           },
-                          "src": "514:30:19",
+                          "src": "514:30:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bool",
                             "typeString": "bool"
                           }
                         },
-                        "src": "480:64:19",
+                        "src": "480:64:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -483,21 +483,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 1620,
+                      "id": 744,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        6218,
-                        6219
+                        3425,
+                        3426
                       ],
-                      "referencedDeclaration": 6218,
-                      "src": "472:7:19",
+                      "referencedDeclaration": 3425,
+                      "src": "472:7:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 1630,
+                    "id": 754,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -505,41 +505,41 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "472:73:19",
+                    "src": "472:73:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1631,
+                  "id": 755,
                   "nodeType": "ExpressionStatement",
-                  "src": "472:73:19"
+                  "src": "472:73:8"
                 },
                 {
-                  "id": 1632,
+                  "id": 756,
                   "nodeType": "PlaceholderStatement",
-                  "src": "551:1:19"
+                  "src": "551:1:8"
                 }
               ]
             },
             "documentation": "@dev Reverts if not in crowdsale time range.",
-            "id": 1634,
+            "id": 758,
             "name": "onlyWhileOpen",
             "nodeType": "ModifierDefinition",
             "parameters": {
-              "id": 1619,
+              "id": 743,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "408:0:19"
+              "src": "408:0:8"
             },
-            "src": "385:172:19",
+            "src": "385:172:8",
             "visibility": "internal"
           },
           {
             "body": {
-              "id": 1662,
+              "id": 786,
               "nodeType": "Block",
-              "src": "810:217:19",
+              "src": "798:217:8",
               "statements": [
                 {
                   "expression": {
@@ -551,19 +551,19 @@
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         },
-                        "id": 1645,
+                        "id": 769,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
                           "argumentTypes": null,
-                          "id": 1642,
+                          "id": 766,
                           "name": "_openingTime",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1636,
-                          "src": "882:12:19",
+                          "referencedDeclaration": 760,
+                          "src": "870:12:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
@@ -575,18 +575,18 @@
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 1643,
+                            "id": 767,
                             "name": "block",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 6205,
-                            "src": "898:5:19",
+                            "referencedDeclaration": 3412,
+                            "src": "886:5:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_block",
                               "typeString": "block"
                             }
                           },
-                          "id": 1644,
+                          "id": 768,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -594,13 +594,13 @@
                           "memberName": "timestamp",
                           "nodeType": "MemberAccess",
                           "referencedDeclaration": null,
-                          "src": "898:15:19",
+                          "src": "886:15:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
                           }
                         },
-                        "src": "882:31:19",
+                        "src": "870:31:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -614,21 +614,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 1641,
+                      "id": 765,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        6218,
-                        6219
+                        3425,
+                        3426
                       ],
-                      "referencedDeclaration": 6218,
-                      "src": "874:7:19",
+                      "referencedDeclaration": 3425,
+                      "src": "862:7:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 1646,
+                    "id": 770,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -636,15 +636,15 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "874:40:19",
+                    "src": "862:40:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1647,
+                  "id": 771,
                   "nodeType": "ExpressionStatement",
-                  "src": "874:40:19"
+                  "src": "862:40:8"
                 },
                 {
                   "expression": {
@@ -656,19 +656,19 @@
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         },
-                        "id": 1651,
+                        "id": 775,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
                           "argumentTypes": null,
-                          "id": 1649,
+                          "id": 773,
                           "name": "_closingTime",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1638,
-                          "src": "928:12:19",
+                          "referencedDeclaration": 762,
+                          "src": "916:12:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
@@ -678,18 +678,18 @@
                         "operator": ">=",
                         "rightExpression": {
                           "argumentTypes": null,
-                          "id": 1650,
+                          "id": 774,
                           "name": "_openingTime",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1636,
-                          "src": "944:12:19",
+                          "referencedDeclaration": 760,
+                          "src": "932:12:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
                           }
                         },
-                        "src": "928:28:19",
+                        "src": "916:28:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -703,21 +703,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 1648,
+                      "id": 772,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        6218,
-                        6219
+                        3425,
+                        3426
                       ],
-                      "referencedDeclaration": 6218,
-                      "src": "920:7:19",
+                      "referencedDeclaration": 3425,
+                      "src": "908:7:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 1652,
+                    "id": 776,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -725,32 +725,32 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "920:37:19",
+                    "src": "908:37:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1653,
+                  "id": 777,
                   "nodeType": "ExpressionStatement",
-                  "src": "920:37:19"
+                  "src": "908:37:8"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 1656,
+                    "id": 780,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 1654,
+                      "id": 778,
                       "name": "openingTime",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1616,
-                      "src": "964:11:19",
+                      "referencedDeclaration": 740,
+                      "src": "952:11:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -760,43 +760,43 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 1655,
+                      "id": 779,
                       "name": "_openingTime",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1636,
-                      "src": "978:12:19",
+                      "referencedDeclaration": 760,
+                      "src": "966:12:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "src": "964:26:19",
+                    "src": "952:26:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "id": 1657,
+                  "id": 781,
                   "nodeType": "ExpressionStatement",
-                  "src": "964:26:19"
+                  "src": "952:26:8"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 1660,
+                    "id": 784,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 1658,
+                      "id": 782,
                       "name": "closingTime",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1618,
-                      "src": "996:11:19",
+                      "referencedDeclaration": 742,
+                      "src": "984:11:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -806,48 +806,48 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 1659,
+                      "id": 783,
                       "name": "_closingTime",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1638,
-                      "src": "1010:12:19",
+                      "referencedDeclaration": 762,
+                      "src": "998:12:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "src": "996:26:19",
+                    "src": "984:26:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "id": 1661,
+                  "id": 785,
                   "nodeType": "ExpressionStatement",
-                  "src": "996:26:19"
+                  "src": "984:26:8"
                 }
               ]
             },
             "documentation": "@dev Constructor, takes crowdsale opening and closing times.\n@param _openingTime Crowdsale opening time\n@param _closingTime Crowdsale closing time",
-            "id": 1663,
+            "id": 787,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
             "modifiers": [],
-            "name": "TimedCrowdsale",
+            "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1639,
+              "id": 763,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1636,
+                  "id": 760,
                   "name": "_openingTime",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1663,
-                  "src": "759:20:19",
+                  "scope": 787,
+                  "src": "747:20:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -855,10 +855,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1635,
+                    "id": 759,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "759:7:19",
+                    "src": "747:7:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -869,11 +869,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 1638,
+                  "id": 762,
                   "name": "_closingTime",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1663,
-                  "src": "781:20:19",
+                  "scope": 787,
+                  "src": "769:20:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -881,10 +881,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1637,
+                    "id": 761,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "781:7:19",
+                    "src": "769:7:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -894,26 +894,26 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "758:44:19"
+              "src": "746:44:8"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1640,
+              "id": 764,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "810:0:19"
+              "src": "798:0:8"
             },
-            "scope": 1692,
-            "src": "735:292:19",
+            "scope": 816,
+            "src": "735:280:8",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 1673,
+              "id": 797,
               "nodeType": "Block",
-              "src": "1229:105:19",
+              "src": "1217:105:8",
               "statements": [
                 {
                   "expression": {
@@ -922,7 +922,7 @@
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     },
-                    "id": 1671,
+                    "id": 795,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -931,18 +931,18 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 1668,
+                        "id": 792,
                         "name": "block",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 6205,
-                        "src": "1300:5:19",
+                        "referencedDeclaration": 3412,
+                        "src": "1288:5:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_block",
                           "typeString": "block"
                         }
                       },
-                      "id": 1669,
+                      "id": 793,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -950,7 +950,7 @@
                       "memberName": "timestamp",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "1300:15:19",
+                      "src": "1288:15:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -960,32 +960,32 @@
                     "operator": ">",
                     "rightExpression": {
                       "argumentTypes": null,
-                      "id": 1670,
+                      "id": 794,
                       "name": "closingTime",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1618,
-                      "src": "1318:11:19",
+                      "referencedDeclaration": 742,
+                      "src": "1306:11:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "src": "1300:29:19",
+                    "src": "1288:29:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "functionReturnParameters": 1667,
-                  "id": 1672,
+                  "functionReturnParameters": 791,
+                  "id": 796,
                   "nodeType": "Return",
-                  "src": "1293:36:19"
+                  "src": "1281:36:8"
                 }
               ]
             },
             "documentation": "@dev Checks whether the period in which the crowdsale is open has already elapsed.\n@return Whether crowdsale period has elapsed",
-            "id": 1674,
+            "id": 798,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -993,23 +993,23 @@
             "name": "hasClosed",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1664,
+              "id": 788,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1199:2:19"
+              "src": "1187:2:8"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1667,
+              "id": 791,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1666,
+                  "id": 790,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1674,
-                  "src": "1223:4:19",
+                  "scope": 798,
+                  "src": "1211:4:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1017,10 +1017,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 1665,
+                    "id": 789,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1223:4:19",
+                    "src": "1211:4:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -1030,19 +1030,19 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1222:6:19"
+              "src": "1210:6:8"
             },
-            "scope": 1692,
-            "src": "1181:153:19",
+            "scope": 816,
+            "src": "1169:153:8",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 1690,
+              "id": 814,
               "nodeType": "Block",
-              "src": "1611:63:19",
+              "src": "1621:63:8",
               "statements": [
                 {
                   "expression": {
@@ -1050,12 +1050,12 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 1686,
+                        "id": 810,
                         "name": "_beneficiary",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1676,
-                        "src": "1644:12:19",
+                        "referencedDeclaration": 800,
+                        "src": "1654:12:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -1063,12 +1063,12 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 1687,
+                        "id": 811,
                         "name": "_weiAmount",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1678,
-                        "src": "1658:10:19",
+                        "referencedDeclaration": 802,
+                        "src": "1668:10:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -1088,32 +1088,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 1683,
+                        "id": 807,
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 6267,
-                        "src": "1617:5:19",
+                        "referencedDeclaration": 3458,
+                        "src": "1627:5:8",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_super$_TimedCrowdsale_$1692",
+                          "typeIdentifier": "t_super$_TimedCrowdsale_$816",
                           "typeString": "contract super TimedCrowdsale"
                         }
                       },
-                      "id": 1685,
+                      "id": 809,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "_preValidatePurchase",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 749,
-                      "src": "1617:26:19",
+                      "referencedDeclaration": 498,
+                      "src": "1627:26:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$_t_uint256_$returns$__$",
                         "typeString": "function (address,uint256)"
                       }
                     },
-                    "id": 1688,
+                    "id": 812,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1121,57 +1121,57 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1617:52:19",
+                    "src": "1627:52:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1689,
+                  "id": 813,
                   "nodeType": "ExpressionStatement",
-                  "src": "1617:52:19"
+                  "src": "1627:52:8"
                 }
               ]
             },
             "documentation": "@dev Extend parent behavior requiring to be within contributing period\n@param _beneficiary Token purchaser\n@param _weiAmount Amount of wei contributed",
-            "id": 1691,
+            "id": 815,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
             "modifiers": [
               {
                 "arguments": null,
-                "id": 1681,
+                "id": 805,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 1680,
+                  "id": 804,
                   "name": "onlyWhileOpen",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 1634,
-                  "src": "1597:13:19",
+                  "referencedDeclaration": 758,
+                  "src": "1605:13:8",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
                     "typeString": "modifier ()"
                   }
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "1597:13:19"
+                "src": "1605:13:8"
               }
             ],
             "name": "_preValidatePurchase",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1679,
+              "id": 803,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1676,
+                  "id": 800,
                   "name": "_beneficiary",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1691,
-                  "src": "1546:20:19",
+                  "scope": 815,
+                  "src": "1539:20:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1179,10 +1179,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1675,
+                    "id": 799,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1546:7:19",
+                    "src": "1539:7:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -1193,11 +1193,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 1678,
+                  "id": 802,
                   "name": "_weiAmount",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1691,
-                  "src": "1568:18:19",
+                  "scope": 815,
+                  "src": "1565:18:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1205,10 +1205,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1677,
+                    "id": 801,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1568:7:19",
+                    "src": "1565:7:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1218,68 +1218,68 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1545:42:19"
+              "src": "1533:54:8"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1682,
+              "id": 806,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1611:0:19"
+              "src": "1621:0:8"
             },
-            "scope": 1692,
-            "src": "1516:158:19",
+            "scope": 816,
+            "src": "1504:180:8",
             "stateMutability": "nonpayable",
-            "superFunction": 749,
+            "superFunction": 498,
             "visibility": "internal"
           }
         ],
-        "scope": 1693,
-        "src": "190:1487:19"
+        "scope": 817,
+        "src": "190:1497:8"
       }
     ],
-    "src": "0:1678:19"
+    "src": "0:1688:8"
   },
   "legacyAST": {
     "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/lib/openzeppelin/crowdsale/validation/TimedCrowdsale.sol",
     "exportedSymbols": {
       "TimedCrowdsale": [
-        1692
+        816
       ]
     },
-    "id": 1693,
+    "id": 817,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1607,
+        "id": 731,
         "literals": [
           "solidity",
           "^",
           "0.4",
-          ".21"
+          ".24"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:19"
+        "src": "0:24:8"
       },
       {
         "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/lib/openzeppelin/math/SafeMath.sol",
         "file": "../../math/SafeMath.sol",
-        "id": 1608,
+        "id": 732,
         "nodeType": "ImportDirective",
-        "scope": 1693,
-        "sourceUnit": 2110,
-        "src": "26:33:19",
+        "scope": 817,
+        "sourceUnit": 1059,
+        "src": "26:33:8",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
         "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/lib/openzeppelin/crowdsale/Crowdsale.sol",
         "file": "../Crowdsale.sol",
-        "id": 1609,
+        "id": 733,
         "nodeType": "ImportDirective",
-        "scope": 1693,
-        "sourceUnit": 819,
-        "src": "60:26:19",
+        "scope": 817,
+        "sourceUnit": 568,
+        "src": "60:26:8",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -1289,56 +1289,56 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 1610,
+              "id": 734,
               "name": "Crowdsale",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 818,
-              "src": "217:9:19",
+              "referencedDeclaration": 567,
+              "src": "217:9:8",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Crowdsale_$818",
+                "typeIdentifier": "t_contract$_Crowdsale_$567",
                 "typeString": "contract Crowdsale"
               }
             },
-            "id": 1611,
+            "id": 735,
             "nodeType": "InheritanceSpecifier",
-            "src": "217:9:19"
+            "src": "217:9:8"
           }
         ],
         "contractDependencies": [
-          818
+          567
         ],
         "contractKind": "contract",
         "documentation": "@title TimedCrowdsale\n@dev Crowdsale accepting contributions only within a time frame.",
         "fullyImplemented": false,
-        "id": 1692,
+        "id": 816,
         "linearizedBaseContracts": [
-          1692,
-          818
+          816,
+          567
         ],
         "name": "TimedCrowdsale",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
-            "id": 1614,
+            "id": 738,
             "libraryName": {
               "contractScope": null,
-              "id": 1612,
+              "id": 736,
               "name": "SafeMath",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 2109,
-              "src": "237:8:19",
+              "referencedDeclaration": 1058,
+              "src": "237:8:8",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_SafeMath_$2109",
+                "typeIdentifier": "t_contract$_SafeMath_$1058",
                 "typeString": "library SafeMath"
               }
             },
             "nodeType": "UsingForDirective",
-            "src": "231:27:19",
+            "src": "231:27:8",
             "typeName": {
-              "id": 1613,
+              "id": 737,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
-              "src": "250:7:19",
+              "src": "250:7:8",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -1347,11 +1347,11 @@
           },
           {
             "constant": false,
-            "id": 1616,
+            "id": 740,
             "name": "openingTime",
             "nodeType": "VariableDeclaration",
-            "scope": 1692,
-            "src": "262:26:19",
+            "scope": 816,
+            "src": "262:26:8",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -1359,10 +1359,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 1615,
+              "id": 739,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
-              "src": "262:7:19",
+              "src": "262:7:8",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -1373,11 +1373,11 @@
           },
           {
             "constant": false,
-            "id": 1618,
+            "id": 742,
             "name": "closingTime",
             "nodeType": "VariableDeclaration",
-            "scope": 1692,
-            "src": "292:26:19",
+            "scope": 816,
+            "src": "292:26:8",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -1385,10 +1385,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 1617,
+              "id": 741,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
-              "src": "292:7:19",
+              "src": "292:7:8",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -1399,9 +1399,9 @@
           },
           {
             "body": {
-              "id": 1633,
+              "id": 757,
               "nodeType": "Block",
-              "src": "408:149:19",
+              "src": "408:149:8",
               "statements": [
                 {
                   "expression": {
@@ -1413,7 +1413,7 @@
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
                         },
-                        "id": 1629,
+                        "id": 753,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1424,7 +1424,7 @@
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
                           },
-                          "id": 1624,
+                          "id": 748,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -1433,18 +1433,18 @@
                             "argumentTypes": null,
                             "expression": {
                               "argumentTypes": null,
-                              "id": 1621,
+                              "id": 745,
                               "name": "block",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 6205,
-                              "src": "480:5:19",
+                              "referencedDeclaration": 3412,
+                              "src": "480:5:8",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_block",
                                 "typeString": "block"
                               }
                             },
-                            "id": 1622,
+                            "id": 746,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -1452,7 +1452,7 @@
                             "memberName": "timestamp",
                             "nodeType": "MemberAccess",
                             "referencedDeclaration": null,
-                            "src": "480:15:19",
+                            "src": "480:15:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
@@ -1462,18 +1462,18 @@
                           "operator": ">=",
                           "rightExpression": {
                             "argumentTypes": null,
-                            "id": 1623,
+                            "id": 747,
                             "name": "openingTime",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1616,
-                            "src": "499:11:19",
+                            "referencedDeclaration": 740,
+                            "src": "499:11:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
                             }
                           },
-                          "src": "480:30:19",
+                          "src": "480:30:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bool",
                             "typeString": "bool"
@@ -1487,7 +1487,7 @@
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
                           },
-                          "id": 1628,
+                          "id": 752,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -1496,18 +1496,18 @@
                             "argumentTypes": null,
                             "expression": {
                               "argumentTypes": null,
-                              "id": 1625,
+                              "id": 749,
                               "name": "block",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 6205,
-                              "src": "514:5:19",
+                              "referencedDeclaration": 3412,
+                              "src": "514:5:8",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_block",
                                 "typeString": "block"
                               }
                             },
-                            "id": 1626,
+                            "id": 750,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -1515,7 +1515,7 @@
                             "memberName": "timestamp",
                             "nodeType": "MemberAccess",
                             "referencedDeclaration": null,
-                            "src": "514:15:19",
+                            "src": "514:15:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
@@ -1525,24 +1525,24 @@
                           "operator": "<=",
                           "rightExpression": {
                             "argumentTypes": null,
-                            "id": 1627,
+                            "id": 751,
                             "name": "closingTime",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1618,
-                            "src": "533:11:19",
+                            "referencedDeclaration": 742,
+                            "src": "533:11:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
                             }
                           },
-                          "src": "514:30:19",
+                          "src": "514:30:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bool",
                             "typeString": "bool"
                           }
                         },
-                        "src": "480:64:19",
+                        "src": "480:64:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -1556,21 +1556,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 1620,
+                      "id": 744,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        6218,
-                        6219
+                        3425,
+                        3426
                       ],
-                      "referencedDeclaration": 6218,
-                      "src": "472:7:19",
+                      "referencedDeclaration": 3425,
+                      "src": "472:7:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 1630,
+                    "id": 754,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1578,41 +1578,41 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "472:73:19",
+                    "src": "472:73:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1631,
+                  "id": 755,
                   "nodeType": "ExpressionStatement",
-                  "src": "472:73:19"
+                  "src": "472:73:8"
                 },
                 {
-                  "id": 1632,
+                  "id": 756,
                   "nodeType": "PlaceholderStatement",
-                  "src": "551:1:19"
+                  "src": "551:1:8"
                 }
               ]
             },
             "documentation": "@dev Reverts if not in crowdsale time range.",
-            "id": 1634,
+            "id": 758,
             "name": "onlyWhileOpen",
             "nodeType": "ModifierDefinition",
             "parameters": {
-              "id": 1619,
+              "id": 743,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "408:0:19"
+              "src": "408:0:8"
             },
-            "src": "385:172:19",
+            "src": "385:172:8",
             "visibility": "internal"
           },
           {
             "body": {
-              "id": 1662,
+              "id": 786,
               "nodeType": "Block",
-              "src": "810:217:19",
+              "src": "798:217:8",
               "statements": [
                 {
                   "expression": {
@@ -1624,19 +1624,19 @@
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         },
-                        "id": 1645,
+                        "id": 769,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
                           "argumentTypes": null,
-                          "id": 1642,
+                          "id": 766,
                           "name": "_openingTime",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1636,
-                          "src": "882:12:19",
+                          "referencedDeclaration": 760,
+                          "src": "870:12:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
@@ -1648,18 +1648,18 @@
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 1643,
+                            "id": 767,
                             "name": "block",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 6205,
-                            "src": "898:5:19",
+                            "referencedDeclaration": 3412,
+                            "src": "886:5:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_block",
                               "typeString": "block"
                             }
                           },
-                          "id": 1644,
+                          "id": 768,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -1667,13 +1667,13 @@
                           "memberName": "timestamp",
                           "nodeType": "MemberAccess",
                           "referencedDeclaration": null,
-                          "src": "898:15:19",
+                          "src": "886:15:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
                           }
                         },
-                        "src": "882:31:19",
+                        "src": "870:31:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -1687,21 +1687,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 1641,
+                      "id": 765,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        6218,
-                        6219
+                        3425,
+                        3426
                       ],
-                      "referencedDeclaration": 6218,
-                      "src": "874:7:19",
+                      "referencedDeclaration": 3425,
+                      "src": "862:7:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 1646,
+                    "id": 770,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1709,15 +1709,15 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "874:40:19",
+                    "src": "862:40:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1647,
+                  "id": 771,
                   "nodeType": "ExpressionStatement",
-                  "src": "874:40:19"
+                  "src": "862:40:8"
                 },
                 {
                   "expression": {
@@ -1729,19 +1729,19 @@
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         },
-                        "id": 1651,
+                        "id": 775,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
                           "argumentTypes": null,
-                          "id": 1649,
+                          "id": 773,
                           "name": "_closingTime",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1638,
-                          "src": "928:12:19",
+                          "referencedDeclaration": 762,
+                          "src": "916:12:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
@@ -1751,18 +1751,18 @@
                         "operator": ">=",
                         "rightExpression": {
                           "argumentTypes": null,
-                          "id": 1650,
+                          "id": 774,
                           "name": "_openingTime",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1636,
-                          "src": "944:12:19",
+                          "referencedDeclaration": 760,
+                          "src": "932:12:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
                           }
                         },
-                        "src": "928:28:19",
+                        "src": "916:28:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -1776,21 +1776,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 1648,
+                      "id": 772,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        6218,
-                        6219
+                        3425,
+                        3426
                       ],
-                      "referencedDeclaration": 6218,
-                      "src": "920:7:19",
+                      "referencedDeclaration": 3425,
+                      "src": "908:7:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 1652,
+                    "id": 776,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1798,32 +1798,32 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "920:37:19",
+                    "src": "908:37:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1653,
+                  "id": 777,
                   "nodeType": "ExpressionStatement",
-                  "src": "920:37:19"
+                  "src": "908:37:8"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 1656,
+                    "id": 780,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 1654,
+                      "id": 778,
                       "name": "openingTime",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1616,
-                      "src": "964:11:19",
+                      "referencedDeclaration": 740,
+                      "src": "952:11:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -1833,43 +1833,43 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 1655,
+                      "id": 779,
                       "name": "_openingTime",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1636,
-                      "src": "978:12:19",
+                      "referencedDeclaration": 760,
+                      "src": "966:12:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "src": "964:26:19",
+                    "src": "952:26:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "id": 1657,
+                  "id": 781,
                   "nodeType": "ExpressionStatement",
-                  "src": "964:26:19"
+                  "src": "952:26:8"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 1660,
+                    "id": 784,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 1658,
+                      "id": 782,
                       "name": "closingTime",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1618,
-                      "src": "996:11:19",
+                      "referencedDeclaration": 742,
+                      "src": "984:11:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -1879,48 +1879,48 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 1659,
+                      "id": 783,
                       "name": "_closingTime",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1638,
-                      "src": "1010:12:19",
+                      "referencedDeclaration": 762,
+                      "src": "998:12:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "src": "996:26:19",
+                    "src": "984:26:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "id": 1661,
+                  "id": 785,
                   "nodeType": "ExpressionStatement",
-                  "src": "996:26:19"
+                  "src": "984:26:8"
                 }
               ]
             },
             "documentation": "@dev Constructor, takes crowdsale opening and closing times.\n@param _openingTime Crowdsale opening time\n@param _closingTime Crowdsale closing time",
-            "id": 1663,
+            "id": 787,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
             "modifiers": [],
-            "name": "TimedCrowdsale",
+            "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1639,
+              "id": 763,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1636,
+                  "id": 760,
                   "name": "_openingTime",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1663,
-                  "src": "759:20:19",
+                  "scope": 787,
+                  "src": "747:20:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1928,10 +1928,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1635,
+                    "id": 759,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "759:7:19",
+                    "src": "747:7:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1942,11 +1942,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 1638,
+                  "id": 762,
                   "name": "_closingTime",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1663,
-                  "src": "781:20:19",
+                  "scope": 787,
+                  "src": "769:20:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1954,10 +1954,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1637,
+                    "id": 761,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "781:7:19",
+                    "src": "769:7:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1967,26 +1967,26 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "758:44:19"
+              "src": "746:44:8"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1640,
+              "id": 764,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "810:0:19"
+              "src": "798:0:8"
             },
-            "scope": 1692,
-            "src": "735:292:19",
+            "scope": 816,
+            "src": "735:280:8",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 1673,
+              "id": 797,
               "nodeType": "Block",
-              "src": "1229:105:19",
+              "src": "1217:105:8",
               "statements": [
                 {
                   "expression": {
@@ -1995,7 +1995,7 @@
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     },
-                    "id": 1671,
+                    "id": 795,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2004,18 +2004,18 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 1668,
+                        "id": 792,
                         "name": "block",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 6205,
-                        "src": "1300:5:19",
+                        "referencedDeclaration": 3412,
+                        "src": "1288:5:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_block",
                           "typeString": "block"
                         }
                       },
-                      "id": 1669,
+                      "id": 793,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -2023,7 +2023,7 @@
                       "memberName": "timestamp",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "1300:15:19",
+                      "src": "1288:15:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -2033,32 +2033,32 @@
                     "operator": ">",
                     "rightExpression": {
                       "argumentTypes": null,
-                      "id": 1670,
+                      "id": 794,
                       "name": "closingTime",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1618,
-                      "src": "1318:11:19",
+                      "referencedDeclaration": 742,
+                      "src": "1306:11:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "src": "1300:29:19",
+                    "src": "1288:29:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "functionReturnParameters": 1667,
-                  "id": 1672,
+                  "functionReturnParameters": 791,
+                  "id": 796,
                   "nodeType": "Return",
-                  "src": "1293:36:19"
+                  "src": "1281:36:8"
                 }
               ]
             },
             "documentation": "@dev Checks whether the period in which the crowdsale is open has already elapsed.\n@return Whether crowdsale period has elapsed",
-            "id": 1674,
+            "id": 798,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -2066,23 +2066,23 @@
             "name": "hasClosed",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1664,
+              "id": 788,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1199:2:19"
+              "src": "1187:2:8"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1667,
+              "id": 791,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1666,
+                  "id": 790,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1674,
-                  "src": "1223:4:19",
+                  "scope": 798,
+                  "src": "1211:4:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2090,10 +2090,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 1665,
+                    "id": 789,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1223:4:19",
+                    "src": "1211:4:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -2103,19 +2103,19 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1222:6:19"
+              "src": "1210:6:8"
             },
-            "scope": 1692,
-            "src": "1181:153:19",
+            "scope": 816,
+            "src": "1169:153:8",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 1690,
+              "id": 814,
               "nodeType": "Block",
-              "src": "1611:63:19",
+              "src": "1621:63:8",
               "statements": [
                 {
                   "expression": {
@@ -2123,12 +2123,12 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 1686,
+                        "id": 810,
                         "name": "_beneficiary",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1676,
-                        "src": "1644:12:19",
+                        "referencedDeclaration": 800,
+                        "src": "1654:12:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -2136,12 +2136,12 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 1687,
+                        "id": 811,
                         "name": "_weiAmount",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1678,
-                        "src": "1658:10:19",
+                        "referencedDeclaration": 802,
+                        "src": "1668:10:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -2161,32 +2161,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 1683,
+                        "id": 807,
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 6267,
-                        "src": "1617:5:19",
+                        "referencedDeclaration": 3458,
+                        "src": "1627:5:8",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_super$_TimedCrowdsale_$1692",
+                          "typeIdentifier": "t_super$_TimedCrowdsale_$816",
                           "typeString": "contract super TimedCrowdsale"
                         }
                       },
-                      "id": 1685,
+                      "id": 809,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "_preValidatePurchase",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 749,
-                      "src": "1617:26:19",
+                      "referencedDeclaration": 498,
+                      "src": "1627:26:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$_t_uint256_$returns$__$",
                         "typeString": "function (address,uint256)"
                       }
                     },
-                    "id": 1688,
+                    "id": 812,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2194,57 +2194,57 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1617:52:19",
+                    "src": "1627:52:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1689,
+                  "id": 813,
                   "nodeType": "ExpressionStatement",
-                  "src": "1617:52:19"
+                  "src": "1627:52:8"
                 }
               ]
             },
             "documentation": "@dev Extend parent behavior requiring to be within contributing period\n@param _beneficiary Token purchaser\n@param _weiAmount Amount of wei contributed",
-            "id": 1691,
+            "id": 815,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
             "modifiers": [
               {
                 "arguments": null,
-                "id": 1681,
+                "id": 805,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 1680,
+                  "id": 804,
                   "name": "onlyWhileOpen",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 1634,
-                  "src": "1597:13:19",
+                  "referencedDeclaration": 758,
+                  "src": "1605:13:8",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
                     "typeString": "modifier ()"
                   }
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "1597:13:19"
+                "src": "1605:13:8"
               }
             ],
             "name": "_preValidatePurchase",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1679,
+              "id": 803,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1676,
+                  "id": 800,
                   "name": "_beneficiary",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1691,
-                  "src": "1546:20:19",
+                  "scope": 815,
+                  "src": "1539:20:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2252,10 +2252,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1675,
+                    "id": 799,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1546:7:19",
+                    "src": "1539:7:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -2266,11 +2266,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 1678,
+                  "id": 802,
                   "name": "_weiAmount",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1691,
-                  "src": "1568:18:19",
+                  "scope": 815,
+                  "src": "1565:18:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2278,10 +2278,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1677,
+                    "id": 801,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1568:7:19",
+                    "src": "1565:7:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2291,27 +2291,27 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1545:42:19"
+              "src": "1533:54:8"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1682,
+              "id": 806,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1611:0:19"
+              "src": "1621:0:8"
             },
-            "scope": 1692,
-            "src": "1516:158:19",
+            "scope": 816,
+            "src": "1504:180:8",
             "stateMutability": "nonpayable",
-            "superFunction": 749,
+            "superFunction": 498,
             "visibility": "internal"
           }
         ],
-        "scope": 1693,
-        "src": "190:1487:19"
+        "scope": 817,
+        "src": "190:1497:8"
       }
     ],
-    "src": "0:1678:19"
+    "src": "0:1688:8"
   },
   "compiler": {
     "name": "solc",
@@ -2319,5 +2319,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.0",
-  "updatedAt": "2018-08-26T19:45:30.899Z"
+  "updatedAt": "2018-08-26T22:57:40.155Z"
 }
