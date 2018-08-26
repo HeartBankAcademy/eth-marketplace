@@ -64,14 +64,14 @@
     "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/acl/IACL.sol",
     "exportedSymbols": {
       "IACL": [
-        181
+        327
       ]
     },
-    "id": 182,
+    "id": 328,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 161,
+        "id": 307,
         "literals": [
           "solidity",
           "^",
@@ -79,7 +79,7 @@
           ".23"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:1"
+        "src": "0:24:2"
       },
       {
         "baseContracts": [],
@@ -87,9 +87,9 @@
         "contractKind": "contract",
         "documentation": "@title IACL\n@dev Interface all ACL contracts must implement",
         "fullyImplemented": false,
-        "id": 181,
+        "id": 327,
         "linearizedBaseContracts": [
-          181
+          327
         ],
         "name": "IACL",
         "nodeType": "ContractDefinition",
@@ -97,7 +97,7 @@
           {
             "body": null,
             "documentation": "@dev Returns true if the provided address is registered as a product owner\n@param _sender Address to check for product owner authorization",
-            "id": 168,
+            "id": 314,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -105,16 +105,16 @@
             "name": "isProductOwner",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 164,
+              "id": 310,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 163,
+                  "id": 309,
                   "name": "_sender",
                   "nodeType": "VariableDeclaration",
-                  "scope": 168,
-                  "src": "298:15:1",
+                  "scope": 314,
+                  "src": "298:15:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -122,10 +122,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 162,
+                    "id": 308,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "298:7:1",
+                    "src": "298:7:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -135,20 +135,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "297:17:1"
+              "src": "297:17:2"
             },
             "payable": false,
             "returnParameters": {
-              "id": 167,
+              "id": 313,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 166,
+                  "id": 312,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 168,
-                  "src": "335:4:1",
+                  "scope": 314,
+                  "src": "335:4:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -156,10 +156,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 165,
+                    "id": 311,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "335:4:1",
+                    "src": "335:4:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -169,10 +169,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "334:6:1"
+              "src": "334:6:2"
             },
-            "scope": 181,
-            "src": "274:67:1",
+            "scope": 327,
+            "src": "274:67:2",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
@@ -180,7 +180,7 @@
           {
             "body": null,
             "documentation": "@dev Returns true if the provided address is registered as an authorized account\n@param _sender Address to check for authorization",
-            "id": 175,
+            "id": 321,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -188,16 +188,16 @@
             "name": "isAuthorized",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 171,
+              "id": 317,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 170,
+                  "id": 316,
                   "name": "_sender",
                   "nodeType": "VariableDeclaration",
-                  "scope": 175,
-                  "src": "517:15:1",
+                  "scope": 321,
+                  "src": "517:15:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -205,10 +205,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 169,
+                    "id": 315,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "517:7:1",
+                    "src": "517:7:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -218,20 +218,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "516:17:1"
+              "src": "516:17:2"
             },
             "payable": false,
             "returnParameters": {
-              "id": 174,
+              "id": 320,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 173,
+                  "id": 319,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 175,
-                  "src": "554:4:1",
+                  "scope": 321,
+                  "src": "554:4:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -239,10 +239,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 172,
+                    "id": 318,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "554:4:1",
+                    "src": "554:4:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -252,10 +252,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "553:6:1"
+              "src": "553:6:2"
             },
-            "scope": 181,
-            "src": "495:65:1",
+            "scope": 327,
+            "src": "495:65:2",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
@@ -263,7 +263,7 @@
           {
             "body": null,
             "documentation": "@dev Returns true for contracts that adhere to the ACL interface\n@return Boolean value identifying contract as implementing the ACL interface",
-            "id": 180,
+            "id": 326,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -271,23 +271,23 @@
             "name": "isACL",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 176,
+              "id": 322,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "739:2:1"
+              "src": "739:2:2"
             },
             "payable": false,
             "returnParameters": {
-              "id": 179,
+              "id": 325,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 178,
+                  "id": 324,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 180,
-                  "src": "762:4:1",
+                  "scope": 326,
+                  "src": "762:4:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -295,10 +295,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 177,
+                    "id": 323,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "762:4:1",
+                    "src": "762:4:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -308,33 +308,33 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "761:6:1"
+              "src": "761:6:2"
             },
-            "scope": 181,
-            "src": "725:43:1",
+            "scope": 327,
+            "src": "725:43:2",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 182,
-        "src": "97:674:1"
+        "scope": 328,
+        "src": "97:674:2"
       }
     ],
-    "src": "0:771:1"
+    "src": "0:771:2"
   },
   "legacyAST": {
     "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/acl/IACL.sol",
     "exportedSymbols": {
       "IACL": [
-        181
+        327
       ]
     },
-    "id": 182,
+    "id": 328,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 161,
+        "id": 307,
         "literals": [
           "solidity",
           "^",
@@ -342,7 +342,7 @@
           ".23"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:1"
+        "src": "0:24:2"
       },
       {
         "baseContracts": [],
@@ -350,9 +350,9 @@
         "contractKind": "contract",
         "documentation": "@title IACL\n@dev Interface all ACL contracts must implement",
         "fullyImplemented": false,
-        "id": 181,
+        "id": 327,
         "linearizedBaseContracts": [
-          181
+          327
         ],
         "name": "IACL",
         "nodeType": "ContractDefinition",
@@ -360,7 +360,7 @@
           {
             "body": null,
             "documentation": "@dev Returns true if the provided address is registered as a product owner\n@param _sender Address to check for product owner authorization",
-            "id": 168,
+            "id": 314,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -368,16 +368,16 @@
             "name": "isProductOwner",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 164,
+              "id": 310,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 163,
+                  "id": 309,
                   "name": "_sender",
                   "nodeType": "VariableDeclaration",
-                  "scope": 168,
-                  "src": "298:15:1",
+                  "scope": 314,
+                  "src": "298:15:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -385,10 +385,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 162,
+                    "id": 308,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "298:7:1",
+                    "src": "298:7:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -398,20 +398,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "297:17:1"
+              "src": "297:17:2"
             },
             "payable": false,
             "returnParameters": {
-              "id": 167,
+              "id": 313,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 166,
+                  "id": 312,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 168,
-                  "src": "335:4:1",
+                  "scope": 314,
+                  "src": "335:4:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -419,10 +419,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 165,
+                    "id": 311,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "335:4:1",
+                    "src": "335:4:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -432,10 +432,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "334:6:1"
+              "src": "334:6:2"
             },
-            "scope": 181,
-            "src": "274:67:1",
+            "scope": 327,
+            "src": "274:67:2",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
@@ -443,7 +443,7 @@
           {
             "body": null,
             "documentation": "@dev Returns true if the provided address is registered as an authorized account\n@param _sender Address to check for authorization",
-            "id": 175,
+            "id": 321,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -451,16 +451,16 @@
             "name": "isAuthorized",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 171,
+              "id": 317,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 170,
+                  "id": 316,
                   "name": "_sender",
                   "nodeType": "VariableDeclaration",
-                  "scope": 175,
-                  "src": "517:15:1",
+                  "scope": 321,
+                  "src": "517:15:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -468,10 +468,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 169,
+                    "id": 315,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "517:7:1",
+                    "src": "517:7:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -481,20 +481,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "516:17:1"
+              "src": "516:17:2"
             },
             "payable": false,
             "returnParameters": {
-              "id": 174,
+              "id": 320,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 173,
+                  "id": 319,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 175,
-                  "src": "554:4:1",
+                  "scope": 321,
+                  "src": "554:4:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -502,10 +502,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 172,
+                    "id": 318,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "554:4:1",
+                    "src": "554:4:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -515,10 +515,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "553:6:1"
+              "src": "553:6:2"
             },
-            "scope": 181,
-            "src": "495:65:1",
+            "scope": 327,
+            "src": "495:65:2",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
@@ -526,7 +526,7 @@
           {
             "body": null,
             "documentation": "@dev Returns true for contracts that adhere to the ACL interface\n@return Boolean value identifying contract as implementing the ACL interface",
-            "id": 180,
+            "id": 326,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -534,23 +534,23 @@
             "name": "isACL",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 176,
+              "id": 322,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "739:2:1"
+              "src": "739:2:2"
             },
             "payable": false,
             "returnParameters": {
-              "id": 179,
+              "id": 325,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 178,
+                  "id": 324,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 180,
-                  "src": "762:4:1",
+                  "scope": 326,
+                  "src": "762:4:2",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -558,10 +558,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 177,
+                    "id": 323,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "762:4:1",
+                    "src": "762:4:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -571,20 +571,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "761:6:1"
+              "src": "761:6:2"
             },
-            "scope": 181,
-            "src": "725:43:1",
+            "scope": 327,
+            "src": "725:43:2",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 182,
-        "src": "97:674:1"
+        "scope": 328,
+        "src": "97:674:2"
       }
     ],
-    "src": "0:771:1"
+    "src": "0:771:2"
   },
   "compiler": {
     "name": "solc",
@@ -592,5 +592,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.0",
-  "updatedAt": "2018-08-26T21:24:23.481Z"
+  "updatedAt": "2018-08-26T21:33:32.783Z"
 }
