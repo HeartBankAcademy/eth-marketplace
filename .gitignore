@@ -1,0 +1,13 @@
+# Dependencies
+node_modules/**
+
+# Build Artifacts
+build/app/**
+src/**/*.css
+
+# Coverage
+coverage/
+coverageEnv/
+coverage.json
+allFiredEvents
+scTopics

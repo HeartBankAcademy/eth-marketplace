@@ -1,0 +1,8 @@
+{
+  "extends": ["stylelint-config-recommended-scss"],
+  "rules": {
+    "no-descending-specificity": null,
+    "string-no-newline": null
+  },
+  "ignoreFiles": ["build/**"]
+}
