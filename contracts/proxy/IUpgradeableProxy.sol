@@ -14,7 +14,7 @@ contract IUpgradeableProxy {
   function upgradeTo(address _newImplementation) public;
 
   /**
-  * @dev Returns true if the implementing contract complies with the UpgradeableProxy interface
+  * @dev Returns true for contracts that adhere to the UpgradeableProxy interface
   * @return Boolean value identifying contract as implementing the UpgradeableProxy interface
   */
   function isUpgradeable() public pure returns (bool);

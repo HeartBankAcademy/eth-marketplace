@@ -8,7 +8,7 @@ pragma solidity ^0.4.23;
 contract IProxy {
 
   /**
-  * @dev Returns true if the implementing contract complies with the Proxy interface
+  * @dev Returns true for contracts that adhere to the Proxy interface
   * @return Boolean value identifying contract as implementing the Proxy interface
   */
   function isProxy() public pure returns (bool);

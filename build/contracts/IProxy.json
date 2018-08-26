@@ -20,20 +20,20 @@
   "deployedBytecode": "0x",
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "pragma solidity ^0.4.23;\n\n/**\n* @title IProxy\n* @dev Interface all Proxy contracts must implement to publically\n*      verify it complies with the Proxy contract interface\n*/\ncontract IProxy {\n\n  /**\n  * @dev Returns true if the implementing contract complies with the Proxy interface\n  * @return Boolean value identifying contract as implementing the Proxy interface\n  */\n  function isProxy() public pure returns (bool);\n\n}",
+  "source": "pragma solidity ^0.4.23;\n\n/**\n* @title IProxy\n* @dev Interface all Proxy contracts must implement to publically\n*      verify it complies with the Proxy contract interface\n*/\ncontract IProxy {\n\n  /**\n  * @dev Returns true for contracts that adhere to the Proxy interface\n  * @return Boolean value identifying contract as implementing the Proxy interface\n  */\n  function isProxy() public pure returns (bool);\n\n}",
   "sourcePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/proxy/IProxy.sol",
   "ast": {
     "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/proxy/IProxy.sol",
     "exportedSymbols": {
       "IProxy": [
-        33
+        234
       ]
     },
-    "id": 34,
+    "id": 235,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 27,
+        "id": 228,
         "literals": [
           "solidity",
           "^",
@@ -41,7 +41,7 @@
           ".23"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:1"
+        "src": "0:24:4"
       },
       {
         "baseContracts": [],
@@ -49,17 +49,17 @@
         "contractKind": "contract",
         "documentation": "@title IProxy\n@dev Interface all Proxy contracts must implement to publically\n     verify it complies with the Proxy contract interface",
         "fullyImplemented": false,
-        "id": 33,
+        "id": 234,
         "linearizedBaseContracts": [
-          33
+          234
         ],
         "name": "IProxy",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": null,
-            "documentation": "@dev Returns true if the implementing contract complies with the Proxy interface\n@return Boolean value identifying contract as implementing the Proxy interface",
-            "id": 32,
+            "documentation": "@dev Returns true for contracts that adhere to the Proxy interface\n@return Boolean value identifying contract as implementing the Proxy interface",
+            "id": 233,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -67,23 +67,23 @@
             "name": "isProxy",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 28,
+              "id": 229,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "391:2:1"
+              "src": "377:2:4"
             },
             "payable": false,
             "returnParameters": {
-              "id": 31,
+              "id": 232,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 30,
+                  "id": 231,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 32,
-                  "src": "415:4:1",
+                  "scope": 233,
+                  "src": "401:4:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -91,10 +91,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 29,
+                    "id": 230,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "415:4:1",
+                    "src": "401:4:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -104,33 +104,33 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "414:6:1"
+              "src": "400:6:4"
             },
-            "scope": 33,
-            "src": "375:46:1",
+            "scope": 234,
+            "src": "361:46:4",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 34,
-        "src": "175:249:1"
+        "scope": 235,
+        "src": "175:235:4"
       }
     ],
-    "src": "0:424:1"
+    "src": "0:410:4"
   },
   "legacyAST": {
     "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/proxy/IProxy.sol",
     "exportedSymbols": {
       "IProxy": [
-        33
+        234
       ]
     },
-    "id": 34,
+    "id": 235,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 27,
+        "id": 228,
         "literals": [
           "solidity",
           "^",
@@ -138,7 +138,7 @@
           ".23"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:1"
+        "src": "0:24:4"
       },
       {
         "baseContracts": [],
@@ -146,17 +146,17 @@
         "contractKind": "contract",
         "documentation": "@title IProxy\n@dev Interface all Proxy contracts must implement to publically\n     verify it complies with the Proxy contract interface",
         "fullyImplemented": false,
-        "id": 33,
+        "id": 234,
         "linearizedBaseContracts": [
-          33
+          234
         ],
         "name": "IProxy",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": null,
-            "documentation": "@dev Returns true if the implementing contract complies with the Proxy interface\n@return Boolean value identifying contract as implementing the Proxy interface",
-            "id": 32,
+            "documentation": "@dev Returns true for contracts that adhere to the Proxy interface\n@return Boolean value identifying contract as implementing the Proxy interface",
+            "id": 233,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -164,23 +164,23 @@
             "name": "isProxy",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 28,
+              "id": 229,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "391:2:1"
+              "src": "377:2:4"
             },
             "payable": false,
             "returnParameters": {
-              "id": 31,
+              "id": 232,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 30,
+                  "id": 231,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 32,
-                  "src": "415:4:1",
+                  "scope": 233,
+                  "src": "401:4:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -188,10 +188,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 29,
+                    "id": 230,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "415:4:1",
+                    "src": "401:4:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -201,20 +201,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "414:6:1"
+              "src": "400:6:4"
             },
-            "scope": 33,
-            "src": "375:46:1",
+            "scope": 234,
+            "src": "361:46:4",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 34,
-        "src": "175:249:1"
+        "scope": 235,
+        "src": "175:235:4"
       }
     ],
-    "src": "0:424:1"
+    "src": "0:410:4"
   },
   "compiler": {
     "name": "solc",
@@ -222,5 +222,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.0",
-  "updatedAt": "2018-08-26T20:09:29.189Z"
+  "updatedAt": "2018-08-26T21:08:21.521Z"
 }

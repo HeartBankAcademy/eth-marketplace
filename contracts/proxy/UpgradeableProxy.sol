@@ -24,7 +24,7 @@ contract UpgradeableProxy is Proxy, IUpgradeableProxy {
   * @notice The implementation value is stored using the 'key-value' nature of the contract storage and
   *         is thus not affected by the contract's state data layout
   */
-  bytes32 private constant implementationStorePosition = keccak256("com.blockwire.proxy.implementation");
+  bytes32 private constant implementationStorePosition = keccak256("com.marketplace.proxy.implementation");
 
   /**
   * @dev Constructor function
@@ -75,7 +75,7 @@ contract UpgradeableProxy is Proxy, IUpgradeableProxy {
   }
 
   /**
-  * @dev Returns true for contracts that adhere to the UpgradeableProxy interface 
+  * @dev Returns true for contracts that adhere to the UpgradeableProxy interface
   * @return Always returns true for this contract
   */
   function isUpgradeable() public pure returns (bool) {
