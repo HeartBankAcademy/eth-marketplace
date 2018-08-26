@@ -89,7 +89,7 @@
     "dev": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
-    "test:eth": "truffle test",
+    "test:eth": "truffle compile && truffle test",
     "test:gas": "GAS_REPORTER=true npm run test:eth",
     "lint": "eslint ./src",
     "lint:eth": "solium --dir ./contracts",

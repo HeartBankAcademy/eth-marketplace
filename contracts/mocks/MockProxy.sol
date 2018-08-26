@@ -11,11 +11,11 @@ contract MockProxy is Proxy {
   address private proxyImplementation;
 
   /**
-  * @dev Constructor function
-  * @param _implementation Address of implementation contract to which calls will be delegated
+  * @dev Sets implementation address to where every delegate call will be delegated
+  * @param _proxyImplementation Address of implementation contract to which calls will be delegated
   **/
-  constructor(address _implementation) {
-    proxyImplementation = _implementation;
+  function setImplementation(address _proxyImplementation) public {
+    proxyImplementation = _proxyImplementation;
   }
 
   /**

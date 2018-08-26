@@ -7,11 +7,6 @@ contract('MockContract', async () => {
     mockContract = await MockContract.new()
   })
 
-  it('should return a value when accessing the someValue property', async () => {
-    const someValue = await mockContract.someValue()
-    expect(someValue).to.equal('MockContract.someValue')
-  })
-
   it('should return a value when calling the someString() function', async () => {
     const someString = await mockContract.someString()
     expect(someString).to.equal('MockContract')
