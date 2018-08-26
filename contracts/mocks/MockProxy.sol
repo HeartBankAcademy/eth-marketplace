@@ -1,6 +1,6 @@
 pragma solidity ^0.4.23;
 
-import "../proxy/Proxy";
+import "../proxy/Proxy.sol";
 
 /**
 * @title MockProxy
