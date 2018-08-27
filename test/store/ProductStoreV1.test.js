@@ -3,14 +3,16 @@ const { assertThrow } = require('../helpers/assertThrow')
 const dateUtils = require('../helpers/dateUtils')
 const web3Utils = require('web3-utils')
 
+const ACL = artifacts.require('ACLV1')
 const ProductStoreV1 = artifacts.require('ProductStoreV1')
 const MockProductStoreV1 = artifacts.require('MockProductStoreV1')
 
 contract('ProductStoreV1', async accounts => {
-  let store, owner
+  let acl, store, owner
 
   before(async () => {
-    store = await ProductStoreV1.new()
+    acl = await ACL.new()
+    store = await ProductStoreV1.new(acl.address)
     owner = accounts[0]
   })
 
@@ -86,10 +88,11 @@ contract('ProductStoreV1', async accounts => {
   })
 
   context('when withdrawing funds', async () => {
-    let store, availableFunds
+    let acl, store, availableFunds
 
     beforeEach(async () => {
-      store = await MockProductStoreV1.new()
+      acl = await ACL.new()
+      store = await MockProductStoreV1.new(acl.address)
       availableFunds = Number(web3Utils.toWei('12', 'ether'))
     })
 
@@ -140,10 +143,11 @@ contract('ProductStoreV1', async accounts => {
   context('when adding a new product', async () => {
     context('as the owner', async () => {
       context('and using valid data', async () => {
-        let store
+        let acl, store
 
         beforeEach(async () => {
-          store = await ProductStoreV1.new()
+          acl = await ACL.new()
+          store = await ProductStoreV1.new(acl.address)
         })
 
         it('should increase the product count', async () => {
@@ -207,10 +211,11 @@ contract('ProductStoreV1', async accounts => {
   })
 
   context('when retrieving product data', async () => {
-    let store
+    let acl, store
 
     before(async () => {
-      store = await ProductStoreV1.new()
+      acl = await ACL.new()
+      store = await ProductStoreV1.new(acl.address)
       await store.addProduct('Test Product', 'Test Description', 'https://test.image.uri', 599, 4, { from: owner })
     })
 

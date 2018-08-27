@@ -88,22 +88,22 @@
   ],
   "bytecode": "0x608060405234801561001057600080fd5b50604051602080610ac1833981018060405281019080805190602001909291905050508061004c816100ae640100000000026401000000009004565b8073ffffffffffffffffffffffffffffffffffffffff16600073ffffffffffffffffffffffffffffffffffffffff167fd9c4a08818b5e0b58c0856ec8285d83c51f0654438a200ef0f9e0e968f583ca960405160405180910390a350506102f1565b60006100cc826102de64010000000002610782176401000000009004565b1515610166576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260218152602001807f4e65772041434c2061646472657373206973206e6f74206120636f6e7472616381526020017f740000000000000000000000000000000000000000000000000000000000000081525060400191505060405180910390fd5b8173ffffffffffffffffffffffffffffffffffffffff1663a8218cd36040518163ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401602060405180830381600087803b1580156101ca57600080fd5b505af11580156101de573d6000803e3d6000fd5b505050506040513d60208110156101f457600080fd5b8101908080519060200190929190505050151561029f576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260328152602001807f4e65772041434c206164647265737320646f6573206e6f7420636f6e666f726d81526020017f20746f204941434c20696e74657266616365000000000000000000000000000081525060400191505060405180910390fd5b60405180807f636f6d2e6d61726b6574706c6163652e61636c726571756972696e672e61636c8152506020019050604051809103902090508181555050565b600080823b905060008111915050919050565b6107c1806103006000396000f300608060405260043610610062576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680632a33d4721461006757806387a7066b14610096578063d76ecf69146100d9578063de28735914610108575b600080fd5b34801561007357600080fd5b5061007c61015f565b604051808215151515815260200191505060405180910390f35b3480156100a257600080fd5b506100d7600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610255565b005b3480156100e557600080fd5b506100ee61042c565b604051808215151515815260200191505060405180910390f35b34801561011457600080fd5b5061011d610522565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b60008061016a610522565b90508073ffffffffffffffffffffffffffffffffffffffff1663fe9fbb80336040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050602060405180830381600087803b15801561020757600080fd5b505af115801561021b573d6000803e3d6000fd5b505050506040513d602081101561023157600080fd5b8101908080519060200190929190505050151561024d57600080fd5b600191505090565b600080610260610522565b90508073ffffffffffffffffffffffffffffffffffffffff1663bb6a4520336040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050602060405180830381600087803b1580156102fd57600080fd5b505af1158015610311573d6000803e3d6000fd5b505050506040513d602081101561032757600080fd5b8101908080519060200190929190505050151561034357600080fd5b600073ffffffffffffffffffffffffffffffffffffffff168373ffffffffffffffffffffffffffffffffffffffff161415151561037f57600080fd5b610387610522565b91508173ffffffffffffffffffffffffffffffffffffffff168373ffffffffffffffffffffffffffffffffffffffff16141515156103c457600080fd5b6103cd83610565565b8273ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff167fd9c4a08818b5e0b58c0856ec8285d83c51f0654438a200ef0f9e0e968f583ca960405160405180910390a3505050565b600080610437610522565b90508073ffffffffffffffffffffffffffffffffffffffff1663bb6a4520336040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050602060405180830381600087803b1580156104d457600080fd5b505af11580156104e8573d6000803e3d6000fd5b505050506040513d60208110156104fe57600080fd5b8101908080519060200190929190505050151561051a57600080fd5b600191505090565b60008060405180807f636f6d2e6d61726b6574706c6163652e61636c726571756972696e672e61636c815250602001905060405180910390209050805491505090565b600061057082610782565b151561060a576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260218152602001807f4e65772041434c2061646472657373206973206e6f74206120636f6e7472616381526020017f740000000000000000000000000000000000000000000000000000000000000081525060400191505060405180910390fd5b8173ffffffffffffffffffffffffffffffffffffffff1663a8218cd36040518163ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401602060405180830381600087803b15801561066e57600080fd5b505af1158015610682573d6000803e3d6000fd5b505050506040513d602081101561069857600080fd5b81019080805190602001909291905050501515610743576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260328152602001807f4e65772041434c206164647265737320646f6573206e6f7420636f6e666f726d81526020017f20746f204941434c20696e74657266616365000000000000000000000000000081525060400191505060405180910390fd5b60405180807f636f6d2e6d61726b6574706c6163652e61636c726571756972696e672e61636c8152506020019050604051809103902090508181555050565b600080823b9050600081119150509190505600a165627a7a723058204fca7cffaf3ee9145ae80a0a537dd3ec1bc357ed2e7495747cec8ef278c178e50029",
   "deployedBytecode": "0x608060405260043610610062576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680632a33d4721461006757806387a7066b14610096578063d76ecf69146100d9578063de28735914610108575b600080fd5b34801561007357600080fd5b5061007c61015f565b604051808215151515815260200191505060405180910390f35b3480156100a257600080fd5b506100d7600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610255565b005b3480156100e557600080fd5b506100ee61042c565b604051808215151515815260200191505060405180910390f35b34801561011457600080fd5b5061011d610522565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b60008061016a610522565b90508073ffffffffffffffffffffffffffffffffffffffff1663fe9fbb80336040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050602060405180830381600087803b15801561020757600080fd5b505af115801561021b573d6000803e3d6000fd5b505050506040513d602081101561023157600080fd5b8101908080519060200190929190505050151561024d57600080fd5b600191505090565b600080610260610522565b90508073ffffffffffffffffffffffffffffffffffffffff1663bb6a4520336040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050602060405180830381600087803b1580156102fd57600080fd5b505af1158015610311573d6000803e3d6000fd5b505050506040513d602081101561032757600080fd5b8101908080519060200190929190505050151561034357600080fd5b600073ffffffffffffffffffffffffffffffffffffffff168373ffffffffffffffffffffffffffffffffffffffff161415151561037f57600080fd5b610387610522565b91508173ffffffffffffffffffffffffffffffffffffffff168373ffffffffffffffffffffffffffffffffffffffff16141515156103c457600080fd5b6103cd83610565565b8273ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff167fd9c4a08818b5e0b58c0856ec8285d83c51f0654438a200ef0f9e0e968f583ca960405160405180910390a3505050565b600080610437610522565b90508073ffffffffffffffffffffffffffffffffffffffff1663bb6a4520336040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050602060405180830381600087803b1580156104d457600080fd5b505af11580156104e8573d6000803e3d6000fd5b505050506040513d60208110156104fe57600080fd5b8101908080519060200190929190505050151561051a57600080fd5b600191505090565b60008060405180807f636f6d2e6d61726b6574706c6163652e61636c726571756972696e672e61636c815250602001905060405180910390209050805491505090565b600061057082610782565b151561060a576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260218152602001807f4e65772041434c2061646472657373206973206e6f74206120636f6e7472616381526020017f740000000000000000000000000000000000000000000000000000000000000081525060400191505060405180910390fd5b8173ffffffffffffffffffffffffffffffffffffffff1663a8218cd36040518163ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401602060405180830381600087803b15801561066e57600080fd5b505af1158015610682573d6000803e3d6000fd5b505050506040513d602081101561069857600080fd5b81019080805190602001909291905050501515610743576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260328152602001807f4e65772041434c206164647265737320646f6573206e6f7420636f6e666f726d81526020017f20746f204941434c20696e74657266616365000000000000000000000000000081525060400191505060405180910390fd5b60405180807f636f6d2e6d61726b6574706c6163652e61636c726571756972696e672e61636c8152506020019050604051809103902090508181555050565b600080823b9050600081119150509190505600a165627a7a723058204fca7cffaf3ee9145ae80a0a537dd3ec1bc357ed2e7495747cec8ef278c178e50029",
-  "sourceMap": "143:723:73:-;;;293:69;8:9:-1;5:2;;;30:1;27;20:12;5:2;293:69:73;;;;;;;;;;;;;;;;;;;;;;;;;;;;;339:11;1035:19:1;1042:11;1035:6;;;:19;;;:::i;:::-;1088:11;1065:35;;1084:1;1065:35;;;;;;;;;;;;989:116;293:69:73;143:723;;1954:315:1;2176:16;2009:32;2033:7;2009:23;;;;;:32;;;:::i;:::-;2001:78;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2098:7;2093:19;;;:21;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;2093:21:1;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;2093:21:1;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;2093:21:1;;;;;;;;;;;;;;;;2085:84;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;851:45;;;;;;;;;;;;;;;;;;;2176:35;;2251:7;2241:8;2234:25;2226:39;;:::o;438:578:4:-;496:4;508:12;983:5;971:18;963:26;;1010:1;1003:4;:8;996:15;;438:578;;;;:::o;143:723:73:-;;;;;;;",
-  "deployedSourceMap": "143:723:73:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;764:99;;8:9:-1;5:2;;;30:1;27;20:12;5:2;764:99:73;;;;;;;;;;;;;;;;;;;;;;;;;;;2391:252:1;;8:9:-1;5:2;;;30:1;27;20:12;5:2;2391:252:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;511:96:73;;8:9:-1;5:2;;;30:1;27;20:12;5:2;511:96:73;;;;;;;;;;;;;;;;;;;;;;;;;;;1578:147:1;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1578:147:1;;;;;;;;;;;;;;;;;;;;;;;;;;;764:99:73;835:4;1392:9:1;1409:5;:3;:5::i;:::-;1392:23;;1429:4;:17;;;1447:10;1429:29;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1429:29:1;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1429:29:1;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1429:29:1;;;;;;;;;;;;;;;;1421:38;;;;;;;;854:4:73;847:11;;764:99;;:::o;2391:252:1:-;2501:18;1206:9;1223:5;:3;:5::i;:::-;1206:23;;1243:4;:19;;;1263:10;1243:31;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1243:31:1;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1243:31:1;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1243:31:1;;;;;;;;;;;;;;;;1235:40;;;;;;;;2492:1;2469:25;;:11;:25;;;;2461:34;;;;;;;;2522:5;:3;:5::i;:::-;2501:26;;2556:10;2541:25;;:11;:25;;;;2533:34;;;;;;;;2573:19;2580:11;2573:6;:19::i;:::-;2626:11;2603:35;;2614:10;2603:35;;;;;;;;;;;;2391:252;;;:::o;511:96:73:-;579:4;1206:9:1;1223:5;:3;:5::i;:::-;1206:23;;1243:4;:19;;;1263:10;1243:31;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1243:31:1;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1243:31:1;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1243:31:1;;;;;;;;;;;;;;;;1235:40;;;;;;;;598:4:73;591:11;;511:96;;:::o;1578:147:1:-;1614:12;1634:16;851:45;;;;;;;;;;;;;;;;;;;1634:35;;1706:8;1700:15;1692:23;;1684:37;;:::o;1954:315::-;2176:16;2009:32;2033:7;2009:23;:32::i;:::-;2001:78;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2098:7;2093:19;;;:21;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;2093:21:1;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;2093:21:1;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;2093:21:1;;;;;;;;;;;;;;;;2085:84;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;851:45;;;;;;;;;;;;;;;;;;;2176:35;;2251:7;2241:8;2234:25;2226:39;;:::o;438:578:4:-;496:4;508:12;983:5;971:18;963:26;;1010:1;1003:4;:8;996:15;;438:578;;;;:::o",
+  "sourceMap": "143:723:12:-;;;293:69;8:9:-1;5:2;;;30:1;27;20:12;5:2;293:69:12;;;;;;;;;;;;;;;;;;;;;;;;;;;;;339:11;1035:19:0;1042:11;1035:6;;;:19;;;:::i;:::-;1088:11;1065:35;;1084:1;1065:35;;;;;;;;;;;;989:116;293:69:12;143:723;;1954:315:0;2176:16;2009:32;2033:7;2009:23;;;;;:32;;;:::i;:::-;2001:78;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2098:7;2093:19;;;:21;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;2093:21:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;2093:21:0;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;2093:21:0;;;;;;;;;;;;;;;;2085:84;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;851:45;;;;;;;;;;;;;;;;;;;2176:35;;2251:7;2241:8;2234:25;2226:39;;:::o;438:578:2:-;496:4;508:12;983:5;971:18;963:26;;1010:1;1003:4;:8;996:15;;438:578;;;;:::o;143:723:12:-;;;;;;;",
+  "deployedSourceMap": "143:723:12:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;764:99;;8:9:-1;5:2;;;30:1;27;20:12;5:2;764:99:12;;;;;;;;;;;;;;;;;;;;;;;;;;;2391:252:0;;8:9:-1;5:2;;;30:1;27;20:12;5:2;2391:252:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;511:96:12;;8:9:-1;5:2;;;30:1;27;20:12;5:2;511:96:12;;;;;;;;;;;;;;;;;;;;;;;;;;;1578:147:0;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1578:147:0;;;;;;;;;;;;;;;;;;;;;;;;;;;764:99:12;835:4;1392:9:0;1409:5;:3;:5::i;:::-;1392:23;;1429:4;:17;;;1447:10;1429:29;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1429:29:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1429:29:0;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1429:29:0;;;;;;;;;;;;;;;;1421:38;;;;;;;;854:4:12;847:11;;764:99;;:::o;2391:252:0:-;2501:18;1206:9;1223:5;:3;:5::i;:::-;1206:23;;1243:4;:19;;;1263:10;1243:31;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1243:31:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1243:31:0;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1243:31:0;;;;;;;;;;;;;;;;1235:40;;;;;;;;2492:1;2469:25;;:11;:25;;;;2461:34;;;;;;;;2522:5;:3;:5::i;:::-;2501:26;;2556:10;2541:25;;:11;:25;;;;2533:34;;;;;;;;2573:19;2580:11;2573:6;:19::i;:::-;2626:11;2603:35;;2614:10;2603:35;;;;;;;;;;;;2391:252;;;:::o;511:96:12:-;579:4;1206:9:0;1223:5;:3;:5::i;:::-;1206:23;;1243:4;:19;;;1263:10;1243:31;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1243:31:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1243:31:0;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1243:31:0;;;;;;;;;;;;;;;;1235:40;;;;;;;;598:4:12;591:11;;511:96;;:::o;1578:147:0:-;1614:12;1634:16;851:45;;;;;;;;;;;;;;;;;;;1634:35;;1706:8;1700:15;1692:23;;1684:37;;:::o;1954:315::-;2176:16;2009:32;2033:7;2009:23;:32::i;:::-;2001:78;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2098:7;2093:19;;;:21;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;2093:21:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;2093:21:0;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;2093:21:0;;;;;;;;;;;;;;;;2085:84;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;851:45;;;;;;;;;;;;;;;;;;;2176:35;;2251:7;2241:8;2234:25;2226:39;;:::o;438:578:2:-;496:4;508:12;983:5;971:18;963:26;;1010:1;1003:4;:8;996:15;;438:578;;;;:::o",
   "source": "pragma solidity ^0.4.23;\n\nimport \"../acl/ACLRequiring.sol\";\n\n/**\n* @title MockACLRequiring\n* @dev Mock contract used for ACLRequiring tests\n*/\ncontract MockACLRequiring is ACLRequiring {\n\n  /**\n  * @dev Constructor function\n  * @param _aclAddress Address of the ACL contract to be used\n  */\n  constructor(address _aclAddress) ACLRequiring(_aclAddress) public { }\n\n  /**\n  * @dev Returns true if the sender is the product owner, otherwise it throws\n  * @return Returns true if sender is the product owner\n  */\n  function onlyForProductOwner() onlyProductOwner public view returns(bool) {\n    return true;\n  }\n\n  /**\n  * @dev Returns true if the sender is an authorized account, otherwise it throws\n  * @return Returns true if sender is an authorized account\n  */\n  function onlyForAuthorizedAddress() onlyAuthorized public view returns(bool) {\n    return true;\n  }\n\n}",
   "sourcePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/mocks/MockACLRequiring.sol",
   "ast": {
     "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/mocks/MockACLRequiring.sol",
     "exportedSymbols": {
       "MockACLRequiring": [
-        6505
+        1077
       ]
     },
-    "id": 6506,
+    "id": 1078,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 6472,
+        "id": 1044,
         "literals": [
           "solidity",
           "^",
@@ -111,16 +111,16 @@
           ".23"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:73"
+        "src": "0:24:12"
       },
       {
         "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/acl/ACLRequiring.sol",
         "file": "../acl/ACLRequiring.sol",
-        "id": 6473,
+        "id": 1045,
         "nodeType": "ImportDirective",
-        "scope": 6506,
-        "sourceUnit": 203,
-        "src": "26:33:73",
+        "scope": 1078,
+        "sourceUnit": 146,
+        "src": "26:33:12",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -130,44 +130,44 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 6474,
+              "id": 1046,
               "name": "ACLRequiring",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 202,
-              "src": "172:12:73",
+              "referencedDeclaration": 145,
+              "src": "172:12:12",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_ACLRequiring_$202",
+                "typeIdentifier": "t_contract$_ACLRequiring_$145",
                 "typeString": "contract ACLRequiring"
               }
             },
-            "id": 6475,
+            "id": 1047,
             "nodeType": "InheritanceSpecifier",
-            "src": "172:12:73"
+            "src": "172:12:12"
           }
         ],
         "contractDependencies": [
-          202
+          145
         ],
         "contractKind": "contract",
         "documentation": "@title MockACLRequiring\n@dev Mock contract used for ACLRequiring tests",
         "fullyImplemented": true,
-        "id": 6505,
+        "id": 1077,
         "linearizedBaseContracts": [
-          6505,
-          202
+          1077,
+          145
         ],
         "name": "MockACLRequiring",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 6483,
+              "id": 1055,
               "nodeType": "Block",
-              "src": "359:3:73",
+              "src": "359:3:12",
               "statements": []
             },
             "documentation": "@dev Constructor function\n@param _aclAddress Address of the ACL contract to be used",
-            "id": 6484,
+            "id": 1056,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -176,49 +176,49 @@
                 "arguments": [
                   {
                     "argumentTypes": null,
-                    "id": 6480,
+                    "id": 1052,
                     "name": "_aclAddress",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 6477,
-                    "src": "339:11:73",
+                    "referencedDeclaration": 1049,
+                    "src": "339:11:12",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
                     }
                   }
                 ],
-                "id": 6481,
+                "id": 1053,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 6479,
+                  "id": 1051,
                   "name": "ACLRequiring",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 202,
-                  "src": "326:12:73",
+                  "referencedDeclaration": 145,
+                  "src": "326:12:12",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_type$_t_contract$_ACLRequiring_$202_$",
+                    "typeIdentifier": "t_type$_t_contract$_ACLRequiring_$145_$",
                     "typeString": "type(contract ACLRequiring)"
                   }
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "326:25:73"
+                "src": "326:25:12"
               }
             ],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6478,
+              "id": 1050,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6477,
+                  "id": 1049,
                   "name": "_aclAddress",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6484,
-                  "src": "305:19:73",
+                  "scope": 1056,
+                  "src": "305:19:12",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -226,10 +226,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 6476,
+                    "id": 1048,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "305:7:73",
+                    "src": "305:7:12",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -239,39 +239,39 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "304:21:73"
+              "src": "304:21:12"
             },
             "payable": false,
             "returnParameters": {
-              "id": 6482,
+              "id": 1054,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "359:0:73"
+              "src": "359:0:12"
             },
-            "scope": 6505,
-            "src": "293:69:73",
+            "scope": 1077,
+            "src": "293:69:12",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 6493,
+              "id": 1065,
               "nodeType": "Block",
-              "src": "585:22:73",
+              "src": "585:22:12",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "74727565",
-                    "id": 6491,
+                    "id": 1063,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
                     "kind": "bool",
                     "lValueRequested": false,
                     "nodeType": "Literal",
-                    "src": "598:4:73",
+                    "src": "598:4:12",
                     "subdenomination": null,
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
@@ -279,59 +279,59 @@
                     },
                     "value": "true"
                   },
-                  "functionReturnParameters": 6490,
-                  "id": 6492,
+                  "functionReturnParameters": 1062,
+                  "id": 1064,
                   "nodeType": "Return",
-                  "src": "591:11:73"
+                  "src": "591:11:12"
                 }
               ]
             },
             "documentation": "@dev Returns true if the sender is the product owner, otherwise it throws\n@return Returns true if sender is the product owner",
-            "id": 6494,
+            "id": 1066,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
             "modifiers": [
               {
                 "arguments": null,
-                "id": 6487,
+                "id": 1059,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 6486,
+                  "id": 1058,
                   "name": "onlyProductOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 107,
-                  "src": "542:16:73",
+                  "referencedDeclaration": 50,
+                  "src": "542:16:12",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
                     "typeString": "modifier ()"
                   }
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "542:16:73"
+                "src": "542:16:12"
               }
             ],
             "name": "onlyForProductOwner",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6485,
+              "id": 1057,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "539:2:73"
+              "src": "539:2:12"
             },
             "payable": false,
             "returnParameters": {
-              "id": 6490,
+              "id": 1062,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6489,
+                  "id": 1061,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6494,
-                  "src": "579:4:73",
+                  "scope": 1066,
+                  "src": "579:4:12",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -339,10 +339,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 6488,
+                    "id": 1060,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "579:4:73",
+                    "src": "579:4:12",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -352,32 +352,32 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "578:6:73"
+              "src": "578:6:12"
             },
-            "scope": 6505,
-            "src": "511:96:73",
+            "scope": 1077,
+            "src": "511:96:12",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 6503,
+              "id": 1075,
               "nodeType": "Block",
-              "src": "841:22:73",
+              "src": "841:22:12",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "74727565",
-                    "id": 6501,
+                    "id": 1073,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
                     "kind": "bool",
                     "lValueRequested": false,
                     "nodeType": "Literal",
-                    "src": "854:4:73",
+                    "src": "854:4:12",
                     "subdenomination": null,
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
@@ -385,59 +385,59 @@
                     },
                     "value": "true"
                   },
-                  "functionReturnParameters": 6500,
-                  "id": 6502,
+                  "functionReturnParameters": 1072,
+                  "id": 1074,
                   "nodeType": "Return",
-                  "src": "847:11:73"
+                  "src": "847:11:12"
                 }
               ]
             },
             "documentation": "@dev Returns true if the sender is an authorized account, otherwise it throws\n@return Returns true if sender is an authorized account",
-            "id": 6504,
+            "id": 1076,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
             "modifiers": [
               {
                 "arguments": null,
-                "id": 6497,
+                "id": 1069,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 6496,
+                  "id": 1068,
                   "name": "onlyAuthorized",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 126,
-                  "src": "800:14:73",
+                  "referencedDeclaration": 69,
+                  "src": "800:14:12",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
                     "typeString": "modifier ()"
                   }
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "800:14:73"
+                "src": "800:14:12"
               }
             ],
             "name": "onlyForAuthorizedAddress",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6495,
+              "id": 1067,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "797:2:73"
+              "src": "797:2:12"
             },
             "payable": false,
             "returnParameters": {
-              "id": 6500,
+              "id": 1072,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6499,
+                  "id": 1071,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6504,
-                  "src": "835:4:73",
+                  "scope": 1076,
+                  "src": "835:4:12",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -445,10 +445,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 6498,
+                    "id": 1070,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "835:4:73",
+                    "src": "835:4:12",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -458,33 +458,33 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "834:6:73"
+              "src": "834:6:12"
             },
-            "scope": 6505,
-            "src": "764:99:73",
+            "scope": 1077,
+            "src": "764:99:12",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 6506,
-        "src": "143:723:73"
+        "scope": 1078,
+        "src": "143:723:12"
       }
     ],
-    "src": "0:866:73"
+    "src": "0:866:12"
   },
   "legacyAST": {
     "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/mocks/MockACLRequiring.sol",
     "exportedSymbols": {
       "MockACLRequiring": [
-        6505
+        1077
       ]
     },
-    "id": 6506,
+    "id": 1078,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 6472,
+        "id": 1044,
         "literals": [
           "solidity",
           "^",
@@ -492,16 +492,16 @@
           ".23"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:73"
+        "src": "0:24:12"
       },
       {
         "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/acl/ACLRequiring.sol",
         "file": "../acl/ACLRequiring.sol",
-        "id": 6473,
+        "id": 1045,
         "nodeType": "ImportDirective",
-        "scope": 6506,
-        "sourceUnit": 203,
-        "src": "26:33:73",
+        "scope": 1078,
+        "sourceUnit": 146,
+        "src": "26:33:12",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -511,44 +511,44 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 6474,
+              "id": 1046,
               "name": "ACLRequiring",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 202,
-              "src": "172:12:73",
+              "referencedDeclaration": 145,
+              "src": "172:12:12",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_ACLRequiring_$202",
+                "typeIdentifier": "t_contract$_ACLRequiring_$145",
                 "typeString": "contract ACLRequiring"
               }
             },
-            "id": 6475,
+            "id": 1047,
             "nodeType": "InheritanceSpecifier",
-            "src": "172:12:73"
+            "src": "172:12:12"
           }
         ],
         "contractDependencies": [
-          202
+          145
         ],
         "contractKind": "contract",
         "documentation": "@title MockACLRequiring\n@dev Mock contract used for ACLRequiring tests",
         "fullyImplemented": true,
-        "id": 6505,
+        "id": 1077,
         "linearizedBaseContracts": [
-          6505,
-          202
+          1077,
+          145
         ],
         "name": "MockACLRequiring",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 6483,
+              "id": 1055,
               "nodeType": "Block",
-              "src": "359:3:73",
+              "src": "359:3:12",
               "statements": []
             },
             "documentation": "@dev Constructor function\n@param _aclAddress Address of the ACL contract to be used",
-            "id": 6484,
+            "id": 1056,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -557,49 +557,49 @@
                 "arguments": [
                   {
                     "argumentTypes": null,
-                    "id": 6480,
+                    "id": 1052,
                     "name": "_aclAddress",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 6477,
-                    "src": "339:11:73",
+                    "referencedDeclaration": 1049,
+                    "src": "339:11:12",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
                     }
                   }
                 ],
-                "id": 6481,
+                "id": 1053,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 6479,
+                  "id": 1051,
                   "name": "ACLRequiring",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 202,
-                  "src": "326:12:73",
+                  "referencedDeclaration": 145,
+                  "src": "326:12:12",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_type$_t_contract$_ACLRequiring_$202_$",
+                    "typeIdentifier": "t_type$_t_contract$_ACLRequiring_$145_$",
                     "typeString": "type(contract ACLRequiring)"
                   }
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "326:25:73"
+                "src": "326:25:12"
               }
             ],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6478,
+              "id": 1050,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6477,
+                  "id": 1049,
                   "name": "_aclAddress",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6484,
-                  "src": "305:19:73",
+                  "scope": 1056,
+                  "src": "305:19:12",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -607,10 +607,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 6476,
+                    "id": 1048,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "305:7:73",
+                    "src": "305:7:12",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -620,39 +620,39 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "304:21:73"
+              "src": "304:21:12"
             },
             "payable": false,
             "returnParameters": {
-              "id": 6482,
+              "id": 1054,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "359:0:73"
+              "src": "359:0:12"
             },
-            "scope": 6505,
-            "src": "293:69:73",
+            "scope": 1077,
+            "src": "293:69:12",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 6493,
+              "id": 1065,
               "nodeType": "Block",
-              "src": "585:22:73",
+              "src": "585:22:12",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "74727565",
-                    "id": 6491,
+                    "id": 1063,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
                     "kind": "bool",
                     "lValueRequested": false,
                     "nodeType": "Literal",
-                    "src": "598:4:73",
+                    "src": "598:4:12",
                     "subdenomination": null,
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
@@ -660,59 +660,59 @@
                     },
                     "value": "true"
                   },
-                  "functionReturnParameters": 6490,
-                  "id": 6492,
+                  "functionReturnParameters": 1062,
+                  "id": 1064,
                   "nodeType": "Return",
-                  "src": "591:11:73"
+                  "src": "591:11:12"
                 }
               ]
             },
             "documentation": "@dev Returns true if the sender is the product owner, otherwise it throws\n@return Returns true if sender is the product owner",
-            "id": 6494,
+            "id": 1066,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
             "modifiers": [
               {
                 "arguments": null,
-                "id": 6487,
+                "id": 1059,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 6486,
+                  "id": 1058,
                   "name": "onlyProductOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 107,
-                  "src": "542:16:73",
+                  "referencedDeclaration": 50,
+                  "src": "542:16:12",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
                     "typeString": "modifier ()"
                   }
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "542:16:73"
+                "src": "542:16:12"
               }
             ],
             "name": "onlyForProductOwner",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6485,
+              "id": 1057,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "539:2:73"
+              "src": "539:2:12"
             },
             "payable": false,
             "returnParameters": {
-              "id": 6490,
+              "id": 1062,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6489,
+                  "id": 1061,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6494,
-                  "src": "579:4:73",
+                  "scope": 1066,
+                  "src": "579:4:12",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -720,10 +720,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 6488,
+                    "id": 1060,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "579:4:73",
+                    "src": "579:4:12",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -733,32 +733,32 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "578:6:73"
+              "src": "578:6:12"
             },
-            "scope": 6505,
-            "src": "511:96:73",
+            "scope": 1077,
+            "src": "511:96:12",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 6503,
+              "id": 1075,
               "nodeType": "Block",
-              "src": "841:22:73",
+              "src": "841:22:12",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "74727565",
-                    "id": 6501,
+                    "id": 1073,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
                     "kind": "bool",
                     "lValueRequested": false,
                     "nodeType": "Literal",
-                    "src": "854:4:73",
+                    "src": "854:4:12",
                     "subdenomination": null,
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
@@ -766,59 +766,59 @@
                     },
                     "value": "true"
                   },
-                  "functionReturnParameters": 6500,
-                  "id": 6502,
+                  "functionReturnParameters": 1072,
+                  "id": 1074,
                   "nodeType": "Return",
-                  "src": "847:11:73"
+                  "src": "847:11:12"
                 }
               ]
             },
             "documentation": "@dev Returns true if the sender is an authorized account, otherwise it throws\n@return Returns true if sender is an authorized account",
-            "id": 6504,
+            "id": 1076,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
             "modifiers": [
               {
                 "arguments": null,
-                "id": 6497,
+                "id": 1069,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 6496,
+                  "id": 1068,
                   "name": "onlyAuthorized",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 126,
-                  "src": "800:14:73",
+                  "referencedDeclaration": 69,
+                  "src": "800:14:12",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
                     "typeString": "modifier ()"
                   }
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "800:14:73"
+                "src": "800:14:12"
               }
             ],
             "name": "onlyForAuthorizedAddress",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6495,
+              "id": 1067,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "797:2:73"
+              "src": "797:2:12"
             },
             "payable": false,
             "returnParameters": {
-              "id": 6500,
+              "id": 1072,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6499,
+                  "id": 1071,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6504,
-                  "src": "835:4:73",
+                  "scope": 1076,
+                  "src": "835:4:12",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -826,10 +826,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 6498,
+                    "id": 1070,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "835:4:73",
+                    "src": "835:4:12",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -839,20 +839,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "834:6:73"
+              "src": "834:6:12"
             },
-            "scope": 6505,
-            "src": "764:99:73",
+            "scope": 1077,
+            "src": "764:99:12",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 6506,
-        "src": "143:723:73"
+        "scope": 1078,
+        "src": "143:723:12"
       }
     ],
-    "src": "0:866:73"
+    "src": "0:866:12"
   },
   "compiler": {
     "name": "solc",
@@ -860,5 +860,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-08-27T17:14:41.785Z"
+  "updatedAt": "2018-08-27T21:49:03.323Z"
 }

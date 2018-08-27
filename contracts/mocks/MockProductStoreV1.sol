@@ -11,8 +11,9 @@ contract MockProductStoreV1 is ProductStoreV1 {
 
   /**
   * @dev Constructor function
+  * @param _aclAddress Address of ACL contract
   */
-  constructor() public { }
+  constructor(address _aclAddress) ProductStoreV1(_aclAddress) public { }
 
   /**
   * @dev DepositedFunds is emited every time a deposit is made

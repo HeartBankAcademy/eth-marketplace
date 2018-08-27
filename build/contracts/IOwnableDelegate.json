@@ -42,20 +42,20 @@
   "deployedBytecode": "0x",
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "pragma solidity ^0.4.23;\n\ncontract IOwnableDelegate {\n\n  /**\n  * @dev Function called after the implementing Ownership contract updates the owner address\n  * @param _contract Address of Ownserhip contract changed\n  * @param _previousOwner Address of previous owner\n  * @param _newOwner Address of new owner\n  */\n  function didUpdateOwner(address _contract, address _previousOwner, address _newOwner) external;\n\n  /**\n  * @dev Returns true for contracts that adhere to the OwnableDelegate interface\n  * @return Boolean value identifying contract as implementing the OwnableDelegate interface\n  */\n  function isOwnableDelegate() public pure returns (bool);\n\n}",
+  "source": "pragma solidity ^0.4.23;\n\n/**\n* @title IOwnableDelegate\n* @dev Interface all OwnableDelegate contracts must implement to publically\n*      verify it complies with the OwnableDelegate contract interface\n*/\ncontract IOwnableDelegate {\n\n  /**\n  * @dev Function called after the implementing Ownership contract updates the owner address\n  * @param _contract Address of Ownserhip contract changed\n  * @param _previousOwner Address of previous owner\n  * @param _newOwner Address of new owner\n  */\n  function didUpdateOwner(address _contract, address _previousOwner, address _newOwner) external;\n\n  /**\n  * @dev Returns true for contracts that adhere to the OwnableDelegate interface\n  * @return Boolean value identifying contract as implementing the OwnableDelegate interface\n  */\n  function isOwnableDelegate() public pure returns (bool);\n\n}",
   "sourcePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/ownership/IOwnableDelegate.sol",
   "ast": {
     "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/ownership/IOwnableDelegate.sol",
     "exportedSymbols": {
       "IOwnableDelegate": [
-        707
+        1520
       ]
     },
-    "id": 708,
+    "id": 1521,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 692,
+        "id": 1505,
         "literals": [
           "solidity",
           "^",
@@ -63,17 +63,17 @@
           ".23"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:9"
+        "src": "0:24:19"
       },
       {
         "baseContracts": [],
         "contractDependencies": [],
         "contractKind": "contract",
-        "documentation": null,
+        "documentation": "@title IOwnableDelegate\n@dev Interface all OwnableDelegate contracts must implement to publically\n     verify it complies with the OwnableDelegate contract interface",
         "fullyImplemented": false,
-        "id": 707,
+        "id": 1520,
         "linearizedBaseContracts": [
-          707
+          1520
         ],
         "name": "IOwnableDelegate",
         "nodeType": "ContractDefinition",
@@ -81,7 +81,7 @@
           {
             "body": null,
             "documentation": "@dev Function called after the implementing Ownership contract updates the owner address\n@param _contract Address of Ownserhip contract changed\n@param _previousOwner Address of previous owner\n@param _newOwner Address of new owner",
-            "id": 701,
+            "id": 1514,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -89,16 +89,16 @@
             "name": "didUpdateOwner",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 699,
+              "id": 1512,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 694,
+                  "id": 1507,
                   "name": "_contract",
                   "nodeType": "VariableDeclaration",
-                  "scope": 701,
-                  "src": "338:17:9",
+                  "scope": 1514,
+                  "src": "517:17:19",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -106,10 +106,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 693,
+                    "id": 1506,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "338:7:9",
+                    "src": "517:7:19",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -120,11 +120,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 696,
+                  "id": 1509,
                   "name": "_previousOwner",
                   "nodeType": "VariableDeclaration",
-                  "scope": 701,
-                  "src": "357:22:9",
+                  "scope": 1514,
+                  "src": "536:22:19",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -132,10 +132,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 695,
+                    "id": 1508,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "357:7:9",
+                    "src": "536:7:19",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -146,11 +146,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 698,
+                  "id": 1511,
                   "name": "_newOwner",
                   "nodeType": "VariableDeclaration",
-                  "scope": 701,
-                  "src": "381:17:9",
+                  "scope": 1514,
+                  "src": "560:17:19",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -158,10 +158,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 697,
+                    "id": 1510,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "381:7:9",
+                    "src": "560:7:19",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -171,17 +171,17 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "337:62:9"
+              "src": "516:62:19"
             },
             "payable": false,
             "returnParameters": {
-              "id": 700,
+              "id": 1513,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "408:0:9"
+              "src": "587:0:19"
             },
-            "scope": 707,
-            "src": "314:95:9",
+            "scope": 1520,
+            "src": "493:95:19",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "external"
@@ -189,7 +189,7 @@
           {
             "body": null,
             "documentation": "@dev Returns true for contracts that adhere to the OwnableDelegate interface\n@return Boolean value identifying contract as implementing the OwnableDelegate interface",
-            "id": 706,
+            "id": 1519,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -197,23 +197,23 @@
             "name": "isOwnableDelegate",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 702,
+              "id": 1515,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "624:2:9"
+              "src": "803:2:19"
             },
             "payable": false,
             "returnParameters": {
-              "id": 705,
+              "id": 1518,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 704,
+                  "id": 1517,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 706,
-                  "src": "648:4:9",
+                  "scope": 1519,
+                  "src": "827:4:19",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -221,10 +221,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 703,
+                    "id": 1516,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "648:4:9",
+                    "src": "827:4:19",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -234,33 +234,33 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "647:6:9"
+              "src": "826:6:19"
             },
-            "scope": 707,
-            "src": "598:56:9",
+            "scope": 1520,
+            "src": "777:56:19",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 708,
-        "src": "26:631:9"
+        "scope": 1521,
+        "src": "205:631:19"
       }
     ],
-    "src": "0:657:9"
+    "src": "0:836:19"
   },
   "legacyAST": {
     "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/ownership/IOwnableDelegate.sol",
     "exportedSymbols": {
       "IOwnableDelegate": [
-        707
+        1520
       ]
     },
-    "id": 708,
+    "id": 1521,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 692,
+        "id": 1505,
         "literals": [
           "solidity",
           "^",
@@ -268,17 +268,17 @@
           ".23"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:9"
+        "src": "0:24:19"
       },
       {
         "baseContracts": [],
         "contractDependencies": [],
         "contractKind": "contract",
-        "documentation": null,
+        "documentation": "@title IOwnableDelegate\n@dev Interface all OwnableDelegate contracts must implement to publically\n     verify it complies with the OwnableDelegate contract interface",
         "fullyImplemented": false,
-        "id": 707,
+        "id": 1520,
         "linearizedBaseContracts": [
-          707
+          1520
         ],
         "name": "IOwnableDelegate",
         "nodeType": "ContractDefinition",
@@ -286,7 +286,7 @@
           {
             "body": null,
             "documentation": "@dev Function called after the implementing Ownership contract updates the owner address\n@param _contract Address of Ownserhip contract changed\n@param _previousOwner Address of previous owner\n@param _newOwner Address of new owner",
-            "id": 701,
+            "id": 1514,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -294,16 +294,16 @@
             "name": "didUpdateOwner",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 699,
+              "id": 1512,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 694,
+                  "id": 1507,
                   "name": "_contract",
                   "nodeType": "VariableDeclaration",
-                  "scope": 701,
-                  "src": "338:17:9",
+                  "scope": 1514,
+                  "src": "517:17:19",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -311,10 +311,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 693,
+                    "id": 1506,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "338:7:9",
+                    "src": "517:7:19",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -325,11 +325,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 696,
+                  "id": 1509,
                   "name": "_previousOwner",
                   "nodeType": "VariableDeclaration",
-                  "scope": 701,
-                  "src": "357:22:9",
+                  "scope": 1514,
+                  "src": "536:22:19",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -337,10 +337,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 695,
+                    "id": 1508,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "357:7:9",
+                    "src": "536:7:19",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -351,11 +351,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 698,
+                  "id": 1511,
                   "name": "_newOwner",
                   "nodeType": "VariableDeclaration",
-                  "scope": 701,
-                  "src": "381:17:9",
+                  "scope": 1514,
+                  "src": "560:17:19",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -363,10 +363,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 697,
+                    "id": 1510,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "381:7:9",
+                    "src": "560:7:19",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -376,17 +376,17 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "337:62:9"
+              "src": "516:62:19"
             },
             "payable": false,
             "returnParameters": {
-              "id": 700,
+              "id": 1513,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "408:0:9"
+              "src": "587:0:19"
             },
-            "scope": 707,
-            "src": "314:95:9",
+            "scope": 1520,
+            "src": "493:95:19",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "external"
@@ -394,7 +394,7 @@
           {
             "body": null,
             "documentation": "@dev Returns true for contracts that adhere to the OwnableDelegate interface\n@return Boolean value identifying contract as implementing the OwnableDelegate interface",
-            "id": 706,
+            "id": 1519,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -402,23 +402,23 @@
             "name": "isOwnableDelegate",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 702,
+              "id": 1515,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "624:2:9"
+              "src": "803:2:19"
             },
             "payable": false,
             "returnParameters": {
-              "id": 705,
+              "id": 1518,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 704,
+                  "id": 1517,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 706,
-                  "src": "648:4:9",
+                  "scope": 1519,
+                  "src": "827:4:19",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -426,10 +426,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 703,
+                    "id": 1516,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "648:4:9",
+                    "src": "827:4:19",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -439,20 +439,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "647:6:9"
+              "src": "826:6:19"
             },
-            "scope": 707,
-            "src": "598:56:9",
+            "scope": 1520,
+            "src": "777:56:19",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 708,
-        "src": "26:631:9"
+        "scope": 1521,
+        "src": "205:631:19"
       }
     ],
-    "src": "0:657:9"
+    "src": "0:836:19"
   },
   "compiler": {
     "name": "solc",
@@ -460,5 +460,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-08-27T21:36:29.688Z"
+  "updatedAt": "2018-08-27T21:49:03.328Z"
 }

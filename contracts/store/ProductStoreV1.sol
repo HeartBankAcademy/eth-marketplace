@@ -1,7 +1,11 @@
 pragma solidity ^0.4.23;
 pragma experimental ABIEncoderV2;
 
-import "../ownership/OwnableManager.sol";
+
+import "../acl/ACLRequiring.sol";
+
+// import "../ownership/OwnableManager.sol";
+
 import "../storage/EternalStorage.sol";
 import "./IProductStore.sol";
 import "../models/product/ProductV1.sol";
@@ -11,7 +15,7 @@ import "../models/product/ProductV1.sol";
 * @dev Store contract implementation
 * @notice v1
 */
-contract ProductStoreV1 is OwnableManager, EternalStorage, IProductStore, ProductV1 { 
+contract ProductStoreV1 is ACLRequiring, EternalStorage, IProductStore, ProductV1 { 
   
   string internal _name;
   string internal _logoURI;
@@ -56,8 +60,9 @@ contract ProductStoreV1 is OwnableManager, EternalStorage, IProductStore, Produc
 
   /**
   * @dev Constructor function
+  * @param _aclAddress Address of ACL contract
   */
-  constructor() public { }
+  constructor(address _aclAddress) ACLRequiring(_aclAddress) public { }
 
   /**
   * @dev Modifier to check if the provided id parameter is valid
@@ -102,7 +107,7 @@ contract ProductStoreV1 is OwnableManager, EternalStorage, IProductStore, Produc
   * @dev Sets the store name
   * @param __name Name of the store
   */
-  function setName(string __name) public onlyOwner {
+  function setName(string __name) public onlyProductOwner {
     emit NameUpdated(_name, __name);
     _name = __name;
   }
@@ -111,7 +116,7 @@ contract ProductStoreV1 is OwnableManager, EternalStorage, IProductStore, Produc
   * @dev Sets the store logo
   * @param __logoURI URI for the store logo
   */
-  function setLogoURI(string __logoURI) public onlyOwner {
+  function setLogoURI(string __logoURI) public onlyProductOwner {
     emit LogoUpdated(_logoURI, __logoURI);
     _logoURI = __logoURI;
   }
@@ -119,7 +124,7 @@ contract ProductStoreV1 is OwnableManager, EternalStorage, IProductStore, Produc
   /**
   * @dev Withdraws all available contract funds
   */
-  function withdrawFunds() public onlyOwner {
+  function withdrawFunds() public onlyProductOwner {
     address payee = msg.sender;
     uint256 balance = address(this).balance;
 
@@ -144,7 +149,7 @@ contract ProductStoreV1 is OwnableManager, EternalStorage, IProductStore, Produc
     uint128 __price,
     uint128 __inventory
   )
-    public onlyOwner returns(uint128)
+    public onlyProductOwner returns(uint128)
   {
     uint128 id = _productCount + 1;
 
