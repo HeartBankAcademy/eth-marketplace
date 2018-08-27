@@ -48,12 +48,16 @@ contract ProductStoreV1 is OwnableManager, EternalStorage, IProductStore, Produc
   event LogoUpdated(string _oldLogoURI, string _newLogoURI);
 
   /**
-  * @dev Constructor function
-  * @param __name Name of the store
+  * @dev FundsWithdrawn is emited every time funds are withdrawn from the contract
+  * @param _payee Address where the funds were deposited
+  * @param _amount Amount withdrawn
   */
-  constructor(string __name) public {
-    _name = __name;
-  }
+  event FundsWithdrawn(address indexed _payee, uint256 indexed _amount);
+
+  /**
+  * @dev Constructor function
+  */
+  constructor() public { }
 
   /**
   * @dev Modifier to check if the provided id parameter is valid
@@ -110,6 +114,18 @@ contract ProductStoreV1 is OwnableManager, EternalStorage, IProductStore, Produc
   function setLogoURI(string __logoURI) public onlyOwner {
     emit LogoUpdated(_logoURI, __logoURI);
     _logoURI = __logoURI;
+  }
+
+  /**
+  * @dev Withdraws all available contract funds
+  */
+  function withdrawFunds() public onlyOwner {
+    address payee = msg.sender;
+    uint256 balance = address(this).balance;
+
+    require(balance > 0, "No available funds to withdraw");
+    payee.transfer(balance);
+    emit FundsWithdrawn(payee, balance);
   }
 
   /**

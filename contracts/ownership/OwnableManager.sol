@@ -3,6 +3,7 @@ pragma solidity ^0.4.24;
 // Adapted from:
 // https://github.com/OpenZeppelin/openzeppelin-solidity/blob/0e65947efbffc592cffea8c2ae9d3b8e11659854/contracts/ownership/Ownable.sol
 
+import "./IOwnable.sol";
 import "./IOwnableDelegate.sol";
 
 /**
@@ -10,7 +11,7 @@ import "./IOwnableDelegate.sol";
  * @dev The OwnableManager contract has an owner address, and provides basic authorization control
  * functions, this simplifies the implementation of "user permissions".
  */
-contract OwnableManager {
+contract OwnableManager is IOwnable {
 
   /**
   * @dev The storage position in the contract storage where the implementation address will be stored

@@ -1,5 +1,10 @@
 pragma solidity ^0.4.23;
 
+/**
+* @title IProductStore
+* @dev Interface all ProductStore contracts must implement to publically
+*      verify it complies with the ProductStore contract interface
+*/
 contract IProductStore {
 
   /**

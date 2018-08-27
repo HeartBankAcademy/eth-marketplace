@@ -1,13 +1,16 @@
 const { assertEvent } = require('../helpers/assertEvent')
 const { assertThrow } = require('../helpers/assertThrow')
 const dateUtils = require('../helpers/dateUtils')
+const web3Utils = require('web3-utils')
+
 const ProductStoreV1 = artifacts.require('ProductStoreV1')
+const MockProductStoreV1 = artifacts.require('MockProductStoreV1')
 
 contract('ProductStoreV1', async accounts => {
   let store, owner
 
   before(async () => {
-    store = await ProductStoreV1.new('Test Store')
+    store = await ProductStoreV1.new()
     owner = accounts[0]
   })
 
@@ -21,9 +24,9 @@ contract('ProductStoreV1', async accounts => {
     expect(version).to.equal(1)
   })
 
-  it('is properly initialized to the correct name', async () => {
+  it('is initialized with an empty name', async () => {
     const name = await store.name()
-    expect(name).to.equal('Test Store')
+    expect(name).to.equal('')
   })
 
   it('is initialized with an empty logo URI', async () => {
@@ -82,13 +85,65 @@ contract('ProductStoreV1', async accounts => {
     })
   })
 
+  context('when withdrawing funds', async () => {
+    let store, availableFunds
+
+    beforeEach(async () => {
+      store = await MockProductStoreV1.new()
+      availableFunds = Number(web3Utils.toWei('12', 'ether'))
+    })
+
+    context('as the owner', async () => {
+      context('when funds are available', async () => {
+        beforeEach(async () => {
+          await store.deposit({ value: availableFunds })
+          const storeFunds = (await web3.eth.getBalance(store.address)).toNumber()
+          expect(storeFunds).to.equal(availableFunds)
+        })
+
+        it('should transfer funds to owner account', async () => {
+          const ownerInitialBalance = (await web3.eth.getBalance(accounts[0])).toNumber()
+
+          await store.withdrawFunds()
+
+          const ownerFinalBalance = (await web3.eth.getBalance(accounts[0])).toNumber()
+          const storeFinalBalance = (await web3.eth.getBalance(store.address)).toNumber()
+
+          expect(ownerFinalBalance - ownerInitialBalance).to.be.within(1000, availableFunds)
+          expect(storeFinalBalance).to.equal(0)
+        })
+
+        it('should emit a FundsWithdrawn event', async () => {
+          const tx = await store.withdrawFunds()
+          assertEvent(tx, 'FundsWithdrawn')
+        })
+      })
+
+      context('when no funds are available', async () => {
+        it('should throw', async () => {
+          await assertThrow(async () => {
+            await store.withdrawFunds()
+          })
+        })
+      })
+    })
+
+    context('as a stranger', async () => {
+      it('should throw', async () => {
+        await assertThrow(async () => {
+          await store.withdrawFunds({ from: accounts[3] })
+        })
+      })
+    })
+  })
+
   context('when adding a new product', async () => {
     context('as the owner', async () => {
       context('and using valid data', async () => {
         let store
 
         beforeEach(async () => {
-          store = await ProductStoreV1.new('Test Store')
+          store = await ProductStoreV1.new()
         })
 
         it('should increase the product count', async () => {
@@ -155,7 +210,7 @@ contract('ProductStoreV1', async accounts => {
     let store
 
     before(async () => {
-      store = await ProductStoreV1.new('Test Store')
+      store = await ProductStoreV1.new()
       await store.addProduct('Test Product', 'Test Description', 'https://test.image.uri', 599, 4, { from: owner })
     })
 

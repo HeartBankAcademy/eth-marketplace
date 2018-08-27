@@ -1,5 +1,10 @@
-pragma solidity ^0.4.23;
+pragma solidity ^0.4
 
+/**
+* @title IOwnableDelegate
+* @dev Interface all OwnableDelegate contracts must implement to publically
+*      verify it complies with the OwnableDelegate contract interface
+*/
 contract IOwnableDelegate {
 
   /**
