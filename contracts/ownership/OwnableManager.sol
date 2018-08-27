@@ -6,14 +6,14 @@ pragma solidity ^0.4.24;
 import "./IOwnableDelegate.sol";
 
 /**
- * @title Ownable
- * @dev The Ownable contract has an owner address, and provides basic authorization control
+ * @title OwnableManager
+ * @dev The OwnableManager contract has an owner address, and provides basic authorization control
  * functions, this simplifies the implementation of "user permissions".
  */
-contract Ownable {
+contract OwnableManager {
 
   address public owner;
-  address public ownershipDelegate;
+  address public ownableDelegate;
 
   /**
   * @dev OwnershipTransferred is emitted after the ownership of this contract has been renounced
@@ -55,13 +55,9 @@ contract Ownable {
    */
   function renounceOwnership() public onlyOwner {
     emit OwnershipRenounced(owner);
-
-    if (ownershipDelegate != address(0)) {
-      IOwnableDelegate(ownershipDelegate).didUpdateOwner(address(this), owner, address(0));
-    }
-
+    updateOwnableDelegate(owner, address(0));
     owner = address(0);
-    ownershipDelegate = address(0);
+    ownableDelegate = address(0);
   }
 
   /**
@@ -79,24 +75,31 @@ contract Ownable {
   function _transferOwnership(address _newOwner) internal {
     require(_newOwner != address(0));
     emit OwnershipTransferred(owner, _newOwner);
-
-    if (ownershipDelegate != address(0)) {
-      IOwnableDelegate(ownershipDelegate).didUpdateOwner(address(this), owner, _newOwner);
-    }
-
+    updateOwnableDelegate(owner, _newOwner);
     owner = _newOwner;
   }
 
   /**
-  * @dev Sets the ownserhip delegate contract address
-  * @param _ownershipDelegate Address of the ownership delegate contract to set
-  * @notice The ownership delegate contract must implement the OwnableDelegate interface
+  * @dev Sets the ownable delegate contract address
+  * @param _ownableDelegate Address of the ownable delegate contract to set
+  * @notice The ownable delegate contract must implement the OwnableDelegate interface
   */
-  function setOwnershipDelegate(address _ownershipDelegate) onlyOwner public {
-    if (_ownershipDelegate != address(0)) {
-      require(IOwnableDelegate(_ownershipDelegate).isOwnableDelegate());
+  function setOwnableDelegate(address _ownableDelegate) onlyOwner public {
+    if (_ownableDelegate != address(0)) {
+      require(IOwnableDelegate(_ownableDelegate).isOwnableDelegate());
     }
-    ownershipDelegate = _ownershipDelegate;
+    ownableDelegate = _ownableDelegate;
   }
 
+  /**
+  * @dev Calls didUpdateOwner on the ownable delegate contract
+  * @param _previousOwner Previous owner address
+  * @param _newOwner New owner address
+  */
+  function updateOwnableDelegate(address _previousOwner, address _newOwner) internal {
+    if (ownableDelegate != address(0)) {
+      IOwnableDelegate(ownableDelegate).didUpdateOwner(address(this), _previousOwner, _newOwner);
+    }
+  }
+  
 }
