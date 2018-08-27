@@ -88,6 +88,7 @@
   "scripts": {
     "dev": "node scripts/start.js",
     "build": "node scripts/build.js",
+    "build:eth": "truffle compile",
     "test": "node scripts/test.js --env=jsdom",
     "test:eth": "truffle compile && truffle test",
     "test:gas": "GAS_REPORTER=true npm run test:eth",
