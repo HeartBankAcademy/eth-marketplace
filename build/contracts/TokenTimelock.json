@@ -276,7 +276,7 @@
                             "name": "block",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 7830,
+                            "referencedDeclaration": 8323,
                             "src": "699:5:62",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_block",
@@ -315,10 +315,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        7843,
-                        7844
+                        8336,
+                        8337
                       ],
-                      "referencedDeclaration": 7843,
+                      "referencedDeclaration": 8336,
                       "src": "676:7:62",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -620,7 +620,7 @@
                             "name": "block",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 7830,
+                            "referencedDeclaration": 8323,
                             "src": "981:5:62",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_block",
@@ -674,10 +674,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        7843,
-                        7844
+                        8336,
+                        8337
                       ],
-                      "referencedDeclaration": 7843,
+                      "referencedDeclaration": 8336,
                       "src": "973:7:62",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -747,7 +747,7 @@
                             "name": "this",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 7981,
+                            "referencedDeclaration": 8474,
                             "src": "1060:4:62",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_TokenTimelock_$4927",
@@ -907,10 +907,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        7843,
-                        7844
+                        8336,
+                        8337
                       ],
-                      "referencedDeclaration": 7843,
+                      "referencedDeclaration": 8336,
                       "src": "1072:7:62",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -1256,7 +1256,7 @@
                             "name": "block",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 7830,
+                            "referencedDeclaration": 8323,
                             "src": "699:5:62",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_block",
@@ -1295,10 +1295,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        7843,
-                        7844
+                        8336,
+                        8337
                       ],
-                      "referencedDeclaration": 7843,
+                      "referencedDeclaration": 8336,
                       "src": "676:7:62",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -1600,7 +1600,7 @@
                             "name": "block",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 7830,
+                            "referencedDeclaration": 8323,
                             "src": "981:5:62",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_block",
@@ -1654,10 +1654,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        7843,
-                        7844
+                        8336,
+                        8337
                       ],
-                      "referencedDeclaration": 7843,
+                      "referencedDeclaration": 8336,
                       "src": "973:7:62",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -1727,7 +1727,7 @@
                             "name": "this",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 7981,
+                            "referencedDeclaration": 8474,
                             "src": "1060:4:62",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_TokenTimelock_$4927",
@@ -1887,10 +1887,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        7843,
-                        7844
+                        8336,
+                        8337
                       ],
-                      "referencedDeclaration": 7843,
+                      "referencedDeclaration": 8336,
                       "src": "1072:7:62",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -2043,6 +2043,6 @@
     "version": "0.4.24+commit.e67f0147.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "2.0.0",
-  "updatedAt": "2018-08-27T13:38:31.557Z"
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2018-08-27T17:14:41.779Z"
 }

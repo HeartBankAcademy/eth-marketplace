@@ -26,14 +26,14 @@
     "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/storage/EternalStorage.sol",
     "exportedSymbols": {
       "EternalStorage": [
-        1091
+        1072
       ]
     },
-    "id": 1092,
+    "id": 1073,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1039,
+        "id": 1020,
         "literals": [
           "solidity",
           "^",
@@ -46,10 +46,10 @@
       {
         "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/storage/IEternalStorage.sol",
         "file": "./IEternalStorage.sol",
-        "id": 1040,
+        "id": 1021,
         "nodeType": "ImportDirective",
-        "scope": 1092,
-        "sourceUnit": 1100,
+        "scope": 1073,
+        "sourceUnit": 1081,
         "src": "26:31:14",
         "symbolAliases": [],
         "unitAlias": ""
@@ -60,41 +60,41 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 1041,
+              "id": 1022,
               "name": "IEternalStorage",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 1099,
+              "referencedDeclaration": 1080,
               "src": "220:15:14",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IEternalStorage_$1099",
+                "typeIdentifier": "t_contract$_IEternalStorage_$1080",
                 "typeString": "contract IEternalStorage"
               }
             },
-            "id": 1042,
+            "id": 1023,
             "nodeType": "InheritanceSpecifier",
             "src": "220:15:14"
           }
         ],
         "contractDependencies": [
-          1099
+          1080
         ],
         "contractKind": "contract",
         "documentation": "@title EternalStorage\n@dev This contract holds all the necessary state variables to carry out the storage of any contract",
         "fullyImplemented": true,
-        "id": 1091,
+        "id": 1072,
         "linearizedBaseContracts": [
-          1091,
-          1099
+          1072,
+          1080
         ],
         "name": "EternalStorage",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 1046,
+            "id": 1027,
             "name": "uintStorage",
             "nodeType": "VariableDeclaration",
-            "scope": 1091,
+            "scope": 1072,
             "src": "302:48:14",
             "stateVariable": true,
             "storageLocation": "default",
@@ -103,9 +103,9 @@
               "typeString": "mapping(bytes32 => uint256)"
             },
             "typeName": {
-              "id": 1045,
+              "id": 1026,
               "keyType": {
-                "id": 1043,
+                "id": 1024,
                 "name": "bytes32",
                 "nodeType": "ElementaryTypeName",
                 "src": "310:7:14",
@@ -121,7 +121,7 @@
                 "typeString": "mapping(bytes32 => uint256)"
               },
               "valueType": {
-                "id": 1044,
+                "id": 1025,
                 "name": "uint256",
                 "nodeType": "ElementaryTypeName",
                 "src": "321:7:14",
@@ -136,10 +136,10 @@
           },
           {
             "constant": false,
-            "id": 1050,
+            "id": 1031,
             "name": "uint128Storage",
             "nodeType": "VariableDeclaration",
-            "scope": 1091,
+            "scope": 1072,
             "src": "354:51:14",
             "stateVariable": true,
             "storageLocation": "default",
@@ -148,9 +148,9 @@
               "typeString": "mapping(bytes32 => uint128)"
             },
             "typeName": {
-              "id": 1049,
+              "id": 1030,
               "keyType": {
-                "id": 1047,
+                "id": 1028,
                 "name": "bytes32",
                 "nodeType": "ElementaryTypeName",
                 "src": "362:7:14",
@@ -166,7 +166,7 @@
                 "typeString": "mapping(bytes32 => uint128)"
               },
               "valueType": {
-                "id": 1048,
+                "id": 1029,
                 "name": "uint128",
                 "nodeType": "ElementaryTypeName",
                 "src": "373:7:14",
@@ -181,10 +181,10 @@
           },
           {
             "constant": false,
-            "id": 1054,
+            "id": 1035,
             "name": "uint64Storage",
             "nodeType": "VariableDeclaration",
-            "scope": 1091,
+            "scope": 1072,
             "src": "409:49:14",
             "stateVariable": true,
             "storageLocation": "default",
@@ -193,9 +193,9 @@
               "typeString": "mapping(bytes32 => uint64)"
             },
             "typeName": {
-              "id": 1053,
+              "id": 1034,
               "keyType": {
-                "id": 1051,
+                "id": 1032,
                 "name": "bytes32",
                 "nodeType": "ElementaryTypeName",
                 "src": "417:7:14",
@@ -211,7 +211,7 @@
                 "typeString": "mapping(bytes32 => uint64)"
               },
               "valueType": {
-                "id": 1052,
+                "id": 1033,
                 "name": "uint64",
                 "nodeType": "ElementaryTypeName",
                 "src": "428:6:14",
@@ -226,10 +226,10 @@
           },
           {
             "constant": false,
-            "id": 1058,
+            "id": 1039,
             "name": "stringStorage",
             "nodeType": "VariableDeclaration",
-            "scope": 1091,
+            "scope": 1072,
             "src": "462:49:14",
             "stateVariable": true,
             "storageLocation": "default",
@@ -238,9 +238,9 @@
               "typeString": "mapping(bytes32 => string)"
             },
             "typeName": {
-              "id": 1057,
+              "id": 1038,
               "keyType": {
-                "id": 1055,
+                "id": 1036,
                 "name": "bytes32",
                 "nodeType": "ElementaryTypeName",
                 "src": "470:7:14",
@@ -256,7 +256,7 @@
                 "typeString": "mapping(bytes32 => string)"
               },
               "valueType": {
-                "id": 1056,
+                "id": 1037,
                 "name": "string",
                 "nodeType": "ElementaryTypeName",
                 "src": "481:6:14",
@@ -271,10 +271,10 @@
           },
           {
             "constant": false,
-            "id": 1062,
+            "id": 1043,
             "name": "addressStorage",
             "nodeType": "VariableDeclaration",
-            "scope": 1091,
+            "scope": 1072,
             "src": "515:51:14",
             "stateVariable": true,
             "storageLocation": "default",
@@ -283,9 +283,9 @@
               "typeString": "mapping(bytes32 => address)"
             },
             "typeName": {
-              "id": 1061,
+              "id": 1042,
               "keyType": {
-                "id": 1059,
+                "id": 1040,
                 "name": "bytes32",
                 "nodeType": "ElementaryTypeName",
                 "src": "523:7:14",
@@ -301,7 +301,7 @@
                 "typeString": "mapping(bytes32 => address)"
               },
               "valueType": {
-                "id": 1060,
+                "id": 1041,
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
                 "src": "534:7:14",
@@ -316,10 +316,10 @@
           },
           {
             "constant": false,
-            "id": 1066,
+            "id": 1047,
             "name": "bytesStorage",
             "nodeType": "VariableDeclaration",
-            "scope": 1091,
+            "scope": 1072,
             "src": "570:47:14",
             "stateVariable": true,
             "storageLocation": "default",
@@ -328,9 +328,9 @@
               "typeString": "mapping(bytes32 => bytes)"
             },
             "typeName": {
-              "id": 1065,
+              "id": 1046,
               "keyType": {
-                "id": 1063,
+                "id": 1044,
                 "name": "bytes32",
                 "nodeType": "ElementaryTypeName",
                 "src": "578:7:14",
@@ -346,7 +346,7 @@
                 "typeString": "mapping(bytes32 => bytes)"
               },
               "valueType": {
-                "id": 1064,
+                "id": 1045,
                 "name": "bytes",
                 "nodeType": "ElementaryTypeName",
                 "src": "589:5:14",
@@ -361,10 +361,10 @@
           },
           {
             "constant": false,
-            "id": 1070,
+            "id": 1051,
             "name": "boolStorage",
             "nodeType": "VariableDeclaration",
-            "scope": 1091,
+            "scope": 1072,
             "src": "621:45:14",
             "stateVariable": true,
             "storageLocation": "default",
@@ -373,9 +373,9 @@
               "typeString": "mapping(bytes32 => bool)"
             },
             "typeName": {
-              "id": 1069,
+              "id": 1050,
               "keyType": {
-                "id": 1067,
+                "id": 1048,
                 "name": "bytes32",
                 "nodeType": "ElementaryTypeName",
                 "src": "629:7:14",
@@ -391,7 +391,7 @@
                 "typeString": "mapping(bytes32 => bool)"
               },
               "valueType": {
-                "id": 1068,
+                "id": 1049,
                 "name": "bool",
                 "nodeType": "ElementaryTypeName",
                 "src": "640:4:14",
@@ -406,10 +406,10 @@
           },
           {
             "constant": false,
-            "id": 1074,
+            "id": 1055,
             "name": "intStorage",
             "nodeType": "VariableDeclaration",
-            "scope": 1091,
+            "scope": 1072,
             "src": "670:46:14",
             "stateVariable": true,
             "storageLocation": "default",
@@ -418,9 +418,9 @@
               "typeString": "mapping(bytes32 => int256)"
             },
             "typeName": {
-              "id": 1073,
+              "id": 1054,
               "keyType": {
-                "id": 1071,
+                "id": 1052,
                 "name": "bytes32",
                 "nodeType": "ElementaryTypeName",
                 "src": "678:7:14",
@@ -436,7 +436,7 @@
                 "typeString": "mapping(bytes32 => int256)"
               },
               "valueType": {
-                "id": 1072,
+                "id": 1053,
                 "name": "int256",
                 "nodeType": "ElementaryTypeName",
                 "src": "689:6:14",
@@ -451,10 +451,10 @@
           },
           {
             "constant": false,
-            "id": 1078,
+            "id": 1059,
             "name": "int128Storage",
             "nodeType": "VariableDeclaration",
-            "scope": 1091,
+            "scope": 1072,
             "src": "720:49:14",
             "stateVariable": true,
             "storageLocation": "default",
@@ -463,9 +463,9 @@
               "typeString": "mapping(bytes32 => int128)"
             },
             "typeName": {
-              "id": 1077,
+              "id": 1058,
               "keyType": {
-                "id": 1075,
+                "id": 1056,
                 "name": "bytes32",
                 "nodeType": "ElementaryTypeName",
                 "src": "728:7:14",
@@ -481,7 +481,7 @@
                 "typeString": "mapping(bytes32 => int128)"
               },
               "valueType": {
-                "id": 1076,
+                "id": 1057,
                 "name": "int128",
                 "nodeType": "ElementaryTypeName",
                 "src": "739:6:14",
@@ -496,10 +496,10 @@
           },
           {
             "constant": false,
-            "id": 1082,
+            "id": 1063,
             "name": "int64Storage",
             "nodeType": "VariableDeclaration",
-            "scope": 1091,
+            "scope": 1072,
             "src": "773:47:14",
             "stateVariable": true,
             "storageLocation": "default",
@@ -508,9 +508,9 @@
               "typeString": "mapping(bytes32 => int64)"
             },
             "typeName": {
-              "id": 1081,
+              "id": 1062,
               "keyType": {
-                "id": 1079,
+                "id": 1060,
                 "name": "bytes32",
                 "nodeType": "ElementaryTypeName",
                 "src": "781:7:14",
@@ -526,7 +526,7 @@
                 "typeString": "mapping(bytes32 => int64)"
               },
               "valueType": {
-                "id": 1080,
+                "id": 1061,
                 "name": "int64",
                 "nodeType": "ElementaryTypeName",
                 "src": "792:5:14",
@@ -541,7 +541,7 @@
           },
           {
             "body": {
-              "id": 1089,
+              "id": 1070,
               "nodeType": "Block",
               "src": "1022:22:14",
               "statements": [
@@ -549,7 +549,7 @@
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "74727565",
-                    "id": 1087,
+                    "id": 1068,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -564,15 +564,15 @@
                     },
                     "value": "true"
                   },
-                  "functionReturnParameters": 1086,
-                  "id": 1088,
+                  "functionReturnParameters": 1067,
+                  "id": 1069,
                   "nodeType": "Return",
                   "src": "1028:11:14"
                 }
               ]
             },
             "documentation": "@dev Returns true for contracts that adhere to the EternalStorage interface \n@return Always returns true for this contract",
-            "id": 1090,
+            "id": 1071,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -580,22 +580,22 @@
             "name": "isEternalStorage",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1083,
+              "id": 1064,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "992:2:14"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1086,
+              "id": 1067,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1085,
+                  "id": 1066,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1090,
+                  "scope": 1071,
                   "src": "1016:4:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -604,7 +604,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 1084,
+                    "id": 1065,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "1016:4:14",
@@ -619,14 +619,14 @@
               ],
               "src": "1015:6:14"
             },
-            "scope": 1091,
+            "scope": 1072,
             "src": "967:77:14",
             "stateMutability": "pure",
-            "superFunction": 1098,
+            "superFunction": 1079,
             "visibility": "public"
           }
         ],
-        "scope": 1092,
+        "scope": 1073,
         "src": "193:854:14"
       }
     ],
@@ -636,14 +636,14 @@
     "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/storage/EternalStorage.sol",
     "exportedSymbols": {
       "EternalStorage": [
-        1091
+        1072
       ]
     },
-    "id": 1092,
+    "id": 1073,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1039,
+        "id": 1020,
         "literals": [
           "solidity",
           "^",
@@ -656,10 +656,10 @@
       {
         "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/storage/IEternalStorage.sol",
         "file": "./IEternalStorage.sol",
-        "id": 1040,
+        "id": 1021,
         "nodeType": "ImportDirective",
-        "scope": 1092,
-        "sourceUnit": 1100,
+        "scope": 1073,
+        "sourceUnit": 1081,
         "src": "26:31:14",
         "symbolAliases": [],
         "unitAlias": ""
@@ -670,41 +670,41 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 1041,
+              "id": 1022,
               "name": "IEternalStorage",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 1099,
+              "referencedDeclaration": 1080,
               "src": "220:15:14",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IEternalStorage_$1099",
+                "typeIdentifier": "t_contract$_IEternalStorage_$1080",
                 "typeString": "contract IEternalStorage"
               }
             },
-            "id": 1042,
+            "id": 1023,
             "nodeType": "InheritanceSpecifier",
             "src": "220:15:14"
           }
         ],
         "contractDependencies": [
-          1099
+          1080
         ],
         "contractKind": "contract",
         "documentation": "@title EternalStorage\n@dev This contract holds all the necessary state variables to carry out the storage of any contract",
         "fullyImplemented": true,
-        "id": 1091,
+        "id": 1072,
         "linearizedBaseContracts": [
-          1091,
-          1099
+          1072,
+          1080
         ],
         "name": "EternalStorage",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 1046,
+            "id": 1027,
             "name": "uintStorage",
             "nodeType": "VariableDeclaration",
-            "scope": 1091,
+            "scope": 1072,
             "src": "302:48:14",
             "stateVariable": true,
             "storageLocation": "default",
@@ -713,9 +713,9 @@
               "typeString": "mapping(bytes32 => uint256)"
             },
             "typeName": {
-              "id": 1045,
+              "id": 1026,
               "keyType": {
-                "id": 1043,
+                "id": 1024,
                 "name": "bytes32",
                 "nodeType": "ElementaryTypeName",
                 "src": "310:7:14",
@@ -731,7 +731,7 @@
                 "typeString": "mapping(bytes32 => uint256)"
               },
               "valueType": {
-                "id": 1044,
+                "id": 1025,
                 "name": "uint256",
                 "nodeType": "ElementaryTypeName",
                 "src": "321:7:14",
@@ -746,10 +746,10 @@
           },
           {
             "constant": false,
-            "id": 1050,
+            "id": 1031,
             "name": "uint128Storage",
             "nodeType": "VariableDeclaration",
-            "scope": 1091,
+            "scope": 1072,
             "src": "354:51:14",
             "stateVariable": true,
             "storageLocation": "default",
@@ -758,9 +758,9 @@
               "typeString": "mapping(bytes32 => uint128)"
             },
             "typeName": {
-              "id": 1049,
+              "id": 1030,
               "keyType": {
-                "id": 1047,
+                "id": 1028,
                 "name": "bytes32",
                 "nodeType": "ElementaryTypeName",
                 "src": "362:7:14",
@@ -776,7 +776,7 @@
                 "typeString": "mapping(bytes32 => uint128)"
               },
               "valueType": {
-                "id": 1048,
+                "id": 1029,
                 "name": "uint128",
                 "nodeType": "ElementaryTypeName",
                 "src": "373:7:14",
@@ -791,10 +791,10 @@
           },
           {
             "constant": false,
-            "id": 1054,
+            "id": 1035,
             "name": "uint64Storage",
             "nodeType": "VariableDeclaration",
-            "scope": 1091,
+            "scope": 1072,
             "src": "409:49:14",
             "stateVariable": true,
             "storageLocation": "default",
@@ -803,9 +803,9 @@
               "typeString": "mapping(bytes32 => uint64)"
             },
             "typeName": {
-              "id": 1053,
+              "id": 1034,
               "keyType": {
-                "id": 1051,
+                "id": 1032,
                 "name": "bytes32",
                 "nodeType": "ElementaryTypeName",
                 "src": "417:7:14",
@@ -821,7 +821,7 @@
                 "typeString": "mapping(bytes32 => uint64)"
               },
               "valueType": {
-                "id": 1052,
+                "id": 1033,
                 "name": "uint64",
                 "nodeType": "ElementaryTypeName",
                 "src": "428:6:14",
@@ -836,10 +836,10 @@
           },
           {
             "constant": false,
-            "id": 1058,
+            "id": 1039,
             "name": "stringStorage",
             "nodeType": "VariableDeclaration",
-            "scope": 1091,
+            "scope": 1072,
             "src": "462:49:14",
             "stateVariable": true,
             "storageLocation": "default",
@@ -848,9 +848,9 @@
               "typeString": "mapping(bytes32 => string)"
             },
             "typeName": {
-              "id": 1057,
+              "id": 1038,
               "keyType": {
-                "id": 1055,
+                "id": 1036,
                 "name": "bytes32",
                 "nodeType": "ElementaryTypeName",
                 "src": "470:7:14",
@@ -866,7 +866,7 @@
                 "typeString": "mapping(bytes32 => string)"
               },
               "valueType": {
-                "id": 1056,
+                "id": 1037,
                 "name": "string",
                 "nodeType": "ElementaryTypeName",
                 "src": "481:6:14",
@@ -881,10 +881,10 @@
           },
           {
             "constant": false,
-            "id": 1062,
+            "id": 1043,
             "name": "addressStorage",
             "nodeType": "VariableDeclaration",
-            "scope": 1091,
+            "scope": 1072,
             "src": "515:51:14",
             "stateVariable": true,
             "storageLocation": "default",
@@ -893,9 +893,9 @@
               "typeString": "mapping(bytes32 => address)"
             },
             "typeName": {
-              "id": 1061,
+              "id": 1042,
               "keyType": {
-                "id": 1059,
+                "id": 1040,
                 "name": "bytes32",
                 "nodeType": "ElementaryTypeName",
                 "src": "523:7:14",
@@ -911,7 +911,7 @@
                 "typeString": "mapping(bytes32 => address)"
               },
               "valueType": {
-                "id": 1060,
+                "id": 1041,
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
                 "src": "534:7:14",
@@ -926,10 +926,10 @@
           },
           {
             "constant": false,
-            "id": 1066,
+            "id": 1047,
             "name": "bytesStorage",
             "nodeType": "VariableDeclaration",
-            "scope": 1091,
+            "scope": 1072,
             "src": "570:47:14",
             "stateVariable": true,
             "storageLocation": "default",
@@ -938,9 +938,9 @@
               "typeString": "mapping(bytes32 => bytes)"
             },
             "typeName": {
-              "id": 1065,
+              "id": 1046,
               "keyType": {
-                "id": 1063,
+                "id": 1044,
                 "name": "bytes32",
                 "nodeType": "ElementaryTypeName",
                 "src": "578:7:14",
@@ -956,7 +956,7 @@
                 "typeString": "mapping(bytes32 => bytes)"
               },
               "valueType": {
-                "id": 1064,
+                "id": 1045,
                 "name": "bytes",
                 "nodeType": "ElementaryTypeName",
                 "src": "589:5:14",
@@ -971,10 +971,10 @@
           },
           {
             "constant": false,
-            "id": 1070,
+            "id": 1051,
             "name": "boolStorage",
             "nodeType": "VariableDeclaration",
-            "scope": 1091,
+            "scope": 1072,
             "src": "621:45:14",
             "stateVariable": true,
             "storageLocation": "default",
@@ -983,9 +983,9 @@
               "typeString": "mapping(bytes32 => bool)"
             },
             "typeName": {
-              "id": 1069,
+              "id": 1050,
               "keyType": {
-                "id": 1067,
+                "id": 1048,
                 "name": "bytes32",
                 "nodeType": "ElementaryTypeName",
                 "src": "629:7:14",
@@ -1001,7 +1001,7 @@
                 "typeString": "mapping(bytes32 => bool)"
               },
               "valueType": {
-                "id": 1068,
+                "id": 1049,
                 "name": "bool",
                 "nodeType": "ElementaryTypeName",
                 "src": "640:4:14",
@@ -1016,10 +1016,10 @@
           },
           {
             "constant": false,
-            "id": 1074,
+            "id": 1055,
             "name": "intStorage",
             "nodeType": "VariableDeclaration",
-            "scope": 1091,
+            "scope": 1072,
             "src": "670:46:14",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1028,9 +1028,9 @@
               "typeString": "mapping(bytes32 => int256)"
             },
             "typeName": {
-              "id": 1073,
+              "id": 1054,
               "keyType": {
-                "id": 1071,
+                "id": 1052,
                 "name": "bytes32",
                 "nodeType": "ElementaryTypeName",
                 "src": "678:7:14",
@@ -1046,7 +1046,7 @@
                 "typeString": "mapping(bytes32 => int256)"
               },
               "valueType": {
-                "id": 1072,
+                "id": 1053,
                 "name": "int256",
                 "nodeType": "ElementaryTypeName",
                 "src": "689:6:14",
@@ -1061,10 +1061,10 @@
           },
           {
             "constant": false,
-            "id": 1078,
+            "id": 1059,
             "name": "int128Storage",
             "nodeType": "VariableDeclaration",
-            "scope": 1091,
+            "scope": 1072,
             "src": "720:49:14",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1073,9 +1073,9 @@
               "typeString": "mapping(bytes32 => int128)"
             },
             "typeName": {
-              "id": 1077,
+              "id": 1058,
               "keyType": {
-                "id": 1075,
+                "id": 1056,
                 "name": "bytes32",
                 "nodeType": "ElementaryTypeName",
                 "src": "728:7:14",
@@ -1091,7 +1091,7 @@
                 "typeString": "mapping(bytes32 => int128)"
               },
               "valueType": {
-                "id": 1076,
+                "id": 1057,
                 "name": "int128",
                 "nodeType": "ElementaryTypeName",
                 "src": "739:6:14",
@@ -1106,10 +1106,10 @@
           },
           {
             "constant": false,
-            "id": 1082,
+            "id": 1063,
             "name": "int64Storage",
             "nodeType": "VariableDeclaration",
-            "scope": 1091,
+            "scope": 1072,
             "src": "773:47:14",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1118,9 +1118,9 @@
               "typeString": "mapping(bytes32 => int64)"
             },
             "typeName": {
-              "id": 1081,
+              "id": 1062,
               "keyType": {
-                "id": 1079,
+                "id": 1060,
                 "name": "bytes32",
                 "nodeType": "ElementaryTypeName",
                 "src": "781:7:14",
@@ -1136,7 +1136,7 @@
                 "typeString": "mapping(bytes32 => int64)"
               },
               "valueType": {
-                "id": 1080,
+                "id": 1061,
                 "name": "int64",
                 "nodeType": "ElementaryTypeName",
                 "src": "792:5:14",
@@ -1151,7 +1151,7 @@
           },
           {
             "body": {
-              "id": 1089,
+              "id": 1070,
               "nodeType": "Block",
               "src": "1022:22:14",
               "statements": [
@@ -1159,7 +1159,7 @@
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "74727565",
-                    "id": 1087,
+                    "id": 1068,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -1174,15 +1174,15 @@
                     },
                     "value": "true"
                   },
-                  "functionReturnParameters": 1086,
-                  "id": 1088,
+                  "functionReturnParameters": 1067,
+                  "id": 1069,
                   "nodeType": "Return",
                   "src": "1028:11:14"
                 }
               ]
             },
             "documentation": "@dev Returns true for contracts that adhere to the EternalStorage interface \n@return Always returns true for this contract",
-            "id": 1090,
+            "id": 1071,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1190,22 +1190,22 @@
             "name": "isEternalStorage",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1083,
+              "id": 1064,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "992:2:14"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1086,
+              "id": 1067,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1085,
+                  "id": 1066,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1090,
+                  "scope": 1071,
                   "src": "1016:4:14",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1214,7 +1214,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 1084,
+                    "id": 1065,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "1016:4:14",
@@ -1229,14 +1229,14 @@
               ],
               "src": "1015:6:14"
             },
-            "scope": 1091,
+            "scope": 1072,
             "src": "967:77:14",
             "stateMutability": "pure",
-            "superFunction": 1098,
+            "superFunction": 1079,
             "visibility": "public"
           }
         ],
-        "scope": 1092,
+        "scope": 1073,
         "src": "193:854:14"
       }
     ],
@@ -1247,6 +1247,6 @@
     "version": "0.4.24+commit.e67f0147.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "2.0.0",
-  "updatedAt": "2018-08-27T14:16:21.392Z"
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2018-08-27T19:14:15.999Z"
 }

@@ -190,7 +190,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 7840,
+                            "referencedDeclaration": 8333,
                             "src": "958:3:38",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -249,10 +249,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        7843,
-                        7844
+                        8336,
+                        8337
                       ],
-                      "referencedDeclaration": 7843,
+                      "referencedDeclaration": 8336,
                       "src": "950:7:38",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -361,7 +361,7 @@
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 7953,
+                              "referencedDeclaration": 8446,
                               "src": "1261:4:38",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_contract$_HasNoEther_$2892",
@@ -622,7 +622,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 7840,
+                            "referencedDeclaration": 8333,
                             "src": "958:3:38",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -681,10 +681,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        7843,
-                        7844
+                        8336,
+                        8337
                       ],
-                      "referencedDeclaration": 7843,
+                      "referencedDeclaration": 8336,
                       "src": "950:7:38",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -793,7 +793,7 @@
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 7953,
+                              "referencedDeclaration": 8446,
                               "src": "1261:4:38",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_contract$_HasNoEther_$2892",
@@ -963,6 +963,6 @@
     "version": "0.4.24+commit.e67f0147.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "2.0.0",
-  "updatedAt": "2018-08-27T13:38:31.548Z"
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2018-08-27T17:14:41.771Z"
 }

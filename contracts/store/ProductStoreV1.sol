@@ -1,4 +1,5 @@
 pragma solidity ^0.4.23;
+pragma experimental ABIEncoderV2;
 
 import "../ownership/OwnableManager.sol";
 import "../storage/EternalStorage.sol";
@@ -160,7 +161,7 @@ contract ProductStoreV1 is OwnableManager, EternalStorage, IProductStore, Produc
   * @dev Validates the given product and stores it in Eternal Storage
   * @param _product Product model struct to store
   */
-  function storeProduct(ModelV1 _product) requiresValidId(_product.id) internal {
+  function storeProduct(ModelV1 _product) internal {
     require(isValid(_product), "Product model is invalid");
     uint128Storage[idKey(_product.id)] = _product.id;
     uint64Storage[createdAtKey(_product.id)] = _product.createdAt;
@@ -247,5 +248,21 @@ contract ProductStoreV1 is OwnableManager, EternalStorage, IProductStore, Produc
   function getInventory(uint128 _id) public view requiresValidId(_id) returns(uint128) {
     return uint128Storage[inventoryKey(_id)];
   } 
+
+  /**
+  * @dev Returns true for contracts that adhere to the ProductStore interface
+  * @return Always returns true for this contract
+  */
+  function isProductStore() public pure returns (bool) {
+    return true;
+  }
+
+  /**
+  * @dev Returns the version of the ProductStore contract interface
+  * @return Version of the contract interface
+  */
+  function version() public pure returns (uint16) { 
+    return 1;
+  }
 
 }

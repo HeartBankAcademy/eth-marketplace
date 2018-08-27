@@ -249,10 +249,10 @@
                       "name": "revert",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        7845,
-                        7846
+                        8338,
+                        8339
                       ],
-                      "referencedDeclaration": 7845,
+                      "referencedDeclaration": 8338,
                       "src": "784:6:39",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_revert_pure$__$returns$__$",
@@ -531,10 +531,10 @@
                       "name": "revert",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        7845,
-                        7846
+                        8338,
+                        8339
                       ],
-                      "referencedDeclaration": 7845,
+                      "referencedDeclaration": 8338,
                       "src": "784:6:39",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_revert_pure$__$returns$__$",
@@ -679,6 +679,6 @@
     "version": "0.4.24+commit.e67f0147.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "2.0.0",
-  "updatedAt": "2018-08-27T13:38:31.548Z"
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2018-08-27T17:14:41.771Z"
 }

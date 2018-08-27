@@ -51,22 +51,22 @@
   ],
   "bytecode": "0x608060405234801561001057600080fd5b50610299806100206000396000f300608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680635c60da1b1461012f57806364da4e6f14610186578063d784d426146101b5575b60006100616101f8565b9050600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff1614151515610108576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601e8152602001807f496d706c656d656e746174696f6e2061646472657373206e6f7420736574000081525060200191505060405180910390fd5b60405136600082376000803683855af43d806000843e816000811461012b578184f35b8184fd5b34801561013b57600080fd5b506101446101f8565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561019257600080fd5b5061019b610221565b604051808215151515815260200191505060405180910390f35b3480156101c157600080fd5b506101f6600480360381019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061022a565b005b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b60006001905090565b806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550505600a165627a7a72305820293a5b8acb7475fa3b4009a8703b97f74d8cf7f8fde34a4b828ec2f7fd6ba69d0029",
   "deployedBytecode": "0x608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680635c60da1b1461012f57806364da4e6f14610186578063d784d426146101b5575b60006100616101f8565b9050600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff1614151515610108576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601e8152602001807f496d706c656d656e746174696f6e2061646472657373206e6f7420736574000081525060200191505060405180910390fd5b60405136600082376000803683855af43d806000843e816000811461012b578184f35b8184fd5b34801561013b57600080fd5b506101446101f8565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561019257600080fd5b5061019b610221565b604051808215151515815260200191505060405180910390f35b3480156101c157600080fd5b506101f6600480360381019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061022a565b005b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b60006001905090565b806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550505600a165627a7a72305820293a5b8acb7475fa3b4009a8703b97f74d8cf7f8fde34a4b828ec2f7fd6ba69d0029",
-  "sourceMap": "124:674:79:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;124:674:79;;;;;;;",
-  "deployedSourceMap": "124:674:79:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;799:23:87;825:16;:14;:16::i;:::-;799:42;;882:1;855:29;;:15;:29;;;;847:72;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;960:4;954:11;993:12;990:1;985:3;972:34;1084:1;1081;1067:12;1062:3;1045:15;1040:3;1027:59;1105:14;1149:4;1146:1;1141:3;1126:28;1169:6;1187:1;1182:28;;;;1239:4;1234:3;1227:17;1182:28;1203:4;1198:3;1191:17;702:93:79;;8:9:-1;5:2;;;30:1;27;20:12;5:2;702:93:79;;;;;;;;;;;;;;;;;;;;;;;;;;;1393:68:87;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1393:68:87;;;;;;;;;;;;;;;;;;;;;;;;;;;393:117:79;;8:9:-1;5:2;;;30:1;27;20:12;5:2;393:117:79;;;;;;;;;;;;;;;;;;;;;;;;;;;;702:93;749:7;771:19;;;;;;;;;;;764:26;;702:93;:::o;1393:68:87:-;1433:4;1452;1445:11;;1393:68;:::o;393:117:79:-;485:20;463:19;;:42;;;;;;;;;;;;;;;;;;393:117;:::o",
+  "sourceMap": "124:674:80:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;124:674:80;;;;;;;",
+  "deployedSourceMap": "124:674:80:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;799:23:88;825:16;:14;:16::i;:::-;799:42;;882:1;855:29;;:15;:29;;;;847:72;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;960:4;954:11;993:12;990:1;985:3;972:34;1084:1;1081;1067:12;1062:3;1045:15;1040:3;1027:59;1105:14;1149:4;1146:1;1141:3;1126:28;1169:6;1187:1;1182:28;;;;1239:4;1234:3;1227:17;1182:28;1203:4;1198:3;1191:17;702:93:80;;8:9:-1;5:2;;;30:1;27;20:12;5:2;702:93:80;;;;;;;;;;;;;;;;;;;;;;;;;;;1393:68:88;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1393:68:88;;;;;;;;;;;;;;;;;;;;;;;;;;;393:117:80;;8:9:-1;5:2;;;30:1;27;20:12;5:2;393:117:80;;;;;;;;;;;;;;;;;;;;;;;;;;;;702:93;749:7;771:19;;;;;;;;;;;764:26;;702:93;:::o;1393:68:88:-;1433:4;1452;1445:11;;1393:68;:::o;393:117:80:-;485:20;463:19;;:42;;;;;;;;;;;;;;;;;;393:117;:::o",
   "source": "pragma solidity ^0.4.23;\n\nimport \"../proxy/Proxy.sol\";\n\n/**\n* @title MockProxy\n* @dev Mock contract used for Proxy tests\n*/\ncontract MockProxy is Proxy {\n\n  address private proxyImplementation;\n\n  /**\n  * @dev Sets implementation address to where every delegate call will be delegated\n  * @param _proxyImplementation Address of implementation contract to which calls will be delegated\n  **/\n  function setImplementation(address _proxyImplementation) public {\n    proxyImplementation = _proxyImplementation;\n  }\n\n  /**\n  * @dev Tells the address of the implementation where every delegate call will be delegated\n  * @return Address of the implementation to which contract calls will be delegated\n  */\n  function implementation() public view returns (address) {\n    return proxyImplementation;\n  }\n\n}",
   "sourcePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/mocks/MockProxy.sol",
   "ast": {
     "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/mocks/MockProxy.sol",
     "exportedSymbols": {
       "MockProxy": [
-        6983
+        7200
       ]
     },
-    "id": 6984,
+    "id": 7201,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 6959,
+        "id": 7176,
         "literals": [
           "solidity",
           "^",
@@ -74,16 +74,16 @@
           ".23"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:79"
+        "src": "0:24:80"
       },
       {
         "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/proxy/Proxy.sol",
         "file": "../proxy/Proxy.sol",
-        "id": 6960,
+        "id": 7177,
         "nodeType": "ImportDirective",
-        "scope": 6984,
-        "sourceUnit": 7563,
-        "src": "26:28:79",
+        "scope": 7201,
+        "sourceUnit": 7799,
+        "src": "26:28:80",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -93,44 +93,44 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 6961,
+              "id": 7178,
               "name": "Proxy",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 7562,
-              "src": "146:5:79",
+              "referencedDeclaration": 7798,
+              "src": "146:5:80",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Proxy_$7562",
+                "typeIdentifier": "t_contract$_Proxy_$7798",
                 "typeString": "contract Proxy"
               }
             },
-            "id": 6962,
+            "id": 7179,
             "nodeType": "InheritanceSpecifier",
-            "src": "146:5:79"
+            "src": "146:5:80"
           }
         ],
         "contractDependencies": [
-          7459,
-          7562
+          7695,
+          7798
         ],
         "contractKind": "contract",
         "documentation": "@title MockProxy\n@dev Mock contract used for Proxy tests",
         "fullyImplemented": true,
-        "id": 6983,
+        "id": 7200,
         "linearizedBaseContracts": [
-          6983,
-          7562,
-          7459
+          7200,
+          7798,
+          7695
         ],
         "name": "MockProxy",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 6964,
+            "id": 7181,
             "name": "proxyImplementation",
             "nodeType": "VariableDeclaration",
-            "scope": 6983,
-            "src": "157:35:79",
+            "scope": 7200,
+            "src": "157:35:80",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -138,10 +138,10 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 6963,
+              "id": 7180,
               "name": "address",
               "nodeType": "ElementaryTypeName",
-              "src": "157:7:79",
+              "src": "157:7:80",
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
                 "typeString": "address"
@@ -152,26 +152,26 @@
           },
           {
             "body": {
-              "id": 6973,
+              "id": 7190,
               "nodeType": "Block",
-              "src": "457:53:79",
+              "src": "457:53:80",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 6971,
+                    "id": 7188,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 6969,
+                      "id": 7186,
                       "name": "proxyImplementation",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 6964,
-                      "src": "463:19:79",
+                      "referencedDeclaration": 7181,
+                      "src": "463:19:80",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
@@ -181,31 +181,31 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 6970,
+                      "id": 7187,
                       "name": "_proxyImplementation",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 6966,
-                      "src": "485:20:79",
+                      "referencedDeclaration": 7183,
+                      "src": "485:20:80",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
                       }
                     },
-                    "src": "463:42:79",
+                    "src": "463:42:80",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
                     }
                   },
-                  "id": 6972,
+                  "id": 7189,
                   "nodeType": "ExpressionStatement",
-                  "src": "463:42:79"
+                  "src": "463:42:80"
                 }
               ]
             },
             "documentation": "@dev Sets implementation address to where every delegate call will be delegated\n@param _proxyImplementation Address of implementation contract to which calls will be delegated*",
-            "id": 6974,
+            "id": 7191,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -213,16 +213,16 @@
             "name": "setImplementation",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6967,
+              "id": 7184,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6966,
+                  "id": 7183,
                   "name": "_proxyImplementation",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6974,
-                  "src": "420:28:79",
+                  "scope": 7191,
+                  "src": "420:28:80",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -230,10 +230,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 6965,
+                    "id": 7182,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "420:7:79",
+                    "src": "420:7:80",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -243,50 +243,50 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "419:30:79"
+              "src": "419:30:80"
             },
             "payable": false,
             "returnParameters": {
-              "id": 6968,
+              "id": 7185,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "457:0:79"
+              "src": "457:0:80"
             },
-            "scope": 6983,
-            "src": "393:117:79",
+            "scope": 7200,
+            "src": "393:117:80",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 6981,
+              "id": 7198,
               "nodeType": "Block",
-              "src": "758:37:79",
+              "src": "758:37:80",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 6979,
+                    "id": 7196,
                     "name": "proxyImplementation",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 6964,
-                    "src": "771:19:79",
+                    "referencedDeclaration": 7181,
+                    "src": "771:19:80",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
                     }
                   },
-                  "functionReturnParameters": 6978,
-                  "id": 6980,
+                  "functionReturnParameters": 7195,
+                  "id": 7197,
                   "nodeType": "Return",
-                  "src": "764:26:79"
+                  "src": "764:26:80"
                 }
               ]
             },
             "documentation": "@dev Tells the address of the implementation where every delegate call will be delegated\n@return Address of the implementation to which contract calls will be delegated",
-            "id": 6982,
+            "id": 7199,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -294,23 +294,23 @@
             "name": "implementation",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6975,
+              "id": 7192,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "725:2:79"
+              "src": "725:2:80"
             },
             "payable": false,
             "returnParameters": {
-              "id": 6978,
+              "id": 7195,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6977,
+                  "id": 7194,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6982,
-                  "src": "749:7:79",
+                  "scope": 7199,
+                  "src": "749:7:80",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -318,10 +318,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 6976,
+                    "id": 7193,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "749:7:79",
+                    "src": "749:7:80",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -331,33 +331,33 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "748:9:79"
+              "src": "748:9:80"
             },
-            "scope": 6983,
-            "src": "702:93:79",
+            "scope": 7200,
+            "src": "702:93:80",
             "stateMutability": "view",
-            "superFunction": 7534,
+            "superFunction": 7770,
             "visibility": "public"
           }
         ],
-        "scope": 6984,
-        "src": "124:674:79"
+        "scope": 7201,
+        "src": "124:674:80"
       }
     ],
-    "src": "0:798:79"
+    "src": "0:798:80"
   },
   "legacyAST": {
     "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/mocks/MockProxy.sol",
     "exportedSymbols": {
       "MockProxy": [
-        6983
+        7200
       ]
     },
-    "id": 6984,
+    "id": 7201,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 6959,
+        "id": 7176,
         "literals": [
           "solidity",
           "^",
@@ -365,16 +365,16 @@
           ".23"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:79"
+        "src": "0:24:80"
       },
       {
         "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/proxy/Proxy.sol",
         "file": "../proxy/Proxy.sol",
-        "id": 6960,
+        "id": 7177,
         "nodeType": "ImportDirective",
-        "scope": 6984,
-        "sourceUnit": 7563,
-        "src": "26:28:79",
+        "scope": 7201,
+        "sourceUnit": 7799,
+        "src": "26:28:80",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -384,44 +384,44 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 6961,
+              "id": 7178,
               "name": "Proxy",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 7562,
-              "src": "146:5:79",
+              "referencedDeclaration": 7798,
+              "src": "146:5:80",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Proxy_$7562",
+                "typeIdentifier": "t_contract$_Proxy_$7798",
                 "typeString": "contract Proxy"
               }
             },
-            "id": 6962,
+            "id": 7179,
             "nodeType": "InheritanceSpecifier",
-            "src": "146:5:79"
+            "src": "146:5:80"
           }
         ],
         "contractDependencies": [
-          7459,
-          7562
+          7695,
+          7798
         ],
         "contractKind": "contract",
         "documentation": "@title MockProxy\n@dev Mock contract used for Proxy tests",
         "fullyImplemented": true,
-        "id": 6983,
+        "id": 7200,
         "linearizedBaseContracts": [
-          6983,
-          7562,
-          7459
+          7200,
+          7798,
+          7695
         ],
         "name": "MockProxy",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 6964,
+            "id": 7181,
             "name": "proxyImplementation",
             "nodeType": "VariableDeclaration",
-            "scope": 6983,
-            "src": "157:35:79",
+            "scope": 7200,
+            "src": "157:35:80",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -429,10 +429,10 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 6963,
+              "id": 7180,
               "name": "address",
               "nodeType": "ElementaryTypeName",
-              "src": "157:7:79",
+              "src": "157:7:80",
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
                 "typeString": "address"
@@ -443,26 +443,26 @@
           },
           {
             "body": {
-              "id": 6973,
+              "id": 7190,
               "nodeType": "Block",
-              "src": "457:53:79",
+              "src": "457:53:80",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 6971,
+                    "id": 7188,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 6969,
+                      "id": 7186,
                       "name": "proxyImplementation",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 6964,
-                      "src": "463:19:79",
+                      "referencedDeclaration": 7181,
+                      "src": "463:19:80",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
@@ -472,31 +472,31 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 6970,
+                      "id": 7187,
                       "name": "_proxyImplementation",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 6966,
-                      "src": "485:20:79",
+                      "referencedDeclaration": 7183,
+                      "src": "485:20:80",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
                       }
                     },
-                    "src": "463:42:79",
+                    "src": "463:42:80",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
                     }
                   },
-                  "id": 6972,
+                  "id": 7189,
                   "nodeType": "ExpressionStatement",
-                  "src": "463:42:79"
+                  "src": "463:42:80"
                 }
               ]
             },
             "documentation": "@dev Sets implementation address to where every delegate call will be delegated\n@param _proxyImplementation Address of implementation contract to which calls will be delegated*",
-            "id": 6974,
+            "id": 7191,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -504,16 +504,16 @@
             "name": "setImplementation",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6967,
+              "id": 7184,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6966,
+                  "id": 7183,
                   "name": "_proxyImplementation",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6974,
-                  "src": "420:28:79",
+                  "scope": 7191,
+                  "src": "420:28:80",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -521,10 +521,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 6965,
+                    "id": 7182,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "420:7:79",
+                    "src": "420:7:80",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -534,50 +534,50 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "419:30:79"
+              "src": "419:30:80"
             },
             "payable": false,
             "returnParameters": {
-              "id": 6968,
+              "id": 7185,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "457:0:79"
+              "src": "457:0:80"
             },
-            "scope": 6983,
-            "src": "393:117:79",
+            "scope": 7200,
+            "src": "393:117:80",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 6981,
+              "id": 7198,
               "nodeType": "Block",
-              "src": "758:37:79",
+              "src": "758:37:80",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 6979,
+                    "id": 7196,
                     "name": "proxyImplementation",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 6964,
-                    "src": "771:19:79",
+                    "referencedDeclaration": 7181,
+                    "src": "771:19:80",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
                     }
                   },
-                  "functionReturnParameters": 6978,
-                  "id": 6980,
+                  "functionReturnParameters": 7195,
+                  "id": 7197,
                   "nodeType": "Return",
-                  "src": "764:26:79"
+                  "src": "764:26:80"
                 }
               ]
             },
             "documentation": "@dev Tells the address of the implementation where every delegate call will be delegated\n@return Address of the implementation to which contract calls will be delegated",
-            "id": 6982,
+            "id": 7199,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -585,23 +585,23 @@
             "name": "implementation",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6975,
+              "id": 7192,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "725:2:79"
+              "src": "725:2:80"
             },
             "payable": false,
             "returnParameters": {
-              "id": 6978,
+              "id": 7195,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6977,
+                  "id": 7194,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6982,
-                  "src": "749:7:79",
+                  "scope": 7199,
+                  "src": "749:7:80",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -609,10 +609,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 6976,
+                    "id": 7193,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "749:7:79",
+                    "src": "749:7:80",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -622,26 +622,26 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "748:9:79"
+              "src": "748:9:80"
             },
-            "scope": 6983,
-            "src": "702:93:79",
+            "scope": 7200,
+            "src": "702:93:80",
             "stateMutability": "view",
-            "superFunction": 7534,
+            "superFunction": 7770,
             "visibility": "public"
           }
         ],
-        "scope": 6984,
-        "src": "124:674:79"
+        "scope": 7201,
+        "src": "124:674:80"
       }
     ],
-    "src": "0:798:79"
+    "src": "0:798:80"
   },
   "compiler": {
     "name": "solc",
     "version": "0.4.24+commit.e67f0147.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "2.0.0",
-  "updatedAt": "2018-08-27T13:38:31.564Z"
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2018-08-27T17:14:41.788Z"
 }

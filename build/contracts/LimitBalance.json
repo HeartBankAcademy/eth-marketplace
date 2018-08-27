@@ -233,7 +233,7 @@
                                 "name": "this",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 7881,
+                                "referencedDeclaration": 8374,
                                 "src": "696:4:8",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_contract$_LimitBalance_$642",
@@ -322,10 +322,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        7843,
-                        7844
+                        8336,
+                        8337
                       ],
-                      "referencedDeclaration": 7843,
+                      "referencedDeclaration": 8336,
                       "src": "680:7:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -577,7 +577,7 @@
                                 "name": "this",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 7881,
+                                "referencedDeclaration": 8374,
                                 "src": "696:4:8",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_contract$_LimitBalance_$642",
@@ -666,10 +666,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        7843,
-                        7844
+                        8336,
+                        8337
                       ],
-                      "referencedDeclaration": 7843,
+                      "referencedDeclaration": 8336,
                       "src": "680:7:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -726,6 +726,6 @@
     "version": "0.4.24+commit.e67f0147.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "2.0.0",
-  "updatedAt": "2018-08-27T13:38:31.539Z"
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2018-08-27T17:14:41.762Z"
 }

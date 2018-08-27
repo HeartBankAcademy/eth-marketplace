@@ -496,7 +496,7 @@
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 7932,
+                        "referencedDeclaration": 8425,
                         "src": "575:5:25",
                         "typeDescriptions": {
                           "typeIdentifier": "t_super$_WhitelistedCrowdsale_$2279",
@@ -814,7 +814,7 @@
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 7932,
+                        "referencedDeclaration": 8425,
                         "src": "575:5:25",
                         "typeDescriptions": {
                           "typeIdentifier": "t_super$_WhitelistedCrowdsale_$2279",
@@ -981,6 +981,6 @@
     "version": "0.4.24+commit.e67f0147.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "2.0.0",
-  "updatedAt": "2018-08-27T13:38:31.546Z"
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2018-08-27T17:14:41.768Z"
 }

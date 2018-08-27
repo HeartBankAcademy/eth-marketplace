@@ -374,7 +374,7 @@
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 7939,
+                              "referencedDeclaration": 8432,
                               "src": "892:4:30",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_contract$_TokenDestructible_$2487",
@@ -704,7 +704,7 @@
                       "name": "selfdestruct",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 7848,
+                      "referencedDeclaration": 8341,
                       "src": "1000:12:30",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_selfdestruct_nonpayable$_t_address_$returns$__$",
@@ -1102,7 +1102,7 @@
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 7939,
+                              "referencedDeclaration": 8432,
                               "src": "892:4:30",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_contract$_TokenDestructible_$2487",
@@ -1432,7 +1432,7 @@
                       "name": "selfdestruct",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 7848,
+                      "referencedDeclaration": 8341,
                       "src": "1000:12:30",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_selfdestruct_nonpayable$_t_address_$returns$__$",
@@ -1555,6 +1555,6 @@
     "version": "0.4.24+commit.e67f0147.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "2.0.0",
-  "updatedAt": "2018-08-27T13:38:31.546Z"
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2018-08-27T17:14:41.769Z"
 }

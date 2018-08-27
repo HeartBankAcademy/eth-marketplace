@@ -11,11 +11,23 @@ const date = (year, month, date) => {
 }
 
 const timestampFromDate = date => {
-  return Math.floor(new Date(date).getTime() / 1000)
+  return Math.trunc(new Date(date).getTime() / 1000)
 }
 
 const dateFromTimestamp = timestamp => {
   new Date(Number(timestamp) * 1000)
+}
+
+const secondsAgo = _seconds => {
+  return now() - 1000 * _seconds
+}
+
+const minutesAgo = _minutes => {
+  return now() - 1000 * 60 * _minutes
+}
+
+const hoursAgo = _hours => {
+  return now() - 1000 * 60 * 60 * _hours
 }
 
 module.exports = {
@@ -23,5 +35,8 @@ module.exports = {
   today,
   date,
   timestampFromDate,
-  dateFromTimestamp
+  dateFromTimestamp,
+  secondsAgo,
+  minutesAgo,
+  hoursAgo
 }

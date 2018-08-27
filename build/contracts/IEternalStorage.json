@@ -26,14 +26,14 @@
     "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/storage/IEternalStorage.sol",
     "exportedSymbols": {
       "IEternalStorage": [
-        1099
+        1080
       ]
     },
-    "id": 1100,
+    "id": 1081,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1093,
+        "id": 1074,
         "literals": [
           "solidity",
           "^",
@@ -49,9 +49,9 @@
         "contractKind": "contract",
         "documentation": "@title IEternalStorage\n@dev Interface all EternalStorage contracts must implement to publically\n     verify it complies with the EternalStorage contract interface",
         "fullyImplemented": false,
-        "id": 1099,
+        "id": 1080,
         "linearizedBaseContracts": [
-          1099
+          1080
         ],
         "name": "IEternalStorage",
         "nodeType": "ContractDefinition",
@@ -59,7 +59,7 @@
           {
             "body": null,
             "documentation": "@dev Returns true for contracts that adhere to the EternalStorage interface\n@return Boolean value identifying contract as implementing the EternalStorage interface",
-            "id": 1098,
+            "id": 1079,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -67,22 +67,22 @@
             "name": "isEternalStorage",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1094,
+              "id": 1075,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "440:2:15"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1097,
+              "id": 1078,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1096,
+                  "id": 1077,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1098,
+                  "scope": 1079,
                   "src": "464:4:15",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -91,7 +91,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 1095,
+                    "id": 1076,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "464:4:15",
@@ -106,14 +106,14 @@
               ],
               "src": "463:6:15"
             },
-            "scope": 1099,
+            "scope": 1080,
             "src": "415:55:15",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 1100,
+        "scope": 1081,
         "src": "202:271:15"
       }
     ],
@@ -123,14 +123,14 @@
     "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/storage/IEternalStorage.sol",
     "exportedSymbols": {
       "IEternalStorage": [
-        1099
+        1080
       ]
     },
-    "id": 1100,
+    "id": 1081,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1093,
+        "id": 1074,
         "literals": [
           "solidity",
           "^",
@@ -146,9 +146,9 @@
         "contractKind": "contract",
         "documentation": "@title IEternalStorage\n@dev Interface all EternalStorage contracts must implement to publically\n     verify it complies with the EternalStorage contract interface",
         "fullyImplemented": false,
-        "id": 1099,
+        "id": 1080,
         "linearizedBaseContracts": [
-          1099
+          1080
         ],
         "name": "IEternalStorage",
         "nodeType": "ContractDefinition",
@@ -156,7 +156,7 @@
           {
             "body": null,
             "documentation": "@dev Returns true for contracts that adhere to the EternalStorage interface\n@return Boolean value identifying contract as implementing the EternalStorage interface",
-            "id": 1098,
+            "id": 1079,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -164,22 +164,22 @@
             "name": "isEternalStorage",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1094,
+              "id": 1075,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "440:2:15"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1097,
+              "id": 1078,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1096,
+                  "id": 1077,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1098,
+                  "scope": 1079,
                   "src": "464:4:15",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -188,7 +188,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 1095,
+                    "id": 1076,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "464:4:15",
@@ -203,14 +203,14 @@
               ],
               "src": "463:6:15"
             },
-            "scope": 1099,
+            "scope": 1080,
             "src": "415:55:15",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 1100,
+        "scope": 1081,
         "src": "202:271:15"
       }
     ],
@@ -221,6 +221,6 @@
     "version": "0.4.24+commit.e67f0147.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "2.0.0",
-  "updatedAt": "2018-08-27T14:16:21.393Z"
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2018-08-27T19:14:15.999Z"
 }
