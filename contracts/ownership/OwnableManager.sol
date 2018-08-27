@@ -12,8 +12,13 @@ import "./IOwnableDelegate.sol";
  */
 contract OwnableManager {
 
-  address public owner;
-  address public ownableDelegate;
+  /**
+  * @dev The storage position in the contract storage where the implementation address will be stored
+  * @notice The implementation value is stored using the 'key-value' nature of the contract storage and
+  *         is thus not affected by the contract's state data layout
+  */
+  bytes32 private constant ownerStorePosition = keccak256("com.marketplace.ownablemanager.owner");
+  bytes32 private constant ownableDelegateStorePosition = keccak256("com.marketplace.ownablemanager.ownableDelegate");
 
   /**
   * @dev OwnershipTransferred is emitted after the ownership of this contract has been renounced
@@ -36,15 +41,59 @@ contract OwnableManager {
    * account.
    */
   constructor() public {
-    owner = msg.sender;
+    _setOwner(msg.sender);
   }
 
   /**
    * @dev Throws if called by any account other than the owner
    */
   modifier onlyOwner() {
-    require(msg.sender == owner);
+    require(msg.sender == owner());
     _;
+  }
+
+  /**
+  * @dev Returns the address of the current owner
+  * @return _owner Address of the current owner
+  */
+  function owner() public view returns (address _owner) {
+    bytes32 position = ownerStorePosition;
+    assembly {
+      _owner := sload(position)
+    }
+  }
+
+  /**
+  * @dev Sets the address of the current owner
+  * @param _owner Address of the new owner to be set
+  */
+  function _setOwner(address _owner) internal {
+    bytes32 position = ownerStorePosition;
+    assembly {
+      sstore(position, _owner)
+    }
+  }
+
+  /**
+  * @dev Returns the address of the current ownable delegate contract
+  * @return _ownableDelegate Address of the current ownable delegate contract
+  */
+  function ownableDelegate() public view returns (address _ownableDelegate) {
+    bytes32 position = ownableDelegateStorePosition;
+    assembly {
+      _ownableDelegate := sload(position)
+    }
+  }
+
+  /**
+  * @dev Sets the address of the current ownable delegate contract
+  * @param _ownableDelegate Address of the new ownable delegate contract
+  */
+  function _setOwnableDelegate(address _ownableDelegate) internal {
+    bytes32 position = ownableDelegateStorePosition;
+    assembly {
+      sstore(position, _ownableDelegate)
+    }
   }
 
   /**
@@ -54,10 +103,10 @@ contract OwnableManager {
    * modifier anymore.
    */
   function renounceOwnership() public onlyOwner {
-    emit OwnershipRenounced(owner);
-    updateOwnableDelegate(owner, address(0));
-    owner = address(0);
-    ownableDelegate = address(0);
+    emit OwnershipRenounced(owner());
+    updateOwnableDelegate(owner(), address(0));
+    _setOwner(address(0));
+    _setOwnableDelegate(address(0));
   }
 
   /**
@@ -74,13 +123,13 @@ contract OwnableManager {
    */
   function _transferOwnership(address _newOwner) internal {
     require(_newOwner != address(0));
-    emit OwnershipTransferred(owner, _newOwner);
-    updateOwnableDelegate(owner, _newOwner);
-    owner = _newOwner;
+    emit OwnershipTransferred(owner(), _newOwner);
+    updateOwnableDelegate(owner(), _newOwner);
+    _setOwner(_newOwner);
   }
 
   /**
-  * @dev Sets the ownable delegate contract address
+  * @dev Sets the ownable delegate contract addressf
   * @param _ownableDelegate Address of the ownable delegate contract to set
   * @notice The ownable delegate contract must implement the OwnableDelegate interface
   */
@@ -88,7 +137,7 @@ contract OwnableManager {
     if (_ownableDelegate != address(0)) {
       require(IOwnableDelegate(_ownableDelegate).isOwnableDelegate());
     }
-    ownableDelegate = _ownableDelegate;
+    _setOwnableDelegate(_ownableDelegate);
   }
 
   /**
@@ -97,8 +146,8 @@ contract OwnableManager {
   * @param _newOwner New owner address
   */
   function updateOwnableDelegate(address _previousOwner, address _newOwner) internal {
-    if (ownableDelegate != address(0)) {
-      IOwnableDelegate(ownableDelegate).didUpdateOwner(address(this), _previousOwner, _newOwner);
+    if (ownableDelegate() != address(0)) {
+      IOwnableDelegate(ownableDelegate()).didUpdateOwner(address(this), _previousOwner, _newOwner);
     }
   }
   

@@ -497,7 +497,7 @@
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 802,
+                        "referencedDeclaration": 1915,
                         "src": "364:5:6",
                         "typeDescriptions": {
                           "typeIdentifier": "t_super$_PausableToken_$512",
@@ -737,7 +737,7 @@
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 802,
+                        "referencedDeclaration": 1915,
                         "src": "545:5:6",
                         "typeDescriptions": {
                           "typeIdentifier": "t_super$_PausableToken_$512",
@@ -986,7 +986,7 @@
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 802,
+                        "referencedDeclaration": 1915,
                         "src": "718:5:6",
                         "typeDescriptions": {
                           "typeIdentifier": "t_super$_PausableToken_$512",
@@ -1209,7 +1209,7 @@
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 802,
+                        "referencedDeclaration": 1915,
                         "src": "903:5:6",
                         "typeDescriptions": {
                           "typeIdentifier": "t_super$_PausableToken_$512",
@@ -1432,7 +1432,7 @@
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 802,
+                        "referencedDeclaration": 1915,
                         "src": "1107:5:6",
                         "typeDescriptions": {
                           "typeIdentifier": "t_super$_PausableToken_$512",
@@ -1768,7 +1768,7 @@
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 802,
+                        "referencedDeclaration": 1915,
                         "src": "364:5:6",
                         "typeDescriptions": {
                           "typeIdentifier": "t_super$_PausableToken_$512",
@@ -2008,7 +2008,7 @@
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 802,
+                        "referencedDeclaration": 1915,
                         "src": "545:5:6",
                         "typeDescriptions": {
                           "typeIdentifier": "t_super$_PausableToken_$512",
@@ -2257,7 +2257,7 @@
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 802,
+                        "referencedDeclaration": 1915,
                         "src": "718:5:6",
                         "typeDescriptions": {
                           "typeIdentifier": "t_super$_PausableToken_$512",
@@ -2480,7 +2480,7 @@
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 802,
+                        "referencedDeclaration": 1915,
                         "src": "903:5:6",
                         "typeDescriptions": {
                           "typeIdentifier": "t_super$_PausableToken_$512",
@@ -2703,7 +2703,7 @@
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 802,
+                        "referencedDeclaration": 1915,
                         "src": "1107:5:6",
                         "typeDescriptions": {
                           "typeIdentifier": "t_super$_PausableToken_$512",
@@ -2885,5 +2885,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-08-27T19:17:20.771Z"
+  "updatedAt": "2018-08-27T19:49:44.163Z"
 }
