@@ -89,17 +89,7 @@ contract ProductV1 {
   * @return ABI byte-encoded product model
   */
   function abiEncode(ModelV1 _product) public pure returns(bytes) {
-    return abi.encode(_product.id,
-                      _product.createdAt,
-                      _product.updatedAt,
-                      _product.createdBy,
-                      _product.updatedBy,
-                      _product.name,
-                      _product.description,
-                      _product.imageURI,
-                      _product.price,
-                      _product.inventory
-                    );
+    return abi.encode(_product);
   }
 
   /**
@@ -109,5 +99,5 @@ contract ProductV1 {
   function version() public pure returns(uint16) {
     return 1;
   }
-  
+
 }
