@@ -1,0 +1,472 @@
+{
+  "contractName": "MockContract",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "someString",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "isMockContract",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b50610182806100206000396000f30060806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806318f483d814610051578063e7a96f6d14610080575b600080fd5b34801561005d57600080fd5b50610066610110565b604051808215151515815260200191505060405180910390f35b34801561008c57600080fd5b50610095610119565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156100d55780820151818401526020810190506100ba565b50505050905090810190601f1680156101025780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60006001905090565b60606040805190810160405280600c81526020017f4d6f636b436f6e747261637400000000000000000000000000000000000000008152509050905600a165627a7a7230582097955e2ab7d83048faff3055cdfcc95a4248f5b1478afd1134830ee6c0f31a130029",
+  "deployedBytecode": "0x60806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806318f483d814610051578063e7a96f6d14610080575b600080fd5b34801561005d57600080fd5b50610066610110565b604051808215151515815260200191505060405180910390f35b34801561008c57600080fd5b50610095610119565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156100d55780820151818401526020810190506100ba565b50505050905090810190601f1680156101025780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60006001905090565b60606040805190810160405280600c81526020017f4d6f636b436f6e747261637400000000000000000000000000000000000000008152509050905600a165627a7a7230582097955e2ab7d83048faff3055cdfcc95a4248f5b1478afd1134830ee6c0f31a130029",
+  "sourceMap": "101:358:74:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;101:358:74;;;;;;;",
+  "deployedSourceMap": "101:358:74:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;382:74;;8:9:-1;5:2;;;30:1;27;20:12;5:2;382:74:74;;;;;;;;;;;;;;;;;;;;;;;;;;;223:82;;8:9:-1;5:2;;;30:1;27;20:12;5:2;223:82:74;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;223:82:74;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;382:74;428:4;447;440:11;;382:74;:::o;223:82::-;265:6;279:21;;;;;;;;;;;;;;;;;;;;223:82;:::o",
+  "source": "pragma solidity ^0.4.23;\n\n/**\n* @title MockContract\n* @dev Generic mock contract used for testing\n*/\ncontract MockContract {\n\n  /**\n  * @dev Returns a string value\n  * @return Always returns the value 'MockContract'\n  */\n  function someString() public pure returns(string) {\n    return \"MockContract\";\n  }\n\n  /**\n  * @dev Returns a bool value\n  * @return Always returns true\n  */\n  function isMockContract() public pure returns(bool) {\n    return true;\n  }\n\n}",
+  "sourcePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/mocks/MockContract.sol",
+  "ast": {
+    "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/mocks/MockContract.sol",
+    "exportedSymbols": {
+      "MockContract": [
+        6524
+      ]
+    },
+    "id": 6525,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 6507,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".23"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:74"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": "@title MockContract\n@dev Generic mock contract used for testing",
+        "fullyImplemented": true,
+        "id": 6524,
+        "linearizedBaseContracts": [
+          6524
+        ],
+        "name": "MockContract",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 6514,
+              "nodeType": "Block",
+              "src": "273:32:74",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "4d6f636b436f6e7472616374",
+                    "id": 6512,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "string",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "286:14:74",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_stringliteral_9da07094516f5e59db0542932b4ab3609f82c1a51d952065777145d1206027de",
+                      "typeString": "literal_string \"MockContract\""
+                    },
+                    "value": "MockContract"
+                  },
+                  "functionReturnParameters": 6511,
+                  "id": 6513,
+                  "nodeType": "Return",
+                  "src": "279:21:74"
+                }
+              ]
+            },
+            "documentation": "@dev Returns a string value\n@return Always returns the value 'MockContract'",
+            "id": 6515,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "someString",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 6508,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "242:2:74"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 6511,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6510,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6515,
+                  "src": "265:6:74",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 6509,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "265:6:74",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "264:8:74"
+            },
+            "scope": 6524,
+            "src": "223:82:74",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 6522,
+              "nodeType": "Block",
+              "src": "434:22:74",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "74727565",
+                    "id": 6520,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "bool",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "447:4:74",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    },
+                    "value": "true"
+                  },
+                  "functionReturnParameters": 6519,
+                  "id": 6521,
+                  "nodeType": "Return",
+                  "src": "440:11:74"
+                }
+              ]
+            },
+            "documentation": "@dev Returns a bool value\n@return Always returns true",
+            "id": 6523,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "isMockContract",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 6516,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "405:2:74"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 6519,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6518,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6523,
+                  "src": "428:4:74",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 6517,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "428:4:74",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "427:6:74"
+            },
+            "scope": 6524,
+            "src": "382:74:74",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 6525,
+        "src": "101:358:74"
+      }
+    ],
+    "src": "0:459:74"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/mocks/MockContract.sol",
+    "exportedSymbols": {
+      "MockContract": [
+        6524
+      ]
+    },
+    "id": 6525,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 6507,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".23"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:74"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": "@title MockContract\n@dev Generic mock contract used for testing",
+        "fullyImplemented": true,
+        "id": 6524,
+        "linearizedBaseContracts": [
+          6524
+        ],
+        "name": "MockContract",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 6514,
+              "nodeType": "Block",
+              "src": "273:32:74",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "4d6f636b436f6e7472616374",
+                    "id": 6512,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "string",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "286:14:74",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_stringliteral_9da07094516f5e59db0542932b4ab3609f82c1a51d952065777145d1206027de",
+                      "typeString": "literal_string \"MockContract\""
+                    },
+                    "value": "MockContract"
+                  },
+                  "functionReturnParameters": 6511,
+                  "id": 6513,
+                  "nodeType": "Return",
+                  "src": "279:21:74"
+                }
+              ]
+            },
+            "documentation": "@dev Returns a string value\n@return Always returns the value 'MockContract'",
+            "id": 6515,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "someString",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 6508,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "242:2:74"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 6511,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6510,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6515,
+                  "src": "265:6:74",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 6509,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "265:6:74",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "264:8:74"
+            },
+            "scope": 6524,
+            "src": "223:82:74",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 6522,
+              "nodeType": "Block",
+              "src": "434:22:74",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "74727565",
+                    "id": 6520,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "bool",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "447:4:74",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    },
+                    "value": "true"
+                  },
+                  "functionReturnParameters": 6519,
+                  "id": 6521,
+                  "nodeType": "Return",
+                  "src": "440:11:74"
+                }
+              ]
+            },
+            "documentation": "@dev Returns a bool value\n@return Always returns true",
+            "id": 6523,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "isMockContract",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 6516,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "405:2:74"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 6519,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6518,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6523,
+                  "src": "428:4:74",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 6517,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "428:4:74",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "427:6:74"
+            },
+            "scope": 6524,
+            "src": "382:74:74",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 6525,
+        "src": "101:358:74"
+      }
+    ],
+    "src": "0:459:74"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.0",
+  "updatedAt": "2018-08-27T13:38:31.562Z"
+}

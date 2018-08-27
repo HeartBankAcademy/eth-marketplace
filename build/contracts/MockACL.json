@@ -1,0 +1,528 @@
+{
+  "contractName": "MockACL",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_authorizedAddress",
+          "type": "address"
+        }
+      ],
+      "name": "addAuthorization",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_newAddress",
+          "type": "address"
+        }
+      ],
+      "name": "updateProductOwner",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_authorizedAddress",
+          "type": "address"
+        }
+      ],
+      "name": "removeAuthorization",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_sender",
+          "type": "address"
+        }
+      ],
+      "name": "isProductOwner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_sender",
+          "type": "address"
+        }
+      ],
+      "name": "isAuthorized",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "_oldAddress",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "_newAddress",
+          "type": "address"
+        }
+      ],
+      "name": "ProductOwnerUpdated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "_authorizedAddress",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "_hasAccess",
+          "type": "bool"
+        }
+      ],
+      "name": "AuthorizedAccount",
+      "type": "event"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "isACL",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6080604052336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055507f9f83351d7067410bb7c79ef094e09407af666cec86e4c5d13474144b195d00bc600033604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019250505060405180910390a1610686806100eb6000396000f300608060405260043610610078576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806335b281531461007d5780637d5cb0a5146100c057806394f3f81d14610103578063a8218cd314610146578063bb6a452014610175578063fe9fbb80146101d0575b600080fd5b34801561008957600080fd5b506100be600480360381019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061022b565b005b3480156100cc57600080fd5b50610101600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610309565b005b34801561010f57600080fd5b50610144600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610465565b005b34801561015257600080fd5b5061015b610544565b604051808215151515815260200191505060405180910390f35b34801561018157600080fd5b506101b6600480360381019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061054d565b604051808215151515815260200191505060405180910390f35b3480156101dc57600080fd5b50610211600480360381019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506105a6565b604051808215151515815260200191505060405180910390f35b610234336105a6565b151561023f57600080fd5b60018060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083151502179055507feadbbcd289747ecc98af25e8a89485e7182680fe5dfc0d547a6383470b54728e816001604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001821515151581526020019250505060405180910390a150565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561036657600080fd5b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff169050816000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055507f9f83351d7067410bb7c79ef094e09407af666cec86e4c5d13474144b195d00bc8183604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019250505060405180910390a15050565b61046e336105a6565b151561047957600080fd5b6000600160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083151502179055507feadbbcd289747ecc98af25e8a89485e7182680fe5dfc0d547a6383470b54728e816000604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001821515151581526020019250505060405180910390a150565b60006001905090565b60008173ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16149050919050565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff161480610653575060011515600160008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff161515145b90509190505600a165627a7a72305820be40b48b7962a54b38f496edbab3b339e5a664db69a79c98fc9a2a2d812bd5810029",
+  "deployedBytecode": "0x608060405260043610610078576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806335b281531461007d5780637d5cb0a5146100c057806394f3f81d14610103578063a8218cd314610146578063bb6a452014610175578063fe9fbb80146101d0575b600080fd5b34801561008957600080fd5b506100be600480360381019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061022b565b005b3480156100cc57600080fd5b50610101600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610309565b005b34801561010f57600080fd5b50610144600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610465565b005b34801561015257600080fd5b5061015b610544565b604051808215151515815260200191505060405180910390f35b34801561018157600080fd5b506101b6600480360381019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061054d565b604051808215151515815260200191505060405180910390f35b3480156101dc57600080fd5b50610211600480360381019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506105a6565b604051808215151515815260200191505060405180910390f35b610234336105a6565b151561023f57600080fd5b60018060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083151502179055507feadbbcd289747ecc98af25e8a89485e7182680fe5dfc0d547a6383470b54728e816001604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001821515151581526020019250505060405180910390a150565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561036657600080fd5b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff169050816000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055507f9f83351d7067410bb7c79ef094e09407af666cec86e4c5d13474144b195d00bc8183604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019250505060405180910390a15050565b61046e336105a6565b151561047957600080fd5b6000600160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083151502179055507feadbbcd289747ecc98af25e8a89485e7182680fe5dfc0d547a6383470b54728e816000604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001821515151581526020019250505060405180910390a150565b60006001905090565b60008173ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16149050919050565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff161480610653575060011515600160008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff161515145b90509190505600a165627a7a72305820be40b48b7962a54b38f496edbab3b339e5a664db69a79c98fc9a2a2d812bd5810029",
+  "sourceMap": "144:217:72:-;;;999:10:2;984:12;;:25;;;;;;;;;;;;;;;;;;1020:43;1048:1;1052:10;1020:43;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;144:217:72;;;;;;",
+  "deployedSourceMap": "144:217:72:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2434:186:2;;8:9:-1;5:2;;;30:1;27;20:12;5:2;2434:186:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;2068:206;;8:9:-1;5:2;;;30:1;27;20:12;5:2;2068:206:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;2785:191;;8:9:-1;5:2;;;30:1;27;20:12;5:2;2785:191:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;293:65:72;;8:9:-1;5:2;;;30:1;27;20:12;5:2;293:65:72;;;;;;;;;;;;;;;;;;;;;;;;;;;1528:108:2;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1528:108:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1790:145;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1790:145:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2434:186;1329:24;1342:10;1329:12;:24::i;:::-;1321:33;;;;;;;;2557:4;2516:18;:38;2535:18;2516:38;;;;;;;;;;;;;;;;:45;;;;;;;;;;;;;;;;;;2572:43;2590:18;2610:4;2572:43;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2434:186;:::o;2068:206::-;2147:19;1191:12;;;;;;;;;;;1177:26;;:10;:26;;;1169:35;;;;;;;;2169:12;;;;;;;;;;;2147:34;;2202:11;2187:12;;:26;;;;;;;;;;;;;;;;;;2224:45;2244:11;2257;2224:45;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2068:206;;:::o;2785:191::-;1329:24;1342:10;1329:12;:24::i;:::-;1321:33;;;;;;;;2911:5;2870:18;:38;2889:18;2870:38;;;;;;;;;;;;;;;;:46;;;;;;;;;;;;;;;;;;2927:44;2945:18;2965:5;2927:44;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2785:191;:::o;293:65:72:-;330:4;349;342:11;;293:65;:::o;1528:108:2:-;1589:4;1624:7;1608:23;;:12;;;;;;;;;;;:23;;;1601:30;;1528:108;;;:::o;1790:145::-;1849:4;1879:12;;;;;;;;;;;1868:23;;:7;:23;;;:62;;;;1926:4;1895:35;;:18;:27;1914:7;1895:27;;;;;;;;;;;;;;;;;;;;;;;;;:35;;;1868:62;1861:69;;1790:145;;;:::o",
+  "source": "pragma solidity ^0.4.23;\n\nimport \"../acl/IACL.sol\";\nimport \"../acl/ACLV1.sol\";\n\n/**\n* @title MockACL\n* @dev Mock contract used for ACL tests\n*/\ncontract MockACL is IACL, ACLV1 {\n\n  /**\n  * @dev Returns true for contracts that adhere to the ACL interface\n  * @return Always returns true\n  */\n  function isACL() public pure returns(bool) {\n    return true;\n  }\n\n}",
+  "sourcePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/mocks/MockACL.sol",
+  "ast": {
+    "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/mocks/MockACL.sol",
+    "exportedSymbols": {
+      "MockACL": [
+        6470
+      ]
+    },
+    "id": 6471,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 6455,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".23"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:72"
+      },
+      {
+        "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/acl/IACL.sol",
+        "file": "../acl/IACL.sol",
+        "id": 6456,
+        "nodeType": "ImportDirective",
+        "scope": 6471,
+        "sourceUnit": 385,
+        "src": "26:25:72",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/acl/ACLV1.sol",
+        "file": "../acl/ACLV1.sol",
+        "id": 6457,
+        "nodeType": "ImportDirective",
+        "scope": 6471,
+        "sourceUnit": 363,
+        "src": "52:26:72",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 6458,
+              "name": "IACL",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 384,
+              "src": "164:4:72",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IACL_$384",
+                "typeString": "contract IACL"
+              }
+            },
+            "id": 6459,
+            "nodeType": "InheritanceSpecifier",
+            "src": "164:4:72"
+          },
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 6460,
+              "name": "ACLV1",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 362,
+              "src": "170:5:72",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_ACLV1_$362",
+                "typeString": "contract ACLV1"
+              }
+            },
+            "id": 6461,
+            "nodeType": "InheritanceSpecifier",
+            "src": "170:5:72"
+          }
+        ],
+        "contractDependencies": [
+          362,
+          384
+        ],
+        "contractKind": "contract",
+        "documentation": "@title MockACL\n@dev Mock contract used for ACL tests",
+        "fullyImplemented": true,
+        "id": 6470,
+        "linearizedBaseContracts": [
+          6470,
+          362,
+          384
+        ],
+        "name": "MockACL",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 6468,
+              "nodeType": "Block",
+              "src": "336:22:72",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "74727565",
+                    "id": 6466,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "bool",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "349:4:72",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    },
+                    "value": "true"
+                  },
+                  "functionReturnParameters": 6465,
+                  "id": 6467,
+                  "nodeType": "Return",
+                  "src": "342:11:72"
+                }
+              ]
+            },
+            "documentation": "@dev Returns true for contracts that adhere to the ACL interface\n@return Always returns true",
+            "id": 6469,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "isACL",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 6462,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "307:2:72"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 6465,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6464,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6469,
+                  "src": "330:4:72",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 6463,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "330:4:72",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "329:6:72"
+            },
+            "scope": 6470,
+            "src": "293:65:72",
+            "stateMutability": "pure",
+            "superFunction": 361,
+            "visibility": "public"
+          }
+        ],
+        "scope": 6471,
+        "src": "144:217:72"
+      }
+    ],
+    "src": "0:361:72"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/mocks/MockACL.sol",
+    "exportedSymbols": {
+      "MockACL": [
+        6470
+      ]
+    },
+    "id": 6471,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 6455,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".23"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:72"
+      },
+      {
+        "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/acl/IACL.sol",
+        "file": "../acl/IACL.sol",
+        "id": 6456,
+        "nodeType": "ImportDirective",
+        "scope": 6471,
+        "sourceUnit": 385,
+        "src": "26:25:72",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/acl/ACLV1.sol",
+        "file": "../acl/ACLV1.sol",
+        "id": 6457,
+        "nodeType": "ImportDirective",
+        "scope": 6471,
+        "sourceUnit": 363,
+        "src": "52:26:72",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 6458,
+              "name": "IACL",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 384,
+              "src": "164:4:72",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IACL_$384",
+                "typeString": "contract IACL"
+              }
+            },
+            "id": 6459,
+            "nodeType": "InheritanceSpecifier",
+            "src": "164:4:72"
+          },
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 6460,
+              "name": "ACLV1",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 362,
+              "src": "170:5:72",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_ACLV1_$362",
+                "typeString": "contract ACLV1"
+              }
+            },
+            "id": 6461,
+            "nodeType": "InheritanceSpecifier",
+            "src": "170:5:72"
+          }
+        ],
+        "contractDependencies": [
+          362,
+          384
+        ],
+        "contractKind": "contract",
+        "documentation": "@title MockACL\n@dev Mock contract used for ACL tests",
+        "fullyImplemented": true,
+        "id": 6470,
+        "linearizedBaseContracts": [
+          6470,
+          362,
+          384
+        ],
+        "name": "MockACL",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 6468,
+              "nodeType": "Block",
+              "src": "336:22:72",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "74727565",
+                    "id": 6466,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "bool",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "349:4:72",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    },
+                    "value": "true"
+                  },
+                  "functionReturnParameters": 6465,
+                  "id": 6467,
+                  "nodeType": "Return",
+                  "src": "342:11:72"
+                }
+              ]
+            },
+            "documentation": "@dev Returns true for contracts that adhere to the ACL interface\n@return Always returns true",
+            "id": 6469,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "isACL",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 6462,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "307:2:72"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 6465,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6464,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6469,
+                  "src": "330:4:72",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 6463,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "330:4:72",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "329:6:72"
+            },
+            "scope": 6470,
+            "src": "293:65:72",
+            "stateMutability": "pure",
+            "superFunction": 361,
+            "visibility": "public"
+          }
+        ],
+        "scope": 6471,
+        "src": "144:217:72"
+      }
+    ],
+    "src": "0:361:72"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.0",
+  "updatedAt": "2018-08-27T13:38:31.562Z"
+}
