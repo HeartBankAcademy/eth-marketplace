@@ -117,14 +117,14 @@
     "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/store/IProductStore.sol",
     "exportedSymbols": {
       "IProductStore": [
-        1383
+        1353
       ]
     },
-    "id": 1384,
+    "id": 1354,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1342,
+        "id": 1312,
         "literals": [
           "solidity",
           "^",
@@ -132,7 +132,7 @@
           ".23"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:13"
+        "src": "0:24:19"
       },
       {
         "baseContracts": [],
@@ -140,9 +140,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 1383,
+        "id": 1353,
         "linearizedBaseContracts": [
-          1383
+          1353
         ],
         "name": "IProductStore",
         "nodeType": "ContractDefinition",
@@ -150,7 +150,7 @@
           {
             "body": null,
             "documentation": "@dev Returns the name of the store\n@return Name of the store",
-            "id": 1347,
+            "id": 1317,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -158,10 +158,365 @@
             "name": "name",
             "nodeType": "FunctionDefinition",
             "parameters": {
+              "id": 1313,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "147:2:19"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 1316,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1315,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1317,
+                  "src": "170:6:19",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1314,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "170:6:19",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "169:8:19"
+            },
+            "scope": 1353,
+            "src": "134:44:19",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": null,
+            "documentation": "@dev Returns the logo URI of the store\n@return Logo URI of the store",
+            "id": 1322,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "logoURI",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1318,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "286:2:19"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 1321,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1320,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1322,
+                  "src": "309:6:19",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1319,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "309:6:19",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "308:8:19"
+            },
+            "scope": 1353,
+            "src": "270:47:19",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": null,
+            "documentation": "@dev Returns the total number of products stored\n@return Total number of products stored",
+            "id": 1327,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "productCount",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1323,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "450:2:19"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 1326,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1325,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1327,
+                  "src": "473:4:19",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1324,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "473:4:19",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "472:6:19"
+            },
+            "scope": 1353,
+            "src": "429:50:19",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": null,
+            "documentation": "@dev Adds an product to storage if valid\n@param _name Name of the product\n@param _description Description of the product\n@param _imageURI Optional image URI\n@param _price Price for the product in wei\n@param _inventory Available inventory to be sold for the product\n@return Id of the stored product",
+            "id": 1342,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "addProduct",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1338,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1329,
+                  "name": "_name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1342,
+                  "src": "845:12:19",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1328,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "845:6:19",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1331,
+                  "name": "_description",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1342,
+                  "src": "863:19:19",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1330,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "863:6:19",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1333,
+                  "name": "_imageURI",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1342,
+                  "src": "888:16:19",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1332,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "888:6:19",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1335,
+                  "name": "_price",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1342,
+                  "src": "910:14:19",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint128",
+                    "typeString": "uint128"
+                  },
+                  "typeName": {
+                    "id": 1334,
+                    "name": "uint128",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "910:7:19",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint128",
+                      "typeString": "uint128"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1337,
+                  "name": "_inventory",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1342,
+                  "src": "930:18:19",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint128",
+                    "typeString": "uint128"
+                  },
+                  "typeName": {
+                    "id": 1336,
+                    "name": "uint128",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "930:7:19",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint128",
+                      "typeString": "uint128"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "839:113:19"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 1341,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1340,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1342,
+                  "src": "968:7:19",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint128",
+                    "typeString": "uint128"
+                  },
+                  "typeName": {
+                    "id": 1339,
+                    "name": "uint128",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "968:7:19",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint128",
+                      "typeString": "uint128"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "967:9:19"
+            },
+            "scope": 1353,
+            "src": "820:157:19",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": null,
+            "documentation": "@dev Returns true for contracts that adhere to the ProductStore interface\n@return Boolean value identifying contract as implementing the ProductStore interface",
+            "id": 1347,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "isProductStore",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
               "id": 1343,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "147:2:13"
+              "src": "1183:2:19"
             },
             "payable": false,
             "returnParameters": {
@@ -174,50 +529,50 @@
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 1347,
-                  "src": "170:6:13",
+                  "src": "1207:4:19",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_string_memory_ptr",
-                    "typeString": "string"
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
                   },
                   "typeName": {
                     "id": 1344,
-                    "name": "string",
+                    "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "170:6:13",
+                    "src": "1207:4:19",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_string_storage_ptr",
-                      "typeString": "string"
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
                     }
                   },
                   "value": null,
                   "visibility": "internal"
                 }
               ],
-              "src": "169:8:13"
+              "src": "1206:6:19"
             },
-            "scope": 1383,
-            "src": "134:44:13",
-            "stateMutability": "view",
+            "scope": 1353,
+            "src": "1160:53:19",
+            "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": null,
-            "documentation": "@dev Returns the logo URI of the store\n@return Logo URI of the store",
+            "documentation": "@dev Returns the version of the ProductStore contract interface\n@return Version of the contract interface",
             "id": 1352,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
             "modifiers": [],
-            "name": "logoURI",
+            "name": "version",
             "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 1348,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "286:2:13"
+              "src": "1358:2:19"
             },
             "payable": false,
             "returnParameters": {
@@ -230,362 +585,7 @@
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 1352,
-                  "src": "309:6:13",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_string_memory_ptr",
-                    "typeString": "string"
-                  },
-                  "typeName": {
-                    "id": 1349,
-                    "name": "string",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "309:6:13",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_string_storage_ptr",
-                      "typeString": "string"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "308:8:13"
-            },
-            "scope": 1383,
-            "src": "270:47:13",
-            "stateMutability": "view",
-            "superFunction": null,
-            "visibility": "public"
-          },
-          {
-            "body": null,
-            "documentation": "@dev Returns the total number of products stored\n@return Total number of products stored",
-            "id": 1357,
-            "implemented": false,
-            "isConstructor": false,
-            "isDeclaredConst": true,
-            "modifiers": [],
-            "name": "productCount",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 1353,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "450:2:13"
-            },
-            "payable": false,
-            "returnParameters": {
-              "id": 1356,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 1355,
-                  "name": "",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 1357,
-                  "src": "473:4:13",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
-                  },
-                  "typeName": {
-                    "id": 1354,
-                    "name": "uint",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "473:4:13",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "472:6:13"
-            },
-            "scope": 1383,
-            "src": "429:50:13",
-            "stateMutability": "view",
-            "superFunction": null,
-            "visibility": "public"
-          },
-          {
-            "body": null,
-            "documentation": "@dev Adds an product to storage if valid\n@param _name Name of the product\n@param _description Description of the product\n@param _imageURI Optional image URI\n@param _price Price for the product in wei\n@param _inventory Available inventory to be sold for the product\n@return Id of the stored product",
-            "id": 1372,
-            "implemented": false,
-            "isConstructor": false,
-            "isDeclaredConst": false,
-            "modifiers": [],
-            "name": "addProduct",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 1368,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 1359,
-                  "name": "_name",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 1372,
-                  "src": "845:12:13",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_string_memory_ptr",
-                    "typeString": "string"
-                  },
-                  "typeName": {
-                    "id": 1358,
-                    "name": "string",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "845:6:13",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_string_storage_ptr",
-                      "typeString": "string"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
-                  "id": 1361,
-                  "name": "_description",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 1372,
-                  "src": "863:19:13",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_string_memory_ptr",
-                    "typeString": "string"
-                  },
-                  "typeName": {
-                    "id": 1360,
-                    "name": "string",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "863:6:13",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_string_storage_ptr",
-                      "typeString": "string"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
-                  "id": 1363,
-                  "name": "_imageURI",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 1372,
-                  "src": "888:16:13",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_string_memory_ptr",
-                    "typeString": "string"
-                  },
-                  "typeName": {
-                    "id": 1362,
-                    "name": "string",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "888:6:13",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_string_storage_ptr",
-                      "typeString": "string"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
-                  "id": 1365,
-                  "name": "_price",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 1372,
-                  "src": "910:14:13",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint128",
-                    "typeString": "uint128"
-                  },
-                  "typeName": {
-                    "id": 1364,
-                    "name": "uint128",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "910:7:13",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint128",
-                      "typeString": "uint128"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
-                  "id": 1367,
-                  "name": "_inventory",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 1372,
-                  "src": "930:18:13",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint128",
-                    "typeString": "uint128"
-                  },
-                  "typeName": {
-                    "id": 1366,
-                    "name": "uint128",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "930:7:13",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint128",
-                      "typeString": "uint128"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "839:113:13"
-            },
-            "payable": false,
-            "returnParameters": {
-              "id": 1371,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 1370,
-                  "name": "",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 1372,
-                  "src": "968:7:13",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint128",
-                    "typeString": "uint128"
-                  },
-                  "typeName": {
-                    "id": 1369,
-                    "name": "uint128",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "968:7:13",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint128",
-                      "typeString": "uint128"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "967:9:13"
-            },
-            "scope": 1383,
-            "src": "820:157:13",
-            "stateMutability": "nonpayable",
-            "superFunction": null,
-            "visibility": "public"
-          },
-          {
-            "body": null,
-            "documentation": "@dev Returns true for contracts that adhere to the ProductStore interface\n@return Boolean value identifying contract as implementing the ProductStore interface",
-            "id": 1377,
-            "implemented": false,
-            "isConstructor": false,
-            "isDeclaredConst": true,
-            "modifiers": [],
-            "name": "isProductStore",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 1373,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "1183:2:13"
-            },
-            "payable": false,
-            "returnParameters": {
-              "id": 1376,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 1375,
-                  "name": "",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 1377,
-                  "src": "1207:4:13",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_bool",
-                    "typeString": "bool"
-                  },
-                  "typeName": {
-                    "id": 1374,
-                    "name": "bool",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "1207:4:13",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_bool",
-                      "typeString": "bool"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "1206:6:13"
-            },
-            "scope": 1383,
-            "src": "1160:53:13",
-            "stateMutability": "pure",
-            "superFunction": null,
-            "visibility": "public"
-          },
-          {
-            "body": null,
-            "documentation": "@dev Returns the version of the ProductStore contract interface\n@return Version of the contract interface",
-            "id": 1382,
-            "implemented": false,
-            "isConstructor": false,
-            "isDeclaredConst": true,
-            "modifiers": [],
-            "name": "version",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 1378,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "1358:2:13"
-            },
-            "payable": false,
-            "returnParameters": {
-              "id": 1381,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 1380,
-                  "name": "",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 1382,
-                  "src": "1382:6:13",
+                  "src": "1382:6:19",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -593,10 +593,10 @@
                     "typeString": "uint16"
                   },
                   "typeName": {
-                    "id": 1379,
+                    "id": 1349,
                     "name": "uint16",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1382:6:13",
+                    "src": "1382:6:19",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint16",
                       "typeString": "uint16"
@@ -606,33 +606,33 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1381:8:13"
+              "src": "1381:8:19"
             },
-            "scope": 1383,
-            "src": "1342:48:13",
+            "scope": 1353,
+            "src": "1342:48:19",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 1384,
-        "src": "26:1369:13"
+        "scope": 1354,
+        "src": "26:1369:19"
       }
     ],
-    "src": "0:1395:13"
+    "src": "0:1395:19"
   },
   "legacyAST": {
     "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/store/IProductStore.sol",
     "exportedSymbols": {
       "IProductStore": [
-        1383
+        1353
       ]
     },
-    "id": 1384,
+    "id": 1354,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1342,
+        "id": 1312,
         "literals": [
           "solidity",
           "^",
@@ -640,7 +640,7 @@
           ".23"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:13"
+        "src": "0:24:19"
       },
       {
         "baseContracts": [],
@@ -648,9 +648,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 1383,
+        "id": 1353,
         "linearizedBaseContracts": [
-          1383
+          1353
         ],
         "name": "IProductStore",
         "nodeType": "ContractDefinition",
@@ -658,7 +658,7 @@
           {
             "body": null,
             "documentation": "@dev Returns the name of the store\n@return Name of the store",
-            "id": 1347,
+            "id": 1317,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -666,10 +666,365 @@
             "name": "name",
             "nodeType": "FunctionDefinition",
             "parameters": {
+              "id": 1313,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "147:2:19"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 1316,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1315,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1317,
+                  "src": "170:6:19",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1314,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "170:6:19",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "169:8:19"
+            },
+            "scope": 1353,
+            "src": "134:44:19",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": null,
+            "documentation": "@dev Returns the logo URI of the store\n@return Logo URI of the store",
+            "id": 1322,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "logoURI",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1318,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "286:2:19"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 1321,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1320,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1322,
+                  "src": "309:6:19",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1319,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "309:6:19",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "308:8:19"
+            },
+            "scope": 1353,
+            "src": "270:47:19",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": null,
+            "documentation": "@dev Returns the total number of products stored\n@return Total number of products stored",
+            "id": 1327,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "productCount",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1323,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "450:2:19"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 1326,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1325,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1327,
+                  "src": "473:4:19",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1324,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "473:4:19",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "472:6:19"
+            },
+            "scope": 1353,
+            "src": "429:50:19",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": null,
+            "documentation": "@dev Adds an product to storage if valid\n@param _name Name of the product\n@param _description Description of the product\n@param _imageURI Optional image URI\n@param _price Price for the product in wei\n@param _inventory Available inventory to be sold for the product\n@return Id of the stored product",
+            "id": 1342,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "addProduct",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1338,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1329,
+                  "name": "_name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1342,
+                  "src": "845:12:19",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1328,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "845:6:19",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1331,
+                  "name": "_description",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1342,
+                  "src": "863:19:19",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1330,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "863:6:19",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1333,
+                  "name": "_imageURI",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1342,
+                  "src": "888:16:19",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1332,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "888:6:19",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1335,
+                  "name": "_price",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1342,
+                  "src": "910:14:19",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint128",
+                    "typeString": "uint128"
+                  },
+                  "typeName": {
+                    "id": 1334,
+                    "name": "uint128",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "910:7:19",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint128",
+                      "typeString": "uint128"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1337,
+                  "name": "_inventory",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1342,
+                  "src": "930:18:19",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint128",
+                    "typeString": "uint128"
+                  },
+                  "typeName": {
+                    "id": 1336,
+                    "name": "uint128",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "930:7:19",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint128",
+                      "typeString": "uint128"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "839:113:19"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 1341,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1340,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1342,
+                  "src": "968:7:19",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint128",
+                    "typeString": "uint128"
+                  },
+                  "typeName": {
+                    "id": 1339,
+                    "name": "uint128",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "968:7:19",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint128",
+                      "typeString": "uint128"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "967:9:19"
+            },
+            "scope": 1353,
+            "src": "820:157:19",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": null,
+            "documentation": "@dev Returns true for contracts that adhere to the ProductStore interface\n@return Boolean value identifying contract as implementing the ProductStore interface",
+            "id": 1347,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "isProductStore",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
               "id": 1343,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "147:2:13"
+              "src": "1183:2:19"
             },
             "payable": false,
             "returnParameters": {
@@ -682,50 +1037,50 @@
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 1347,
-                  "src": "170:6:13",
+                  "src": "1207:4:19",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_string_memory_ptr",
-                    "typeString": "string"
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
                   },
                   "typeName": {
                     "id": 1344,
-                    "name": "string",
+                    "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "170:6:13",
+                    "src": "1207:4:19",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_string_storage_ptr",
-                      "typeString": "string"
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
                     }
                   },
                   "value": null,
                   "visibility": "internal"
                 }
               ],
-              "src": "169:8:13"
+              "src": "1206:6:19"
             },
-            "scope": 1383,
-            "src": "134:44:13",
-            "stateMutability": "view",
+            "scope": 1353,
+            "src": "1160:53:19",
+            "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": null,
-            "documentation": "@dev Returns the logo URI of the store\n@return Logo URI of the store",
+            "documentation": "@dev Returns the version of the ProductStore contract interface\n@return Version of the contract interface",
             "id": 1352,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
             "modifiers": [],
-            "name": "logoURI",
+            "name": "version",
             "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 1348,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "286:2:13"
+              "src": "1358:2:19"
             },
             "payable": false,
             "returnParameters": {
@@ -738,362 +1093,7 @@
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 1352,
-                  "src": "309:6:13",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_string_memory_ptr",
-                    "typeString": "string"
-                  },
-                  "typeName": {
-                    "id": 1349,
-                    "name": "string",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "309:6:13",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_string_storage_ptr",
-                      "typeString": "string"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "308:8:13"
-            },
-            "scope": 1383,
-            "src": "270:47:13",
-            "stateMutability": "view",
-            "superFunction": null,
-            "visibility": "public"
-          },
-          {
-            "body": null,
-            "documentation": "@dev Returns the total number of products stored\n@return Total number of products stored",
-            "id": 1357,
-            "implemented": false,
-            "isConstructor": false,
-            "isDeclaredConst": true,
-            "modifiers": [],
-            "name": "productCount",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 1353,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "450:2:13"
-            },
-            "payable": false,
-            "returnParameters": {
-              "id": 1356,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 1355,
-                  "name": "",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 1357,
-                  "src": "473:4:13",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
-                  },
-                  "typeName": {
-                    "id": 1354,
-                    "name": "uint",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "473:4:13",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "472:6:13"
-            },
-            "scope": 1383,
-            "src": "429:50:13",
-            "stateMutability": "view",
-            "superFunction": null,
-            "visibility": "public"
-          },
-          {
-            "body": null,
-            "documentation": "@dev Adds an product to storage if valid\n@param _name Name of the product\n@param _description Description of the product\n@param _imageURI Optional image URI\n@param _price Price for the product in wei\n@param _inventory Available inventory to be sold for the product\n@return Id of the stored product",
-            "id": 1372,
-            "implemented": false,
-            "isConstructor": false,
-            "isDeclaredConst": false,
-            "modifiers": [],
-            "name": "addProduct",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 1368,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 1359,
-                  "name": "_name",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 1372,
-                  "src": "845:12:13",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_string_memory_ptr",
-                    "typeString": "string"
-                  },
-                  "typeName": {
-                    "id": 1358,
-                    "name": "string",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "845:6:13",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_string_storage_ptr",
-                      "typeString": "string"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
-                  "id": 1361,
-                  "name": "_description",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 1372,
-                  "src": "863:19:13",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_string_memory_ptr",
-                    "typeString": "string"
-                  },
-                  "typeName": {
-                    "id": 1360,
-                    "name": "string",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "863:6:13",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_string_storage_ptr",
-                      "typeString": "string"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
-                  "id": 1363,
-                  "name": "_imageURI",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 1372,
-                  "src": "888:16:13",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_string_memory_ptr",
-                    "typeString": "string"
-                  },
-                  "typeName": {
-                    "id": 1362,
-                    "name": "string",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "888:6:13",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_string_storage_ptr",
-                      "typeString": "string"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
-                  "id": 1365,
-                  "name": "_price",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 1372,
-                  "src": "910:14:13",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint128",
-                    "typeString": "uint128"
-                  },
-                  "typeName": {
-                    "id": 1364,
-                    "name": "uint128",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "910:7:13",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint128",
-                      "typeString": "uint128"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
-                  "id": 1367,
-                  "name": "_inventory",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 1372,
-                  "src": "930:18:13",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint128",
-                    "typeString": "uint128"
-                  },
-                  "typeName": {
-                    "id": 1366,
-                    "name": "uint128",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "930:7:13",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint128",
-                      "typeString": "uint128"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "839:113:13"
-            },
-            "payable": false,
-            "returnParameters": {
-              "id": 1371,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 1370,
-                  "name": "",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 1372,
-                  "src": "968:7:13",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint128",
-                    "typeString": "uint128"
-                  },
-                  "typeName": {
-                    "id": 1369,
-                    "name": "uint128",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "968:7:13",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint128",
-                      "typeString": "uint128"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "967:9:13"
-            },
-            "scope": 1383,
-            "src": "820:157:13",
-            "stateMutability": "nonpayable",
-            "superFunction": null,
-            "visibility": "public"
-          },
-          {
-            "body": null,
-            "documentation": "@dev Returns true for contracts that adhere to the ProductStore interface\n@return Boolean value identifying contract as implementing the ProductStore interface",
-            "id": 1377,
-            "implemented": false,
-            "isConstructor": false,
-            "isDeclaredConst": true,
-            "modifiers": [],
-            "name": "isProductStore",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 1373,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "1183:2:13"
-            },
-            "payable": false,
-            "returnParameters": {
-              "id": 1376,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 1375,
-                  "name": "",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 1377,
-                  "src": "1207:4:13",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_bool",
-                    "typeString": "bool"
-                  },
-                  "typeName": {
-                    "id": 1374,
-                    "name": "bool",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "1207:4:13",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_bool",
-                      "typeString": "bool"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "1206:6:13"
-            },
-            "scope": 1383,
-            "src": "1160:53:13",
-            "stateMutability": "pure",
-            "superFunction": null,
-            "visibility": "public"
-          },
-          {
-            "body": null,
-            "documentation": "@dev Returns the version of the ProductStore contract interface\n@return Version of the contract interface",
-            "id": 1382,
-            "implemented": false,
-            "isConstructor": false,
-            "isDeclaredConst": true,
-            "modifiers": [],
-            "name": "version",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 1378,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "1358:2:13"
-            },
-            "payable": false,
-            "returnParameters": {
-              "id": 1381,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 1380,
-                  "name": "",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 1382,
-                  "src": "1382:6:13",
+                  "src": "1382:6:19",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1101,10 +1101,10 @@
                     "typeString": "uint16"
                   },
                   "typeName": {
-                    "id": 1379,
+                    "id": 1349,
                     "name": "uint16",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1382:6:13",
+                    "src": "1382:6:19",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint16",
                       "typeString": "uint16"
@@ -1114,20 +1114,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1381:8:13"
+              "src": "1381:8:19"
             },
-            "scope": 1383,
-            "src": "1342:48:13",
+            "scope": 1353,
+            "src": "1342:48:19",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 1384,
-        "src": "26:1369:13"
+        "scope": 1354,
+        "src": "26:1369:19"
       }
     ],
-    "src": "0:1395:13"
+    "src": "0:1395:19"
   },
   "compiler": {
     "name": "solc",
@@ -1135,5 +1135,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-08-27T19:49:44.171Z"
+  "updatedAt": "2018-08-27T20:20:56.404Z"
 }
