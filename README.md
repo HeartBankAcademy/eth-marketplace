@@ -21,6 +21,9 @@ This project implements an online marketplace that operates on the blockchain
 * Store owners can withdraw all collected store money to their private accounts
 * Reentrancy attacks are prevented in all value-transfering transactions
 
+[See design pattern decisions](design_pattern_decisions.md)
+[See avoiding common attacks](avoiding_common_attacks.md)
+
 ## User Interace
 
 ⚠️ The web user interface of the project is still a work in progress (unfortunately)
@@ -34,6 +37,7 @@ npm run dev
 ## Testing
 
 Project features a complete testing suite with 100% code coverage
+[See coverage reports here](https://mseijas.github.io/eth-marketplace/)
 
 To run test locally use the following command:
 
