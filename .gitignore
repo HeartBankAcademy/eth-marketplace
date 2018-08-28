@@ -6,7 +6,7 @@ build/app/**
 src/**/*.css
 
 # Coverage
-coverage/
+# coverage/
 coverageEnv/
 coverage.json
 allFiredEvents
