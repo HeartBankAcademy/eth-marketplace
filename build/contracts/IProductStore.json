@@ -117,14 +117,14 @@
     "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/store/IProductStore.sol",
     "exportedSymbols": {
       "IProductStore": [
-        1203
+        1369
       ]
     },
-    "id": 1204,
+    "id": 1370,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1162,
+        "id": 1328,
         "literals": [
           "solidity",
           "^",
@@ -132,7 +132,7 @@
           ".23"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:19"
+        "src": "0:24:15"
       },
       {
         "baseContracts": [],
@@ -140,9 +140,9 @@
         "contractKind": "contract",
         "documentation": "@title IProductStore\n@dev Interface all ProductStore contracts must implement to publically\n     verify it complies with the ProductStore contract interface",
         "fullyImplemented": false,
-        "id": 1203,
+        "id": 1369,
         "linearizedBaseContracts": [
-          1203
+          1369
         ],
         "name": "IProductStore",
         "nodeType": "ContractDefinition",
@@ -150,7 +150,7 @@
           {
             "body": null,
             "documentation": "@dev Returns the name of the store\n@return Name of the store",
-            "id": 1167,
+            "id": 1333,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -158,23 +158,23 @@
             "name": "name",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1163,
+              "id": 1329,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "317:2:19"
+              "src": "317:2:15"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1166,
+              "id": 1332,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1165,
+                  "id": 1331,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1167,
-                  "src": "340:6:19",
+                  "scope": 1333,
+                  "src": "340:6:15",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -182,10 +182,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 1164,
+                    "id": 1330,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "340:6:19",
+                    "src": "340:6:15",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -195,10 +195,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "339:8:19"
+              "src": "339:8:15"
             },
-            "scope": 1203,
-            "src": "304:44:19",
+            "scope": 1369,
+            "src": "304:44:15",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
@@ -206,7 +206,7 @@
           {
             "body": null,
             "documentation": "@dev Returns the logo URI of the store\n@return Logo URI of the store",
-            "id": 1172,
+            "id": 1338,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -214,23 +214,23 @@
             "name": "logoURI",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1168,
+              "id": 1334,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "456:2:19"
+              "src": "456:2:15"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1171,
+              "id": 1337,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1170,
+                  "id": 1336,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1172,
-                  "src": "479:6:19",
+                  "scope": 1338,
+                  "src": "479:6:15",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -238,10 +238,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 1169,
+                    "id": 1335,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "479:6:19",
+                    "src": "479:6:15",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -251,10 +251,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "478:8:19"
+              "src": "478:8:15"
             },
-            "scope": 1203,
-            "src": "440:47:19",
+            "scope": 1369,
+            "src": "440:47:15",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
@@ -262,7 +262,7 @@
           {
             "body": null,
             "documentation": "@dev Returns the total number of products stored\n@return Total number of products stored",
-            "id": 1177,
+            "id": 1343,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -270,23 +270,23 @@
             "name": "productCount",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1173,
+              "id": 1339,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "620:2:19"
+              "src": "620:2:15"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1176,
+              "id": 1342,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1175,
+                  "id": 1341,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1177,
-                  "src": "643:4:19",
+                  "scope": 1343,
+                  "src": "643:4:15",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -294,10 +294,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1174,
+                    "id": 1340,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "643:4:19",
+                    "src": "643:4:15",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -307,10 +307,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "642:6:19"
+              "src": "642:6:15"
             },
-            "scope": 1203,
-            "src": "599:50:19",
+            "scope": 1369,
+            "src": "599:50:15",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
@@ -318,7 +318,7 @@
           {
             "body": null,
             "documentation": "@dev Adds an product to storage if valid\n@param _name Name of the product\n@param _description Description of the product\n@param _imageURI Optional image URI\n@param _price Price for the product in wei\n@param _inventory Available inventory to be sold for the product\n@return Id of the stored product",
-            "id": 1192,
+            "id": 1358,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -326,16 +326,16 @@
             "name": "addProduct",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1188,
+              "id": 1354,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1179,
+                  "id": 1345,
                   "name": "_name",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1192,
-                  "src": "1015:12:19",
+                  "scope": 1358,
+                  "src": "1015:12:15",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -343,10 +343,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 1178,
+                    "id": 1344,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1015:6:19",
+                    "src": "1015:6:15",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -357,11 +357,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 1181,
+                  "id": 1347,
                   "name": "_description",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1192,
-                  "src": "1033:19:19",
+                  "scope": 1358,
+                  "src": "1033:19:15",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -369,10 +369,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 1180,
+                    "id": 1346,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1033:6:19",
+                    "src": "1033:6:15",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -383,11 +383,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 1183,
+                  "id": 1349,
                   "name": "_imageURI",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1192,
-                  "src": "1058:16:19",
+                  "scope": 1358,
+                  "src": "1058:16:15",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -395,10 +395,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 1182,
+                    "id": 1348,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1058:6:19",
+                    "src": "1058:6:15",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -409,11 +409,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 1185,
+                  "id": 1351,
                   "name": "_price",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1192,
-                  "src": "1080:14:19",
+                  "scope": 1358,
+                  "src": "1080:14:15",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -421,10 +421,10 @@
                     "typeString": "uint128"
                   },
                   "typeName": {
-                    "id": 1184,
+                    "id": 1350,
                     "name": "uint128",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1080:7:19",
+                    "src": "1080:7:15",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint128",
                       "typeString": "uint128"
@@ -435,11 +435,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 1187,
+                  "id": 1353,
                   "name": "_inventory",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1192,
-                  "src": "1100:18:19",
+                  "scope": 1358,
+                  "src": "1100:18:15",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -447,10 +447,10 @@
                     "typeString": "uint128"
                   },
                   "typeName": {
-                    "id": 1186,
+                    "id": 1352,
                     "name": "uint128",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1100:7:19",
+                    "src": "1100:7:15",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint128",
                       "typeString": "uint128"
@@ -460,20 +460,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1009:113:19"
+              "src": "1009:113:15"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1191,
+              "id": 1357,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1190,
+                  "id": 1356,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1192,
-                  "src": "1138:7:19",
+                  "scope": 1358,
+                  "src": "1138:7:15",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -481,10 +481,10 @@
                     "typeString": "uint128"
                   },
                   "typeName": {
-                    "id": 1189,
+                    "id": 1355,
                     "name": "uint128",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1138:7:19",
+                    "src": "1138:7:15",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint128",
                       "typeString": "uint128"
@@ -494,10 +494,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1137:9:19"
+              "src": "1137:9:15"
             },
-            "scope": 1203,
-            "src": "990:157:19",
+            "scope": 1369,
+            "src": "990:157:15",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
@@ -505,7 +505,7 @@
           {
             "body": null,
             "documentation": "@dev Returns true for contracts that adhere to the ProductStore interface\n@return Boolean value identifying contract as implementing the ProductStore interface",
-            "id": 1197,
+            "id": 1363,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -513,23 +513,23 @@
             "name": "isProductStore",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1193,
+              "id": 1359,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1353:2:19"
+              "src": "1353:2:15"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1196,
+              "id": 1362,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1195,
+                  "id": 1361,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1197,
-                  "src": "1377:4:19",
+                  "scope": 1363,
+                  "src": "1377:4:15",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -537,10 +537,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 1194,
+                    "id": 1360,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1377:4:19",
+                    "src": "1377:4:15",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -550,10 +550,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1376:6:19"
+              "src": "1376:6:15"
             },
-            "scope": 1203,
-            "src": "1330:53:19",
+            "scope": 1369,
+            "src": "1330:53:15",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
@@ -561,7 +561,7 @@
           {
             "body": null,
             "documentation": "@dev Returns the version of the ProductStore contract interface\n@return Version of the contract interface",
-            "id": 1202,
+            "id": 1368,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -569,23 +569,23 @@
             "name": "version",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1198,
+              "id": 1364,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1528:2:19"
+              "src": "1528:2:15"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1201,
+              "id": 1367,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1200,
+                  "id": 1366,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1202,
-                  "src": "1552:6:19",
+                  "scope": 1368,
+                  "src": "1552:6:15",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -593,10 +593,10 @@
                     "typeString": "uint16"
                   },
                   "typeName": {
-                    "id": 1199,
+                    "id": 1365,
                     "name": "uint16",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1552:6:19",
+                    "src": "1552:6:15",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint16",
                       "typeString": "uint16"
@@ -606,33 +606,33 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1551:8:19"
+              "src": "1551:8:15"
             },
-            "scope": 1203,
-            "src": "1512:48:19",
+            "scope": 1369,
+            "src": "1512:48:15",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 1204,
-        "src": "196:1369:19"
+        "scope": 1370,
+        "src": "196:1369:15"
       }
     ],
-    "src": "0:1565:19"
+    "src": "0:1565:15"
   },
   "legacyAST": {
     "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/store/IProductStore.sol",
     "exportedSymbols": {
       "IProductStore": [
-        1203
+        1369
       ]
     },
-    "id": 1204,
+    "id": 1370,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1162,
+        "id": 1328,
         "literals": [
           "solidity",
           "^",
@@ -640,7 +640,7 @@
           ".23"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:19"
+        "src": "0:24:15"
       },
       {
         "baseContracts": [],
@@ -648,9 +648,9 @@
         "contractKind": "contract",
         "documentation": "@title IProductStore\n@dev Interface all ProductStore contracts must implement to publically\n     verify it complies with the ProductStore contract interface",
         "fullyImplemented": false,
-        "id": 1203,
+        "id": 1369,
         "linearizedBaseContracts": [
-          1203
+          1369
         ],
         "name": "IProductStore",
         "nodeType": "ContractDefinition",
@@ -658,7 +658,7 @@
           {
             "body": null,
             "documentation": "@dev Returns the name of the store\n@return Name of the store",
-            "id": 1167,
+            "id": 1333,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -666,23 +666,23 @@
             "name": "name",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1163,
+              "id": 1329,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "317:2:19"
+              "src": "317:2:15"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1166,
+              "id": 1332,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1165,
+                  "id": 1331,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1167,
-                  "src": "340:6:19",
+                  "scope": 1333,
+                  "src": "340:6:15",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -690,10 +690,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 1164,
+                    "id": 1330,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "340:6:19",
+                    "src": "340:6:15",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -703,10 +703,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "339:8:19"
+              "src": "339:8:15"
             },
-            "scope": 1203,
-            "src": "304:44:19",
+            "scope": 1369,
+            "src": "304:44:15",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
@@ -714,7 +714,7 @@
           {
             "body": null,
             "documentation": "@dev Returns the logo URI of the store\n@return Logo URI of the store",
-            "id": 1172,
+            "id": 1338,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -722,23 +722,23 @@
             "name": "logoURI",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1168,
+              "id": 1334,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "456:2:19"
+              "src": "456:2:15"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1171,
+              "id": 1337,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1170,
+                  "id": 1336,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1172,
-                  "src": "479:6:19",
+                  "scope": 1338,
+                  "src": "479:6:15",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -746,10 +746,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 1169,
+                    "id": 1335,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "479:6:19",
+                    "src": "479:6:15",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -759,10 +759,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "478:8:19"
+              "src": "478:8:15"
             },
-            "scope": 1203,
-            "src": "440:47:19",
+            "scope": 1369,
+            "src": "440:47:15",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
@@ -770,7 +770,7 @@
           {
             "body": null,
             "documentation": "@dev Returns the total number of products stored\n@return Total number of products stored",
-            "id": 1177,
+            "id": 1343,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -778,23 +778,23 @@
             "name": "productCount",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1173,
+              "id": 1339,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "620:2:19"
+              "src": "620:2:15"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1176,
+              "id": 1342,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1175,
+                  "id": 1341,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1177,
-                  "src": "643:4:19",
+                  "scope": 1343,
+                  "src": "643:4:15",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -802,10 +802,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1174,
+                    "id": 1340,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "643:4:19",
+                    "src": "643:4:15",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -815,10 +815,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "642:6:19"
+              "src": "642:6:15"
             },
-            "scope": 1203,
-            "src": "599:50:19",
+            "scope": 1369,
+            "src": "599:50:15",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
@@ -826,7 +826,7 @@
           {
             "body": null,
             "documentation": "@dev Adds an product to storage if valid\n@param _name Name of the product\n@param _description Description of the product\n@param _imageURI Optional image URI\n@param _price Price for the product in wei\n@param _inventory Available inventory to be sold for the product\n@return Id of the stored product",
-            "id": 1192,
+            "id": 1358,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -834,16 +834,16 @@
             "name": "addProduct",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1188,
+              "id": 1354,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1179,
+                  "id": 1345,
                   "name": "_name",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1192,
-                  "src": "1015:12:19",
+                  "scope": 1358,
+                  "src": "1015:12:15",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -851,10 +851,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 1178,
+                    "id": 1344,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1015:6:19",
+                    "src": "1015:6:15",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -865,11 +865,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 1181,
+                  "id": 1347,
                   "name": "_description",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1192,
-                  "src": "1033:19:19",
+                  "scope": 1358,
+                  "src": "1033:19:15",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -877,10 +877,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 1180,
+                    "id": 1346,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1033:6:19",
+                    "src": "1033:6:15",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -891,11 +891,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 1183,
+                  "id": 1349,
                   "name": "_imageURI",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1192,
-                  "src": "1058:16:19",
+                  "scope": 1358,
+                  "src": "1058:16:15",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -903,10 +903,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 1182,
+                    "id": 1348,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1058:6:19",
+                    "src": "1058:6:15",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -917,11 +917,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 1185,
+                  "id": 1351,
                   "name": "_price",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1192,
-                  "src": "1080:14:19",
+                  "scope": 1358,
+                  "src": "1080:14:15",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -929,10 +929,10 @@
                     "typeString": "uint128"
                   },
                   "typeName": {
-                    "id": 1184,
+                    "id": 1350,
                     "name": "uint128",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1080:7:19",
+                    "src": "1080:7:15",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint128",
                       "typeString": "uint128"
@@ -943,11 +943,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 1187,
+                  "id": 1353,
                   "name": "_inventory",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1192,
-                  "src": "1100:18:19",
+                  "scope": 1358,
+                  "src": "1100:18:15",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -955,10 +955,10 @@
                     "typeString": "uint128"
                   },
                   "typeName": {
-                    "id": 1186,
+                    "id": 1352,
                     "name": "uint128",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1100:7:19",
+                    "src": "1100:7:15",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint128",
                       "typeString": "uint128"
@@ -968,20 +968,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1009:113:19"
+              "src": "1009:113:15"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1191,
+              "id": 1357,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1190,
+                  "id": 1356,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1192,
-                  "src": "1138:7:19",
+                  "scope": 1358,
+                  "src": "1138:7:15",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -989,10 +989,10 @@
                     "typeString": "uint128"
                   },
                   "typeName": {
-                    "id": 1189,
+                    "id": 1355,
                     "name": "uint128",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1138:7:19",
+                    "src": "1138:7:15",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint128",
                       "typeString": "uint128"
@@ -1002,10 +1002,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1137:9:19"
+              "src": "1137:9:15"
             },
-            "scope": 1203,
-            "src": "990:157:19",
+            "scope": 1369,
+            "src": "990:157:15",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
@@ -1013,7 +1013,7 @@
           {
             "body": null,
             "documentation": "@dev Returns true for contracts that adhere to the ProductStore interface\n@return Boolean value identifying contract as implementing the ProductStore interface",
-            "id": 1197,
+            "id": 1363,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1021,23 +1021,23 @@
             "name": "isProductStore",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1193,
+              "id": 1359,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1353:2:19"
+              "src": "1353:2:15"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1196,
+              "id": 1362,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1195,
+                  "id": 1361,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1197,
-                  "src": "1377:4:19",
+                  "scope": 1363,
+                  "src": "1377:4:15",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1045,10 +1045,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 1194,
+                    "id": 1360,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1377:4:19",
+                    "src": "1377:4:15",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -1058,10 +1058,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1376:6:19"
+              "src": "1376:6:15"
             },
-            "scope": 1203,
-            "src": "1330:53:19",
+            "scope": 1369,
+            "src": "1330:53:15",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
@@ -1069,7 +1069,7 @@
           {
             "body": null,
             "documentation": "@dev Returns the version of the ProductStore contract interface\n@return Version of the contract interface",
-            "id": 1202,
+            "id": 1368,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1077,23 +1077,23 @@
             "name": "version",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1198,
+              "id": 1364,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1528:2:19"
+              "src": "1528:2:15"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1201,
+              "id": 1367,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1200,
+                  "id": 1366,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1202,
-                  "src": "1552:6:19",
+                  "scope": 1368,
+                  "src": "1552:6:15",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1101,10 +1101,10 @@
                     "typeString": "uint16"
                   },
                   "typeName": {
-                    "id": 1199,
+                    "id": 1365,
                     "name": "uint16",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1552:6:19",
+                    "src": "1552:6:15",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint16",
                       "typeString": "uint16"
@@ -1114,20 +1114,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1551:8:19"
+              "src": "1551:8:15"
             },
-            "scope": 1203,
-            "src": "1512:48:19",
+            "scope": 1369,
+            "src": "1512:48:15",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 1204,
-        "src": "196:1369:19"
+        "scope": 1370,
+        "src": "196:1369:15"
       }
     ],
-    "src": "0:1565:19"
+    "src": "0:1565:15"
   },
   "compiler": {
     "name": "solc",
@@ -1135,5 +1135,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-08-28T01:44:43.794Z"
+  "updatedAt": "2018-08-28T01:52:21.064Z"
 }
