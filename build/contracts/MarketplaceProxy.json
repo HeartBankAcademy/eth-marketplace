@@ -1,0 +1,1099 @@
+{
+  "contractName": "MarketplaceProxy",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "unpause",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "implementation",
+      "outputs": [
+        {
+          "name": "_implementation",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "isProxy",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "pause",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_newAddress",
+          "type": "address"
+        }
+      ],
+      "name": "updateACL",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "isPaused",
+      "outputs": [
+        {
+          "name": "_isPaused",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "isUpgradeable",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "acl",
+      "outputs": [
+        {
+          "name": "_acl",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "name": "_aclAddress",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "fallback"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "_implementation",
+          "type": "address"
+        }
+      ],
+      "name": "Upgraded",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [],
+      "name": "Paused",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [],
+      "name": "Unpaused",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "_oldAddress",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "_newAddress",
+          "type": "address"
+        }
+      ],
+      "name": "ACLUpdated",
+      "type": "event"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_newImplementation",
+          "type": "address"
+        }
+      ],
+      "name": "upgradeTo",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b506040516020806112c1833981018060405281019080805190602001909291905050508080808080610050816100b6640100000000026401000000009004565b8073ffffffffffffffffffffffffffffffffffffffff16600073ffffffffffffffffffffffffffffffffffffffff167fd9c4a08818b5e0b58c0856ec8285d83c51f0654438a200ef0f9e0e968f583ca960405160405180910390a35050505050506102f9565b60006100d4826102e664010000000002610f7a176401000000009004565b151561016e576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260218152602001807f4e65772041434c2061646472657373206973206e6f74206120636f6e7472616381526020017f740000000000000000000000000000000000000000000000000000000000000081525060400191505060405180910390fd5b8173ffffffffffffffffffffffffffffffffffffffff1663a8218cd36040518163ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401602060405180830381600087803b1580156101d257600080fd5b505af11580156101e6573d6000803e3d6000fd5b505050506040513d60208110156101fc57600080fd5b810190808051906020019092919050505015156102a7576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260328152602001807f4e65772041434c206164647265737320646f6573206e6f7420636f6e666f726d81526020017f20746f204941434c20696e74657266616365000000000000000000000000000081525060400191505060405180910390fd5b60405180807f636f6d2e6d61726b6574706c6163652e61636c726571756972696e672e61636c8152506020019050604051809103902090508181555050565b600080823b905060008111915050919050565b610fb9806103086000396000f300608060405260043610610099576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680633659cfe61461018a5780633f4ba83a146101cd5780635c60da1b146101e457806364da4e6f1461023b5780638456cb591461026a57806387a7066b14610281578063b187bd26146102c4578063daa3a163146102f3578063de28735914610322575b60008015156100a6610379565b15151415156100b457600080fd5b6100bc6103e2565b9050600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff1614151515610163576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601e8152602001807f496d706c656d656e746174696f6e2061646472657373206e6f7420736574000081525060200191505060405180910390fd5b60405136600082376000803683855af43d806000843e8160008114610186578184f35b8184fd5b34801561019657600080fd5b506101cb600480360381019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061044b565b005b3480156101d957600080fd5b506101e26105ef565b005b3480156101f057600080fd5b506101f96103e2565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561024757600080fd5b50610250610728565b604051808215151515815260200191505060405180910390f35b34801561027657600080fd5b5061027f610731565b005b34801561028d57600080fd5b506102c2600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610871565b005b3480156102d057600080fd5b506102d9610379565b604051808215151515815260200191505060405180910390f35b3480156102ff57600080fd5b50610308610a48565b604051808215151515815260200191505060405180910390f35b34801561032e57600080fd5b50610337610a51565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b60008060405180807f636f6d2e6d61726b6574706c6163652e7061757361626c652e6973706175736581526020017f6400000000000000000000000000000000000000000000000000000000000000815250602101905060405180910390209050805491505090565b60008060405180807f636f6d2e6d61726b6574706c6163652e70726f78792e696d706c656d656e746181526020017f74696f6e00000000000000000000000000000000000000000000000000000000815250602401905060405180910390209050805491505090565b6000610455610a51565b90508073ffffffffffffffffffffffffffffffffffffffff1663bb6a4520336040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050602060405180830381600087803b1580156104f257600080fd5b505af1158015610506573d6000803e3d6000fd5b505050506040513d602081101561051c57600080fd5b8101908080519060200190929190505050151561053857600080fd5b8173ffffffffffffffffffffffffffffffffffffffff1663f4b86c486040518163ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401602060405180830381600087803b15801561059c57600080fd5b505af11580156105b0573d6000803e3d6000fd5b505050506040513d60208110156105c657600080fd5b810190808051906020019092919050505015156105e257600080fd5b6105eb82610a94565b5050565b60006105f9610a51565b90508073ffffffffffffffffffffffffffffffffffffffff1663bb6a4520336040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050602060405180830381600087803b15801561069657600080fd5b505af11580156106aa573d6000803e3d6000fd5b505050506040513d60208110156106c057600080fd5b810190808051906020019092919050505015156106dc57600080fd5b6106e4610379565b15156106ef57600080fd5b6106f96000610bd3565b7fa45f47fdea8a1efdd9029a5691c7f759c32b7c698632b563573e155625d1693360405160405180910390a150565b60006001905090565b600061073b610a51565b90508073ffffffffffffffffffffffffffffffffffffffff1663bb6a4520336040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050602060405180830381600087803b1580156107d857600080fd5b505af11580156107ec573d6000803e3d6000fd5b505050506040513d602081101561080257600080fd5b8101908080519060200190929190505050151561081e57600080fd5b6000151561082a610379565b151514151561083857600080fd5b6108426001610bd3565b7f9e87fac88ff661f02d44f95383c817fece4bce600a3dab7a54406878b965e75260405160405180910390a150565b60008061087c610a51565b90508073ffffffffffffffffffffffffffffffffffffffff1663bb6a4520336040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050602060405180830381600087803b15801561091957600080fd5b505af115801561092d573d6000803e3d6000fd5b505050506040513d602081101561094357600080fd5b8101908080519060200190929190505050151561095f57600080fd5b600073ffffffffffffffffffffffffffffffffffffffff168373ffffffffffffffffffffffffffffffffffffffff161415151561099b57600080fd5b6109a3610a51565b91508173ffffffffffffffffffffffffffffffffffffffff168373ffffffffffffffffffffffffffffffffffffffff16141515156109e057600080fd5b6109e983610c3a565b8273ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff167fd9c4a08818b5e0b58c0856ec8285d83c51f0654438a200ef0f9e0e968f583ca960405160405180910390a3505050565b60006001905090565b60008060405180807f636f6d2e6d61726b6574706c6163652e61636c726571756972696e672e61636c815250602001905060405180910390209050805491505090565b6000801515610aa1610379565b1515141515610aaf57600080fd5b610ab76103e2565b90508173ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff1614151515610b83576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260398152602001807f4e657720696d706c656d656e746174696f6e206164647265737320697320746881526020017f652073616d652061732063757272656e7420616464726573730000000000000081525060400191505060405180910390fd5b610b8c82610e57565b8173ffffffffffffffffffffffffffffffffffffffff167fbc7cd75a20ee27fd9adebab32041f755214dbc6bffa90cc0225b39da2e5c2d3b60405160405180910390a25050565b600060405180807f636f6d2e6d61726b6574706c6163652e7061757361626c652e6973706175736581526020017f64000000000000000000000000000000000000000000000000000000000000008152506021019050604051809103902090508181555050565b6000610c4582610f7a565b1515610cdf576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260218152602001807f4e65772041434c2061646472657373206973206e6f74206120636f6e7472616381526020017f740000000000000000000000000000000000000000000000000000000000000081525060400191505060405180910390fd5b8173ffffffffffffffffffffffffffffffffffffffff1663a8218cd36040518163ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401602060405180830381600087803b158015610d4357600080fd5b505af1158015610d57573d6000803e3d6000fd5b505050506040513d6020811015610d6d57600080fd5b81019080805190602001909291905050501515610e18576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260328152602001807f4e65772041434c206164647265737320646f6573206e6f7420636f6e666f726d81526020017f20746f204941434c20696e74657266616365000000000000000000000000000081525060400191505060405180910390fd5b60405180807f636f6d2e6d61726b6574706c6163652e61636c726571756972696e672e61636c8152506020019050604051809103902090508181555050565b6000801515610e64610379565b1515141515610e7257600080fd5b610e7b82610f7a565b1515610f15576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252602c8152602001807f4e657720696d706c656d656e746174696f6e2061646472657373206973206e6f81526020017f74206120636f6e7472616374000000000000000000000000000000000000000081525060400191505060405180910390fd5b60405180807f636f6d2e6d61726b6574706c6163652e70726f78792e696d706c656d656e746181526020017f74696f6e000000000000000000000000000000000000000000000000000000008152506024019050604051809103902090508181555050565b600080823b9050600081119150509190505600a165627a7a72305820792b536df0c5cfb14ce189b8befa7f73ec16ba844b99d82838459401982206020029",
+  "deployedBytecode": "0x608060405260043610610099576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680633659cfe61461018a5780633f4ba83a146101cd5780635c60da1b146101e457806364da4e6f1461023b5780638456cb591461026a57806387a7066b14610281578063b187bd26146102c4578063daa3a163146102f3578063de28735914610322575b60008015156100a6610379565b15151415156100b457600080fd5b6100bc6103e2565b9050600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff1614151515610163576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601e8152602001807f496d706c656d656e746174696f6e2061646472657373206e6f7420736574000081525060200191505060405180910390fd5b60405136600082376000803683855af43d806000843e8160008114610186578184f35b8184fd5b34801561019657600080fd5b506101cb600480360381019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061044b565b005b3480156101d957600080fd5b506101e26105ef565b005b3480156101f057600080fd5b506101f96103e2565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561024757600080fd5b50610250610728565b604051808215151515815260200191505060405180910390f35b34801561027657600080fd5b5061027f610731565b005b34801561028d57600080fd5b506102c2600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610871565b005b3480156102d057600080fd5b506102d9610379565b604051808215151515815260200191505060405180910390f35b3480156102ff57600080fd5b50610308610a48565b604051808215151515815260200191505060405180910390f35b34801561032e57600080fd5b50610337610a51565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b60008060405180807f636f6d2e6d61726b6574706c6163652e7061757361626c652e6973706175736581526020017f6400000000000000000000000000000000000000000000000000000000000000815250602101905060405180910390209050805491505090565b60008060405180807f636f6d2e6d61726b6574706c6163652e70726f78792e696d706c656d656e746181526020017f74696f6e00000000000000000000000000000000000000000000000000000000815250602401905060405180910390209050805491505090565b6000610455610a51565b90508073ffffffffffffffffffffffffffffffffffffffff1663bb6a4520336040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050602060405180830381600087803b1580156104f257600080fd5b505af1158015610506573d6000803e3d6000fd5b505050506040513d602081101561051c57600080fd5b8101908080519060200190929190505050151561053857600080fd5b8173ffffffffffffffffffffffffffffffffffffffff1663f4b86c486040518163ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401602060405180830381600087803b15801561059c57600080fd5b505af11580156105b0573d6000803e3d6000fd5b505050506040513d60208110156105c657600080fd5b810190808051906020019092919050505015156105e257600080fd5b6105eb82610a94565b5050565b60006105f9610a51565b90508073ffffffffffffffffffffffffffffffffffffffff1663bb6a4520336040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050602060405180830381600087803b15801561069657600080fd5b505af11580156106aa573d6000803e3d6000fd5b505050506040513d60208110156106c057600080fd5b810190808051906020019092919050505015156106dc57600080fd5b6106e4610379565b15156106ef57600080fd5b6106f96000610bd3565b7fa45f47fdea8a1efdd9029a5691c7f759c32b7c698632b563573e155625d1693360405160405180910390a150565b60006001905090565b600061073b610a51565b90508073ffffffffffffffffffffffffffffffffffffffff1663bb6a4520336040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050602060405180830381600087803b1580156107d857600080fd5b505af11580156107ec573d6000803e3d6000fd5b505050506040513d602081101561080257600080fd5b8101908080519060200190929190505050151561081e57600080fd5b6000151561082a610379565b151514151561083857600080fd5b6108426001610bd3565b7f9e87fac88ff661f02d44f95383c817fece4bce600a3dab7a54406878b965e75260405160405180910390a150565b60008061087c610a51565b90508073ffffffffffffffffffffffffffffffffffffffff1663bb6a4520336040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050602060405180830381600087803b15801561091957600080fd5b505af115801561092d573d6000803e3d6000fd5b505050506040513d602081101561094357600080fd5b8101908080519060200190929190505050151561095f57600080fd5b600073ffffffffffffffffffffffffffffffffffffffff168373ffffffffffffffffffffffffffffffffffffffff161415151561099b57600080fd5b6109a3610a51565b91508173ffffffffffffffffffffffffffffffffffffffff168373ffffffffffffffffffffffffffffffffffffffff16141515156109e057600080fd5b6109e983610c3a565b8273ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff167fd9c4a08818b5e0b58c0856ec8285d83c51f0654438a200ef0f9e0e968f583ca960405160405180910390a3505050565b60006001905090565b60008060405180807f636f6d2e6d61726b6574706c6163652e61636c726571756972696e672e61636c815250602001905060405180910390209050805491505090565b6000801515610aa1610379565b1515141515610aaf57600080fd5b610ab76103e2565b90508173ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff1614151515610b83576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260398152602001807f4e657720696d706c656d656e746174696f6e206164647265737320697320746881526020017f652073616d652061732063757272656e7420616464726573730000000000000081525060400191505060405180910390fd5b610b8c82610e57565b8173ffffffffffffffffffffffffffffffffffffffff167fbc7cd75a20ee27fd9adebab32041f755214dbc6bffa90cc0225b39da2e5c2d3b60405160405180910390a25050565b600060405180807f636f6d2e6d61726b6574706c6163652e7061757361626c652e6973706175736581526020017f64000000000000000000000000000000000000000000000000000000000000008152506021019050604051809103902090508181555050565b6000610c4582610f7a565b1515610cdf576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260218152602001807f4e65772041434c2061646472657373206973206e6f74206120636f6e7472616381526020017f740000000000000000000000000000000000000000000000000000000000000081525060400191505060405180910390fd5b8173ffffffffffffffffffffffffffffffffffffffff1663a8218cd36040518163ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401602060405180830381600087803b158015610d4357600080fd5b505af1158015610d57573d6000803e3d6000fd5b505050506040513d6020811015610d6d57600080fd5b81019080805190602001909291905050501515610e18576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260328152602001807f4e65772041434c206164647265737320646f6573206e6f7420636f6e666f726d81526020017f20746f204941434c20696e74657266616365000000000000000000000000000081525060400191505060405180910390fd5b60405180807f636f6d2e6d61726b6574706c6163652e61636c726571756972696e672e61636c8152506020019050604051809103902090508181555050565b6000801515610e64610379565b1515141515610e7257600080fd5b610e7b82610f7a565b1515610f15576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252602c8152602001807f4e657720696d706c656d656e746174696f6e2061646472657373206973206e6f81526020017f74206120636f6e7472616374000000000000000000000000000000000000000081525060400191505060405180910390fd5b60405180807f636f6d2e6d61726b6574706c6163652e70726f78792e696d706c656d656e746181526020017f74696f6e000000000000000000000000000000000000000000000000000000008152506024019050604051809103902090508181555050565b600080823b9050600081119150509190505600a165627a7a72305820792b536df0c5cfb14ce189b8befa7f73ec16ba844b99d82838459401982206020029",
+  "sourceMap": "185:632:5:-;;;359:76;8:9:-1;5:2;;;30:1;27;20:12;5:2;359:76:5;;;;;;;;;;;;;;;;;;;;;;;;;;;;;412:11;440::12;1194::16;452::15;1186::3;1035:19:0;1042:11;1035:6;;;:19;;;:::i;:::-;1088:11;1065:35;;1084:1;1065:35;;;;;;;;;;;;989:116;1140:69:3;410:65:15;1147:70:16;382:81:12;359:76:5;185:632;;1954:315:0;2176:16;2009:32;2033:7;2009:23;;;;;:32;;;:::i;:::-;2001:78;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2098:7;2093:19;;;:21;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;2093:21:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;2093:21:0;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;2093:21:0;;;;;;;;;;;;;;;;2085:84;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;851:45;;;;;;;;;;;;;;;;;;;2176:35;;2251:7;2241:8;2234:25;2226:39;;:::o;438:578:2:-;496:4;508:12;983:5;971:18;963:26;;1010:1;1003:4;:8;996:15;;438:578;;;;:::o;185:632:5:-;;;;;;;",
+  "deployedSourceMap": "185:632:5:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;948:23:15;1364:5:3;1350:19;;:10;:8;:10::i;:::-;:19;;;1342:28;;;;;;;;974:16:15;:14;:16::i;:::-;948:42;;1031:1;1004:29;;:15;:29;;;;996:72;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1109:4;1103:11;1142:12;1139:1;1134:3;1121:34;1233:1;1230;1216:12;1211:3;1194:15;1189:3;1176:59;1254:14;1298:4;1295:1;1290:3;1275:28;1318:6;1336:1;1331:28;;;;1388:4;1383:3;1376:17;1331:28;1352:4;1347:3;1340:17;639:175:5;;8:9:-1;5:2;;;30:1;27;20:12;5:2;639:175:5;;;;;;;;;;;;;;;;;;;;;;;;;;;;2304:104:3;;8:9:-1;5:2;;;30:1;27;20:12;5:2;2304:104:3;;;;;;1357:191:16;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1357:191:16;;;;;;;;;;;;;;;;;;;;;;;;;;;1542:68:15;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1542:68:15;;;;;;;;;;;;;;;;;;;;;;;;;;;2146:102:3;;8:9:-1;5:2;;;30:1;27;20:12;5:2;2146:102:3;;;;;;2391:252:0;;8:9:-1;5:2;;;30:1;27;20:12;5:2;2391:252:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;1665:163:3;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1665:163:3;;;;;;;;;;;;;;;;;;;;;;;;;;;2890:74:16;;8:9:-1;5:2;;;30:1;27;20:12;5:2;2890:74:16;;;;;;;;;;;;;;;;;;;;;;;;;;;1578:147:0;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1578:147:0;;;;;;;;;;;;;;;;;;;;;;;;;;;1665:163:3;1705:14;1727:16;759:46;;;;;;;;;;;;;;;;;;;;;;;;1727:40;;1809:8;1803:15;1790:28;;1782:42;;:::o;1357:191:16:-;1404:23;1435:16;1052:49;;;;;;;;;;;;;;;;;;;;;;;;1435:46;;1529:8;1523:15;1504:34;;1496:48;;:::o;639:175:5:-;1206:9:0;1223:5;:3;:5::i;:::-;1206:23;;1243:4;:19;;;1263:10;1243:31;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1243:31:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1243:31:0;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1243:31:0;;;;;;;;;;;;;;;;1235:40;;;;;;;;737:18:5;724:46;;;:48;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;724:48:5;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;724:48:5;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;724:48:5;;;;;;;;;;;;;;;;716:57;;;;;;;;779:30;790:18;779:10;:30::i;:::-;639:175;;:::o;2304:104:3:-;1206:9:0;1223:5;:3;:5::i;:::-;1206:23;;1243:4;:19;;;1263:10;1243:31;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1243:31:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1243:31:0;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1243:31:0;;;;;;;;;;;;;;;;1235:40;;;;;;;;1518:10:3;:8;:10::i;:::-;1510:19;;;;;;;;2364:18;2376:5;2364:11;:18::i;:::-;2393:10;;;;;;;;;;2304:104;:::o;1542:68:15:-;1582:4;1601;1594:11;;1542:68;:::o;2146:102:3:-;1206:9:0;1223:5;:3;:5::i;:::-;1206:23;;1243:4;:19;;;1263:10;1243:31;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1243:31:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1243:31:0;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1243:31:0;;;;;;;;;;;;;;;;1235:40;;;;;;;;1364:5:3;1350:19;;:10;:8;:10::i;:::-;:19;;;1342:28;;;;;;;;2207:17;2219:4;2207:11;:17::i;:::-;2235:8;;;;;;;;;;2146:102;:::o;2391:252:0:-;2501:18;1206:9;1223:5;:3;:5::i;:::-;1206:23;;1243:4;:19;;;1263:10;1243:31;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1243:31:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1243:31:0;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1243:31:0;;;;;;;;;;;;;;;;1235:40;;;;;;;;2492:1;2469:25;;:11;:25;;;;2461:34;;;;;;;;2522:5;:3;:5::i;:::-;2501:26;;2556:10;2541:25;;:11;:25;;;;2533:34;;;;;;;;2573:19;2580:11;2573:6;:19::i;:::-;2626:11;2603:35;;2614:10;2603:35;;;;;;;;;;;;2391:252;;;:::o;2890:74:16:-;2936:4;2955;2948:11;;2890:74;:::o;1578:147:0:-;1614:12;1634:16;851:45;;;;;;;;;;;;;;;;;;;1634:35;;1706:8;1700:15;1692:23;;1684:37;;:::o;2137:331:16:-;2214:29;1364:5:3;1350:19;;:10;:8;:10::i;:::-;:19;;;1342:28;;;;;;;;2246:16:16;:14;:16::i;:::-;2214:48;;2301:18;2276:43;;:21;:43;;;;2268:113;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2387:37;2405:18;2387:17;:37::i;:::-;2444:18;2435:28;;;;;;;;;;;;2137:331;;:::o;1941:151:3:-;1992:16;759:46;;;;;;;;;;;;;;;;;;;;;;;;1992:40;;2072:9;2062:8;2055:27;2047:41;;:::o;1954:315:0:-;2176:16;2009:32;2033:7;2009:23;:32::i;:::-;2001:78;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2098:7;2093:19;;;:21;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;2093:21:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;2093:21:0;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;2093:21:0;;;;;;;;;;;;;;;;2085:84;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;851:45;;;;;;;;;;;;;;;;;;;2176:35;;2251:7;2241:8;2234:25;2226:39;;:::o;1693:310:16:-;1888:16;1364:5:3;1350:19;;:10;:8;:10::i;:::-;:19;;;1342:28;;;;;;;;1785:43:16;1809:18;1785:23;:43::i;:::-;1777:100;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1052:49;;;;;;;;;;;;;;;;;;;;;;;;1888:46;;1974:18;1964:8;1957:36;1693:310;;:::o;438:578:2:-;496:4;508:12;983:5;971:18;963:26;;1010:1;1003:4;:8;996:15;;438:578;;;;:::o",
+  "source": "pragma solidity ^0.4.23;\n\nimport \"./IMarketplace.sol\";\nimport \"../proxy/ACLUpgradeableProxy.sol\";\n\n/**\n* @title MarketplaceProxy\n* @dev Proxy contract for Marketplaec implementation\n*/\ncontract MarketplaceProxy is ACLUpgradeableProxy {\n\n  /**\n  * @dev Constructor function\n  * @param _aclAddress Adress of the ACL contract to be used for permissioning\n  */\n  constructor(address _aclAddress) ACLUpgradeableProxy(_aclAddress) public { }\n\n  /**\n  * @dev Upgrades the contract implementation address\n  * @param _newImplementation New contract implementation address\n  * @notice New contract implementation must conform to IMarketplace\n  */\n  function upgradeTo(address _newImplementation) public onlyProductOwner {\n    require(IMarketplace(_newImplementation).isMarketplace());\n    _upgradeTo(_newImplementation);\n  }\n\n}\n",
+  "sourcePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/marketplace/MarketplaceProxy.sol",
+  "ast": {
+    "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/marketplace/MarketplaceProxy.sol",
+    "exportedSymbols": {
+      "MarketplaceProxy": [
+        352
+      ]
+    },
+    "id": 353,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 318,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".23"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:5"
+      },
+      {
+        "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/marketplace/IMarketplace.sol",
+        "file": "./IMarketplace.sol",
+        "id": 319,
+        "nodeType": "ImportDirective",
+        "scope": 353,
+        "sourceUnit": 317,
+        "src": "26:28:5",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/proxy/ACLUpgradeableProxy.sol",
+        "file": "../proxy/ACLUpgradeableProxy.sol",
+        "id": 320,
+        "nodeType": "ImportDirective",
+        "scope": 353,
+        "sourceUnit": 920,
+        "src": "55:42:5",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 321,
+              "name": "ACLUpgradeableProxy",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 919,
+              "src": "214:19:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_ACLUpgradeableProxy_$919",
+                "typeString": "contract ACLUpgradeableProxy"
+              }
+            },
+            "id": 322,
+            "nodeType": "InheritanceSpecifier",
+            "src": "214:19:5"
+          }
+        ],
+        "contractDependencies": [
+          145,
+          282,
+          919,
+          927,
+          940,
+          992,
+          1098
+        ],
+        "contractKind": "contract",
+        "documentation": "@title MarketplaceProxy\n@dev Proxy contract for Marketplaec implementation",
+        "fullyImplemented": true,
+        "id": 352,
+        "linearizedBaseContracts": [
+          352,
+          919,
+          1098,
+          940,
+          992,
+          282,
+          145,
+          927
+        ],
+        "name": "MarketplaceProxy",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 330,
+              "nodeType": "Block",
+              "src": "432:3:5",
+              "statements": []
+            },
+            "documentation": "@dev Constructor function\n@param _aclAddress Adress of the ACL contract to be used for permissioning",
+            "id": 331,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [
+              {
+                "arguments": [
+                  {
+                    "argumentTypes": null,
+                    "id": 327,
+                    "name": "_aclAddress",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 324,
+                    "src": "412:11:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  }
+                ],
+                "id": 328,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 326,
+                  "name": "ACLUpgradeableProxy",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 919,
+                  "src": "392:19:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_type$_t_contract$_ACLUpgradeableProxy_$919_$",
+                    "typeString": "type(contract ACLUpgradeableProxy)"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "392:32:5"
+              }
+            ],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 325,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 324,
+                  "name": "_aclAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 331,
+                  "src": "371:19:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 323,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "371:7:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "370:21:5"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 329,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "432:0:5"
+            },
+            "scope": 352,
+            "src": "359:76:5",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 350,
+              "nodeType": "Block",
+              "src": "710:104:5",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "arguments": [],
+                        "expression": {
+                          "argumentTypes": [],
+                          "expression": {
+                            "argumentTypes": null,
+                            "arguments": [
+                              {
+                                "argumentTypes": null,
+                                "id": 340,
+                                "name": "_newImplementation",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 333,
+                                "src": "737:18:5",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_address",
+                                  "typeString": "address"
+                                }
+                              }
+                            ],
+                            "expression": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_address",
+                                  "typeString": "address"
+                                }
+                              ],
+                              "id": 339,
+                              "name": "IMarketplace",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 316,
+                              "src": "724:12:5",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_contract$_IMarketplace_$316_$",
+                                "typeString": "type(contract IMarketplace)"
+                              }
+                            },
+                            "id": 341,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "kind": "typeConversion",
+                            "lValueRequested": false,
+                            "names": [],
+                            "nodeType": "FunctionCall",
+                            "src": "724:32:5",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_IMarketplace_$316",
+                              "typeString": "contract IMarketplace"
+                            }
+                          },
+                          "id": 342,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "isMarketplace",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 310,
+                          "src": "724:46:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_external_pure$__$returns$_t_bool_$",
+                            "typeString": "function () pure external returns (bool)"
+                          }
+                        },
+                        "id": 343,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "724:48:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      ],
+                      "id": 338,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        1790,
+                        1791
+                      ],
+                      "referencedDeclaration": 1790,
+                      "src": "716:7:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
+                        "typeString": "function (bool) pure"
+                      }
+                    },
+                    "id": 344,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "716:57:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 345,
+                  "nodeType": "ExpressionStatement",
+                  "src": "716:57:5"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 347,
+                        "name": "_newImplementation",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 333,
+                        "src": "790:18:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 346,
+                      "name": "_upgradeTo",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1079,
+                      "src": "779:10:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
+                        "typeString": "function (address)"
+                      }
+                    },
+                    "id": 348,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "779:30:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 349,
+                  "nodeType": "ExpressionStatement",
+                  "src": "779:30:5"
+                }
+              ]
+            },
+            "documentation": "@dev Upgrades the contract implementation address\n@param _newImplementation New contract implementation address\n@notice New contract implementation must conform to IMarketplace",
+            "id": 351,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [
+              {
+                "arguments": null,
+                "id": 336,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 335,
+                  "name": "onlyProductOwner",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 50,
+                  "src": "693:16:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "693:16:5"
+              }
+            ],
+            "name": "upgradeTo",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 334,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 333,
+                  "name": "_newImplementation",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 351,
+                  "src": "658:26:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 332,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "658:7:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "657:28:5"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 337,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "710:0:5"
+            },
+            "scope": 352,
+            "src": "639:175:5",
+            "stateMutability": "nonpayable",
+            "superFunction": 918,
+            "visibility": "public"
+          }
+        ],
+        "scope": 353,
+        "src": "185:632:5"
+      }
+    ],
+    "src": "0:818:5"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/marketplace/MarketplaceProxy.sol",
+    "exportedSymbols": {
+      "MarketplaceProxy": [
+        352
+      ]
+    },
+    "id": 353,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 318,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".23"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:5"
+      },
+      {
+        "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/marketplace/IMarketplace.sol",
+        "file": "./IMarketplace.sol",
+        "id": 319,
+        "nodeType": "ImportDirective",
+        "scope": 353,
+        "sourceUnit": 317,
+        "src": "26:28:5",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/proxy/ACLUpgradeableProxy.sol",
+        "file": "../proxy/ACLUpgradeableProxy.sol",
+        "id": 320,
+        "nodeType": "ImportDirective",
+        "scope": 353,
+        "sourceUnit": 920,
+        "src": "55:42:5",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 321,
+              "name": "ACLUpgradeableProxy",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 919,
+              "src": "214:19:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_ACLUpgradeableProxy_$919",
+                "typeString": "contract ACLUpgradeableProxy"
+              }
+            },
+            "id": 322,
+            "nodeType": "InheritanceSpecifier",
+            "src": "214:19:5"
+          }
+        ],
+        "contractDependencies": [
+          145,
+          282,
+          919,
+          927,
+          940,
+          992,
+          1098
+        ],
+        "contractKind": "contract",
+        "documentation": "@title MarketplaceProxy\n@dev Proxy contract for Marketplaec implementation",
+        "fullyImplemented": true,
+        "id": 352,
+        "linearizedBaseContracts": [
+          352,
+          919,
+          1098,
+          940,
+          992,
+          282,
+          145,
+          927
+        ],
+        "name": "MarketplaceProxy",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 330,
+              "nodeType": "Block",
+              "src": "432:3:5",
+              "statements": []
+            },
+            "documentation": "@dev Constructor function\n@param _aclAddress Adress of the ACL contract to be used for permissioning",
+            "id": 331,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [
+              {
+                "arguments": [
+                  {
+                    "argumentTypes": null,
+                    "id": 327,
+                    "name": "_aclAddress",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 324,
+                    "src": "412:11:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  }
+                ],
+                "id": 328,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 326,
+                  "name": "ACLUpgradeableProxy",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 919,
+                  "src": "392:19:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_type$_t_contract$_ACLUpgradeableProxy_$919_$",
+                    "typeString": "type(contract ACLUpgradeableProxy)"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "392:32:5"
+              }
+            ],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 325,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 324,
+                  "name": "_aclAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 331,
+                  "src": "371:19:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 323,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "371:7:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "370:21:5"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 329,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "432:0:5"
+            },
+            "scope": 352,
+            "src": "359:76:5",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 350,
+              "nodeType": "Block",
+              "src": "710:104:5",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "arguments": [],
+                        "expression": {
+                          "argumentTypes": [],
+                          "expression": {
+                            "argumentTypes": null,
+                            "arguments": [
+                              {
+                                "argumentTypes": null,
+                                "id": 340,
+                                "name": "_newImplementation",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 333,
+                                "src": "737:18:5",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_address",
+                                  "typeString": "address"
+                                }
+                              }
+                            ],
+                            "expression": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_address",
+                                  "typeString": "address"
+                                }
+                              ],
+                              "id": 339,
+                              "name": "IMarketplace",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 316,
+                              "src": "724:12:5",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_contract$_IMarketplace_$316_$",
+                                "typeString": "type(contract IMarketplace)"
+                              }
+                            },
+                            "id": 341,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "kind": "typeConversion",
+                            "lValueRequested": false,
+                            "names": [],
+                            "nodeType": "FunctionCall",
+                            "src": "724:32:5",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_IMarketplace_$316",
+                              "typeString": "contract IMarketplace"
+                            }
+                          },
+                          "id": 342,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "isMarketplace",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 310,
+                          "src": "724:46:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_external_pure$__$returns$_t_bool_$",
+                            "typeString": "function () pure external returns (bool)"
+                          }
+                        },
+                        "id": 343,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "724:48:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      ],
+                      "id": 338,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        1790,
+                        1791
+                      ],
+                      "referencedDeclaration": 1790,
+                      "src": "716:7:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
+                        "typeString": "function (bool) pure"
+                      }
+                    },
+                    "id": 344,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "716:57:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 345,
+                  "nodeType": "ExpressionStatement",
+                  "src": "716:57:5"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 347,
+                        "name": "_newImplementation",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 333,
+                        "src": "790:18:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 346,
+                      "name": "_upgradeTo",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1079,
+                      "src": "779:10:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
+                        "typeString": "function (address)"
+                      }
+                    },
+                    "id": 348,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "779:30:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 349,
+                  "nodeType": "ExpressionStatement",
+                  "src": "779:30:5"
+                }
+              ]
+            },
+            "documentation": "@dev Upgrades the contract implementation address\n@param _newImplementation New contract implementation address\n@notice New contract implementation must conform to IMarketplace",
+            "id": 351,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [
+              {
+                "arguments": null,
+                "id": 336,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 335,
+                  "name": "onlyProductOwner",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 50,
+                  "src": "693:16:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "693:16:5"
+              }
+            ],
+            "name": "upgradeTo",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 334,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 333,
+                  "name": "_newImplementation",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 351,
+                  "src": "658:26:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 332,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "658:7:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "657:28:5"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 337,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "710:0:5"
+            },
+            "scope": 352,
+            "src": "639:175:5",
+            "stateMutability": "nonpayable",
+            "superFunction": 918,
+            "visibility": "public"
+          }
+        ],
+        "scope": 353,
+        "src": "185:632:5"
+      }
+    ],
+    "src": "0:818:5"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2018-08-28T00:22:10.364Z"
+}

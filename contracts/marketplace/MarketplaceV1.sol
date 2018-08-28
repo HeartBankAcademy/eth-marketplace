@@ -1,5 +1,6 @@
 pragma solidity ^0.4.23;
 
+import "./IMarketplace.sol";
 import "../acl/ACLRequiring.sol";
 import "../lifecycle/Pausable.sol";
 import "../store/IProductStore.sol";
@@ -9,7 +10,7 @@ import "../store/IProductStore.sol";
 * @dev Marketplace management contract
 * @notice v1
 */
-contract MarketplaceV1 is ACLRequiring, Pausable {
+contract MarketplaceV1 is ACLRequiring, Pausable, IMarketplace {
 
   mapping(address => address[]) public stores;
   uint256 public totalStores;
@@ -64,6 +65,22 @@ contract MarketplaceV1 is ACLRequiring, Pausable {
   */
   function storeAddressForOwnerWithIndex(address _owner, uint256 _index) public view returns (address) {
     return stores[_owner][_index];
+  }
+
+  /**
+  * @dev Returns true for contracts that adhere to the Marketplace interface
+  * @return Always returns true
+  */
+  function isMarketplace() public pure returns (bool) { 
+    return true;
+  }
+  
+  /**
+  * @dev Returns the version of the Marketplace contract interface
+  * @return Always returns 1
+  */
+  function version() public pure returns (uint16) {
+    return 1;
   }
   
 }

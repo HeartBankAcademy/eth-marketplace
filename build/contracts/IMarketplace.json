@@ -1,74 +1,66 @@
 {
-  "contractName": "ERC20Basic",
+  "contractName": "IMarketplace",
   "abi": [
-    {
-      "anonymous": false,
-      "inputs": [
-        {
-          "indexed": true,
-          "name": "from",
-          "type": "address"
-        },
-        {
-          "indexed": true,
-          "name": "to",
-          "type": "address"
-        },
-        {
-          "indexed": false,
-          "name": "value",
-          "type": "uint256"
-        }
-      ],
-      "name": "Transfer",
-      "type": "event"
-    },
-    {
-      "constant": true,
-      "inputs": [],
-      "name": "totalSupply",
-      "outputs": [
-        {
-          "name": "",
-          "type": "uint256"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "view",
-      "type": "function"
-    },
-    {
-      "constant": true,
-      "inputs": [
-        {
-          "name": "_who",
-          "type": "address"
-        }
-      ],
-      "name": "balanceOf",
-      "outputs": [
-        {
-          "name": "",
-          "type": "uint256"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "view",
-      "type": "function"
-    },
     {
       "constant": false,
       "inputs": [
         {
-          "name": "_to",
+          "name": "_storeAddress",
           "type": "address"
-        },
+        }
+      ],
+      "name": "addStore",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
         {
-          "name": "_value",
+          "name": "_owner",
+          "type": "address"
+        }
+      ],
+      "name": "storeCountFor",
+      "outputs": [
+        {
+          "name": "",
           "type": "uint256"
         }
       ],
-      "name": "transfer",
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_owner",
+          "type": "address"
+        },
+        {
+          "name": "_index",
+          "type": "uint256"
+        }
+      ],
+      "name": "storeAddressForOwnerWithIndex",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "isMarketplace",
       "outputs": [
         {
           "name": "",
@@ -76,7 +68,21 @@
         }
       ],
       "payable": false,
-      "stateMutability": "nonpayable",
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "version",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint16"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "pure",
       "type": "function"
     }
   ],
@@ -84,119 +90,63 @@
   "deployedBytecode": "0x",
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "pragma solidity ^0.4.24;\n\n\n/**\n * @title ERC20Basic\n * @dev Simpler version of ERC20 interface\n * See https://github.com/ethereum/EIPs/issues/179\n */\ncontract ERC20Basic {\n  function totalSupply() public view returns (uint256);\n  function balanceOf(address _who) public view returns (uint256);\n  function transfer(address _to, uint256 _value) public returns (bool);\n  event Transfer(address indexed from, address indexed to, uint256 value);\n}\n",
-  "sourcePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/lib/openzeppelin/token/ERC20/ERC20Basic.sol",
+  "source": "pragma solidity ^0.4.23;\n\n/**\n* @title IMarketplace\n* @dev Interface all Marketplace contracts must implement to publically\n*      verify it complies with the Marketplace contract interface\n*/\ncontract IMarketplace {\n\n  /**\n  * @dev Adds a store to the marketplace\n  * @param _storeAddress Address of the store contract to add\n  */\n  function addStore(address _storeAddress) public;\n\n  /**\n  * @dev Returns the number of stores added to the marketplace by a particular owner\n  * @param _owner Owner address to look up\n  * @return Number of stores added by the owner to the marketplace\n  */\n  function storeCountFor(address _owner) public view returns (uint256);\n\n  /**\n  * @dev Returns the store address for a particular owner and index\n  * @param _owner Owner address to look up\n  * @param _index Index of store address to look up\n  * @return Store contract address\n  */\n  function storeAddressForOwnerWithIndex(address _owner, uint256 _index) public view returns (address);\n  \n  /**\n  * @dev Returns true for contracts that adhere to the Marketplace interface\n  * @return Boolean value identifying contract as implementing the Marketplace interface\n  */\n  function isMarketplace() public pure returns (bool);\n\n  /**\n  * @dev Returns the version of the Marketplace contract interface\n  * @return Version of the contract interface\n  */\n  function version() public pure returns (uint16);\n\n}",
+  "sourcePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/marketplace/IMarketplace.sol",
   "ast": {
-    "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/lib/openzeppelin/token/ERC20/ERC20Basic.sol",
+    "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/marketplace/IMarketplace.sol",
     "exportedSymbols": {
-      "ERC20Basic": [
-        597
+      "IMarketplace": [
+        316
       ]
     },
-    "id": 598,
+    "id": 317,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 567,
+        "id": 284,
         "literals": [
           "solidity",
           "^",
           "0.4",
-          ".24"
+          ".23"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:8"
+        "src": "0:24:4"
       },
       {
         "baseContracts": [],
         "contractDependencies": [],
         "contractKind": "contract",
-        "documentation": "@title ERC20Basic\n@dev Simpler version of ERC20 interface\nSee https://github.com/ethereum/EIPs/issues/179",
+        "documentation": "@title IMarketplace\n@dev Interface all Marketplace contracts must implement to publically\n     verify it complies with the Marketplace contract interface",
         "fullyImplemented": false,
-        "id": 597,
+        "id": 316,
         "linearizedBaseContracts": [
-          597
+          316
         ],
-        "name": "ERC20Basic",
+        "name": "IMarketplace",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": null,
-            "documentation": null,
-            "id": 572,
+            "documentation": "@dev Adds a store to the marketplace\n@param _storeAddress Address of the store contract to add",
+            "id": 289,
             "implemented": false,
             "isConstructor": false,
-            "isDeclaredConst": true,
+            "isDeclaredConst": false,
             "modifiers": [],
-            "name": "totalSupply",
+            "name": "addStore",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 568,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "194:2:8"
-            },
-            "payable": false,
-            "returnParameters": {
-              "id": 571,
+              "id": 287,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 570,
-                  "name": "",
+                  "id": 286,
+                  "name": "_storeAddress",
                   "nodeType": "VariableDeclaration",
-                  "scope": 572,
-                  "src": "218:7:8",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
-                  },
-                  "typeName": {
-                    "id": 569,
-                    "name": "uint256",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "218:7:8",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "217:9:8"
-            },
-            "scope": 597,
-            "src": "174:53:8",
-            "stateMutability": "view",
-            "superFunction": null,
-            "visibility": "public"
-          },
-          {
-            "body": null,
-            "documentation": null,
-            "id": 579,
-            "implemented": false,
-            "isConstructor": false,
-            "isDeclaredConst": true,
-            "modifiers": [],
-            "name": "balanceOf",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 575,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 574,
-                  "name": "_who",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 579,
-                  "src": "249:12:8",
+                  "scope": 289,
+                  "src": "352:21:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -204,10 +154,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 573,
+                    "id": 285,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "249:7:8",
+                    "src": "352:7:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -217,20 +167,76 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "248:14:8"
+              "src": "351:23:4"
             },
             "payable": false,
             "returnParameters": {
-              "id": 578,
+              "id": 288,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "381:0:4"
+            },
+            "scope": 316,
+            "src": "334:48:4",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": null,
+            "documentation": "@dev Returns the number of stores added to the marketplace by a particular owner\n@param _owner Owner address to look up\n@return Number of stores added by the owner to the marketplace",
+            "id": 296,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "storeCountFor",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 292,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 577,
+                  "id": 291,
+                  "name": "_owner",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 296,
+                  "src": "615:14:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 290,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "615:7:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "614:16:4"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 295,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 294,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 579,
-                  "src": "284:7:8",
+                  "scope": 296,
+                  "src": "652:7:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -238,10 +244,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 576,
+                    "id": 293,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "284:7:8",
+                    "src": "652:7:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -251,35 +257,35 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "283:9:8"
+              "src": "651:9:4"
             },
-            "scope": 597,
-            "src": "230:63:8",
+            "scope": 316,
+            "src": "592:69:4",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": null,
-            "documentation": null,
-            "id": 588,
+            "documentation": "@dev Returns the store address for a particular owner and index\n@param _owner Owner address to look up\n@param _index Index of store address to look up\n@return Store contract address",
+            "id": 305,
             "implemented": false,
             "isConstructor": false,
-            "isDeclaredConst": false,
+            "isDeclaredConst": true,
             "modifiers": [],
-            "name": "transfer",
+            "name": "storeAddressForOwnerWithIndex",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 584,
+              "id": 301,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 581,
-                  "name": "_to",
+                  "id": 298,
+                  "name": "_owner",
                   "nodeType": "VariableDeclaration",
-                  "scope": 588,
-                  "src": "314:11:8",
+                  "scope": 305,
+                  "src": "913:14:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -287,10 +293,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 580,
+                    "id": 297,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "314:7:8",
+                    "src": "913:7:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -301,11 +307,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 583,
-                  "name": "_value",
+                  "id": 300,
+                  "name": "_index",
                   "nodeType": "VariableDeclaration",
-                  "scope": 588,
-                  "src": "327:14:8",
+                  "scope": 305,
+                  "src": "929:14:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -313,10 +319,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 582,
+                    "id": 299,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "327:7:8",
+                    "src": "929:7:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -326,20 +332,76 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "313:29:8"
+              "src": "912:32:4"
             },
             "payable": false,
             "returnParameters": {
-              "id": 587,
+              "id": 304,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 586,
+                  "id": 303,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 588,
-                  "src": "359:4:8",
+                  "scope": 305,
+                  "src": "966:7:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 302,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "966:7:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "965:9:4"
+            },
+            "scope": 316,
+            "src": "874:101:4",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": null,
+            "documentation": "@dev Returns true for contracts that adhere to the Marketplace interface\n@return Boolean value identifying contract as implementing the Marketplace interface",
+            "id": 310,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "isMarketplace",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 306,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1180:2:4"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 309,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 308,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 310,
+                  "src": "1204:4:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -347,10 +409,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 585,
+                    "id": 307,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "359:4:8",
+                    "src": "1204:4:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -360,228 +422,132 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "358:6:8"
+              "src": "1203:6:4"
             },
-            "scope": 597,
-            "src": "296:69:8",
-            "stateMutability": "nonpayable",
+            "scope": 316,
+            "src": "1158:52:4",
+            "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           },
           {
-            "anonymous": false,
-            "documentation": null,
-            "id": 596,
-            "name": "Transfer",
-            "nodeType": "EventDefinition",
+            "body": null,
+            "documentation": "@dev Returns the version of the Marketplace contract interface\n@return Version of the contract interface",
+            "id": 315,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "version",
+            "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 595,
+              "id": 311,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1354:2:4"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 314,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 590,
-                  "indexed": true,
-                  "name": "from",
+                  "id": 313,
+                  "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 596,
-                  "src": "383:20:8",
+                  "scope": 315,
+                  "src": "1378:6:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_address",
-                    "typeString": "address"
+                    "typeIdentifier": "t_uint16",
+                    "typeString": "uint16"
                   },
                   "typeName": {
-                    "id": 589,
-                    "name": "address",
+                    "id": 312,
+                    "name": "uint16",
                     "nodeType": "ElementaryTypeName",
-                    "src": "383:7:8",
+                    "src": "1378:6:4",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_address",
-                      "typeString": "address"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
-                  "id": 592,
-                  "indexed": true,
-                  "name": "to",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 596,
-                  "src": "405:18:8",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_address",
-                    "typeString": "address"
-                  },
-                  "typeName": {
-                    "id": 591,
-                    "name": "address",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "405:7:8",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_address",
-                      "typeString": "address"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
-                  "id": 594,
-                  "indexed": false,
-                  "name": "value",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 596,
-                  "src": "425:13:8",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
-                  },
-                  "typeName": {
-                    "id": 593,
-                    "name": "uint256",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "425:7:8",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
+                      "typeIdentifier": "t_uint16",
+                      "typeString": "uint16"
                     }
                   },
                   "value": null,
                   "visibility": "internal"
                 }
               ],
-              "src": "382:57:8"
+              "src": "1377:8:4"
             },
-            "src": "368:72:8"
+            "scope": 316,
+            "src": "1338:48:4",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "public"
           }
         ],
-        "scope": 598,
-        "src": "150:292:8"
+        "scope": 317,
+        "src": "193:1196:4"
       }
     ],
-    "src": "0:443:8"
+    "src": "0:1389:4"
   },
   "legacyAST": {
-    "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/lib/openzeppelin/token/ERC20/ERC20Basic.sol",
+    "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/marketplace/IMarketplace.sol",
     "exportedSymbols": {
-      "ERC20Basic": [
-        597
+      "IMarketplace": [
+        316
       ]
     },
-    "id": 598,
+    "id": 317,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 567,
+        "id": 284,
         "literals": [
           "solidity",
           "^",
           "0.4",
-          ".24"
+          ".23"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:8"
+        "src": "0:24:4"
       },
       {
         "baseContracts": [],
         "contractDependencies": [],
         "contractKind": "contract",
-        "documentation": "@title ERC20Basic\n@dev Simpler version of ERC20 interface\nSee https://github.com/ethereum/EIPs/issues/179",
+        "documentation": "@title IMarketplace\n@dev Interface all Marketplace contracts must implement to publically\n     verify it complies with the Marketplace contract interface",
         "fullyImplemented": false,
-        "id": 597,
+        "id": 316,
         "linearizedBaseContracts": [
-          597
+          316
         ],
-        "name": "ERC20Basic",
+        "name": "IMarketplace",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": null,
-            "documentation": null,
-            "id": 572,
+            "documentation": "@dev Adds a store to the marketplace\n@param _storeAddress Address of the store contract to add",
+            "id": 289,
             "implemented": false,
             "isConstructor": false,
-            "isDeclaredConst": true,
+            "isDeclaredConst": false,
             "modifiers": [],
-            "name": "totalSupply",
+            "name": "addStore",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 568,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "194:2:8"
-            },
-            "payable": false,
-            "returnParameters": {
-              "id": 571,
+              "id": 287,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 570,
-                  "name": "",
+                  "id": 286,
+                  "name": "_storeAddress",
                   "nodeType": "VariableDeclaration",
-                  "scope": 572,
-                  "src": "218:7:8",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
-                  },
-                  "typeName": {
-                    "id": 569,
-                    "name": "uint256",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "218:7:8",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "217:9:8"
-            },
-            "scope": 597,
-            "src": "174:53:8",
-            "stateMutability": "view",
-            "superFunction": null,
-            "visibility": "public"
-          },
-          {
-            "body": null,
-            "documentation": null,
-            "id": 579,
-            "implemented": false,
-            "isConstructor": false,
-            "isDeclaredConst": true,
-            "modifiers": [],
-            "name": "balanceOf",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 575,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 574,
-                  "name": "_who",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 579,
-                  "src": "249:12:8",
+                  "scope": 289,
+                  "src": "352:21:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -589,10 +555,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 573,
+                    "id": 285,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "249:7:8",
+                    "src": "352:7:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -602,20 +568,76 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "248:14:8"
+              "src": "351:23:4"
             },
             "payable": false,
             "returnParameters": {
-              "id": 578,
+              "id": 288,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "381:0:4"
+            },
+            "scope": 316,
+            "src": "334:48:4",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": null,
+            "documentation": "@dev Returns the number of stores added to the marketplace by a particular owner\n@param _owner Owner address to look up\n@return Number of stores added by the owner to the marketplace",
+            "id": 296,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "storeCountFor",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 292,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 577,
+                  "id": 291,
+                  "name": "_owner",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 296,
+                  "src": "615:14:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 290,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "615:7:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "614:16:4"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 295,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 294,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 579,
-                  "src": "284:7:8",
+                  "scope": 296,
+                  "src": "652:7:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -623,10 +645,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 576,
+                    "id": 293,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "284:7:8",
+                    "src": "652:7:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -636,35 +658,35 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "283:9:8"
+              "src": "651:9:4"
             },
-            "scope": 597,
-            "src": "230:63:8",
+            "scope": 316,
+            "src": "592:69:4",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": null,
-            "documentation": null,
-            "id": 588,
+            "documentation": "@dev Returns the store address for a particular owner and index\n@param _owner Owner address to look up\n@param _index Index of store address to look up\n@return Store contract address",
+            "id": 305,
             "implemented": false,
             "isConstructor": false,
-            "isDeclaredConst": false,
+            "isDeclaredConst": true,
             "modifiers": [],
-            "name": "transfer",
+            "name": "storeAddressForOwnerWithIndex",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 584,
+              "id": 301,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 581,
-                  "name": "_to",
+                  "id": 298,
+                  "name": "_owner",
                   "nodeType": "VariableDeclaration",
-                  "scope": 588,
-                  "src": "314:11:8",
+                  "scope": 305,
+                  "src": "913:14:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -672,10 +694,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 580,
+                    "id": 297,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "314:7:8",
+                    "src": "913:7:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -686,11 +708,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 583,
-                  "name": "_value",
+                  "id": 300,
+                  "name": "_index",
                   "nodeType": "VariableDeclaration",
-                  "scope": 588,
-                  "src": "327:14:8",
+                  "scope": 305,
+                  "src": "929:14:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -698,10 +720,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 582,
+                    "id": 299,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "327:7:8",
+                    "src": "929:7:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -711,20 +733,76 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "313:29:8"
+              "src": "912:32:4"
             },
             "payable": false,
             "returnParameters": {
-              "id": 587,
+              "id": 304,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 586,
+                  "id": 303,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 588,
-                  "src": "359:4:8",
+                  "scope": 305,
+                  "src": "966:7:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 302,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "966:7:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "965:9:4"
+            },
+            "scope": 316,
+            "src": "874:101:4",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": null,
+            "documentation": "@dev Returns true for contracts that adhere to the Marketplace interface\n@return Boolean value identifying contract as implementing the Marketplace interface",
+            "id": 310,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "isMarketplace",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 306,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1180:2:4"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 309,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 308,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 310,
+                  "src": "1204:4:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -732,10 +810,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 585,
+                    "id": 307,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "359:4:8",
+                    "src": "1204:4:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -745,116 +823,76 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "358:6:8"
+              "src": "1203:6:4"
             },
-            "scope": 597,
-            "src": "296:69:8",
-            "stateMutability": "nonpayable",
+            "scope": 316,
+            "src": "1158:52:4",
+            "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           },
           {
-            "anonymous": false,
-            "documentation": null,
-            "id": 596,
-            "name": "Transfer",
-            "nodeType": "EventDefinition",
+            "body": null,
+            "documentation": "@dev Returns the version of the Marketplace contract interface\n@return Version of the contract interface",
+            "id": 315,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "version",
+            "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 595,
+              "id": 311,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1354:2:4"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 314,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 590,
-                  "indexed": true,
-                  "name": "from",
+                  "id": 313,
+                  "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 596,
-                  "src": "383:20:8",
+                  "scope": 315,
+                  "src": "1378:6:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_address",
-                    "typeString": "address"
+                    "typeIdentifier": "t_uint16",
+                    "typeString": "uint16"
                   },
                   "typeName": {
-                    "id": 589,
-                    "name": "address",
+                    "id": 312,
+                    "name": "uint16",
                     "nodeType": "ElementaryTypeName",
-                    "src": "383:7:8",
+                    "src": "1378:6:4",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_address",
-                      "typeString": "address"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
-                  "id": 592,
-                  "indexed": true,
-                  "name": "to",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 596,
-                  "src": "405:18:8",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_address",
-                    "typeString": "address"
-                  },
-                  "typeName": {
-                    "id": 591,
-                    "name": "address",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "405:7:8",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_address",
-                      "typeString": "address"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
-                  "id": 594,
-                  "indexed": false,
-                  "name": "value",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 596,
-                  "src": "425:13:8",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
-                  },
-                  "typeName": {
-                    "id": 593,
-                    "name": "uint256",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "425:7:8",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
+                      "typeIdentifier": "t_uint16",
+                      "typeString": "uint16"
                     }
                   },
                   "value": null,
                   "visibility": "internal"
                 }
               ],
-              "src": "382:57:8"
+              "src": "1377:8:4"
             },
-            "src": "368:72:8"
+            "scope": 316,
+            "src": "1338:48:4",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "public"
           }
         ],
-        "scope": 598,
-        "src": "150:292:8"
+        "scope": 317,
+        "src": "193:1196:4"
       }
     ],
-    "src": "0:443:8"
+    "src": "0:1389:4"
   },
   "compiler": {
     "name": "solc",
@@ -862,5 +900,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-08-28T00:30:11.195Z"
+  "updatedAt": "2018-08-28T00:22:10.363Z"
 }

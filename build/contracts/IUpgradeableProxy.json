@@ -40,14 +40,14 @@
     "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/proxy/IUpgradeableProxy.sol",
     "exportedSymbols": {
       "IUpgradeableProxy": [
-        851
+        940
       ]
     },
-    "id": 852,
+    "id": 941,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 840,
+        "id": 929,
         "literals": [
           "solidity",
           "^",
@@ -55,7 +55,7 @@
           ".23"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:12"
+        "src": "0:24:14"
       },
       {
         "baseContracts": [],
@@ -63,9 +63,9 @@
         "contractKind": "contract",
         "documentation": "@title IUpgradeableProxy\n@dev Interface all UpgradeableProxy contracts must implement to publically\n     verify it complies with the UpgradeableProxy contract interface",
         "fullyImplemented": false,
-        "id": 851,
+        "id": 940,
         "linearizedBaseContracts": [
-          851
+          940
         ],
         "name": "IUpgradeableProxy",
         "nodeType": "ContractDefinition",
@@ -73,7 +73,7 @@
           {
             "body": null,
             "documentation": "@dev Upgrades the implementation contract address\n@param _newImplementation Address of the new implementation to be set",
-            "id": 845,
+            "id": 934,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -81,16 +81,16 @@
             "name": "upgradeTo",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 843,
+              "id": 932,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 842,
+                  "id": 931,
                   "name": "_newImplementation",
                   "nodeType": "VariableDeclaration",
-                  "scope": 845,
-                  "src": "398:26:12",
+                  "scope": 934,
+                  "src": "398:26:14",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -98,10 +98,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 841,
+                    "id": 930,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "398:7:12",
+                    "src": "398:7:14",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -111,17 +111,17 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "397:28:12"
+              "src": "397:28:14"
             },
             "payable": false,
             "returnParameters": {
-              "id": 844,
+              "id": 933,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "432:0:12"
+              "src": "432:0:14"
             },
-            "scope": 851,
-            "src": "379:54:12",
+            "scope": 940,
+            "src": "379:54:14",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
@@ -129,7 +129,7 @@
           {
             "body": null,
             "documentation": "@dev Returns true for contracts that adhere to the UpgradeableProxy interface\n@return Boolean value identifying contract as implementing the UpgradeableProxy interface",
-            "id": 850,
+            "id": 939,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -137,23 +137,23 @@
             "name": "isUpgradeable",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 846,
+              "id": 935,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "646:2:12"
+              "src": "646:2:14"
             },
             "payable": false,
             "returnParameters": {
-              "id": 849,
+              "id": 938,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 848,
+                  "id": 937,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 850,
-                  "src": "670:4:12",
+                  "scope": 939,
+                  "src": "670:4:14",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -161,10 +161,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 847,
+                    "id": 936,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "670:4:12",
+                    "src": "670:4:14",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -174,33 +174,33 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "669:6:12"
+              "src": "669:6:14"
             },
-            "scope": 851,
-            "src": "624:52:12",
+            "scope": 940,
+            "src": "624:52:14",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 852,
-        "src": "208:471:12"
+        "scope": 941,
+        "src": "208:471:14"
       }
     ],
-    "src": "0:679:12"
+    "src": "0:679:14"
   },
   "legacyAST": {
     "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/proxy/IUpgradeableProxy.sol",
     "exportedSymbols": {
       "IUpgradeableProxy": [
-        851
+        940
       ]
     },
-    "id": 852,
+    "id": 941,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 840,
+        "id": 929,
         "literals": [
           "solidity",
           "^",
@@ -208,7 +208,7 @@
           ".23"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:12"
+        "src": "0:24:14"
       },
       {
         "baseContracts": [],
@@ -216,9 +216,9 @@
         "contractKind": "contract",
         "documentation": "@title IUpgradeableProxy\n@dev Interface all UpgradeableProxy contracts must implement to publically\n     verify it complies with the UpgradeableProxy contract interface",
         "fullyImplemented": false,
-        "id": 851,
+        "id": 940,
         "linearizedBaseContracts": [
-          851
+          940
         ],
         "name": "IUpgradeableProxy",
         "nodeType": "ContractDefinition",
@@ -226,7 +226,7 @@
           {
             "body": null,
             "documentation": "@dev Upgrades the implementation contract address\n@param _newImplementation Address of the new implementation to be set",
-            "id": 845,
+            "id": 934,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -234,16 +234,16 @@
             "name": "upgradeTo",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 843,
+              "id": 932,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 842,
+                  "id": 931,
                   "name": "_newImplementation",
                   "nodeType": "VariableDeclaration",
-                  "scope": 845,
-                  "src": "398:26:12",
+                  "scope": 934,
+                  "src": "398:26:14",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -251,10 +251,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 841,
+                    "id": 930,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "398:7:12",
+                    "src": "398:7:14",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -264,17 +264,17 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "397:28:12"
+              "src": "397:28:14"
             },
             "payable": false,
             "returnParameters": {
-              "id": 844,
+              "id": 933,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "432:0:12"
+              "src": "432:0:14"
             },
-            "scope": 851,
-            "src": "379:54:12",
+            "scope": 940,
+            "src": "379:54:14",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
@@ -282,7 +282,7 @@
           {
             "body": null,
             "documentation": "@dev Returns true for contracts that adhere to the UpgradeableProxy interface\n@return Boolean value identifying contract as implementing the UpgradeableProxy interface",
-            "id": 850,
+            "id": 939,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -290,23 +290,23 @@
             "name": "isUpgradeable",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 846,
+              "id": 935,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "646:2:12"
+              "src": "646:2:14"
             },
             "payable": false,
             "returnParameters": {
-              "id": 849,
+              "id": 938,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 848,
+                  "id": 937,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 850,
-                  "src": "670:4:12",
+                  "scope": 939,
+                  "src": "670:4:14",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -314,10 +314,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 847,
+                    "id": 936,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "670:4:12",
+                    "src": "670:4:14",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -327,20 +327,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "669:6:12"
+              "src": "669:6:14"
             },
-            "scope": 851,
-            "src": "624:52:12",
+            "scope": 940,
+            "src": "624:52:14",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 852,
-        "src": "208:471:12"
+        "scope": 941,
+        "src": "208:471:14"
       }
     ],
-    "src": "0:679:12"
+    "src": "0:679:14"
   },
   "compiler": {
     "name": "solc",
@@ -348,5 +348,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-08-27T23:57:17.867Z"
+  "updatedAt": "2018-08-28T00:22:10.368Z"
 }

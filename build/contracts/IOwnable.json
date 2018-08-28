@@ -40,14 +40,14 @@
     "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/ownership/IOwnable.sol",
     "exportedSymbols": {
       "IOwnable": [
-        868
+        1573
       ]
     },
-    "id": 869,
+    "id": 1574,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 857,
+        "id": 1562,
         "literals": [
           "solidity",
           "^",
@@ -55,7 +55,7 @@
           ".23"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:10"
+        "src": "0:24:17"
       },
       {
         "baseContracts": [],
@@ -63,9 +63,9 @@
         "contractKind": "contract",
         "documentation": "@title IOwnable\n@dev Interface all IOwnable contracts must implement to publically\n     verify it complies with the IOwnable contract interface",
         "fullyImplemented": false,
-        "id": 868,
+        "id": 1573,
         "linearizedBaseContracts": [
-          868
+          1573
         ],
         "name": "IOwnable",
         "nodeType": "ContractDefinition",
@@ -73,7 +73,7 @@
           {
             "body": null,
             "documentation": "@dev Returns the address of the current owner\n@return _owner Address of the current owner",
-            "id": 862,
+            "id": 1567,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -81,23 +81,23 @@
             "name": "owner",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 858,
+              "id": 1563,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "329:2:10"
+              "src": "329:2:17"
             },
             "payable": false,
             "returnParameters": {
-              "id": 861,
+              "id": 1566,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 860,
+                  "id": 1565,
                   "name": "_owner",
                   "nodeType": "VariableDeclaration",
-                  "scope": 862,
-                  "src": "353:14:10",
+                  "scope": 1567,
+                  "src": "353:14:17",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -105,10 +105,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 859,
+                    "id": 1564,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "353:7:10",
+                    "src": "353:7:17",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -118,10 +118,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "352:16:10"
+              "src": "352:16:17"
             },
-            "scope": 868,
-            "src": "315:54:10",
+            "scope": 1573,
+            "src": "315:54:17",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
@@ -129,7 +129,7 @@
           {
             "body": null,
             "documentation": "@dev Returns true for contracts that adhere to the IOwnable interface\n@return Boolean value identifying contract as implementing the IOwnable interface",
-            "id": 867,
+            "id": 1572,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -137,23 +137,23 @@
             "name": "isOwnable",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 863,
+              "id": 1568,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "562:2:10"
+              "src": "562:2:17"
             },
             "payable": false,
             "returnParameters": {
-              "id": 866,
+              "id": 1571,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 865,
+                  "id": 1570,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 867,
-                  "src": "586:4:10",
+                  "scope": 1572,
+                  "src": "586:4:17",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -161,10 +161,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 864,
+                    "id": 1569,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "586:4:10",
+                    "src": "586:4:17",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -174,33 +174,33 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "585:6:10"
+              "src": "585:6:17"
             },
-            "scope": 868,
-            "src": "544:48:10",
+            "scope": 1573,
+            "src": "544:48:17",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 869,
-        "src": "183:412:10"
+        "scope": 1574,
+        "src": "183:412:17"
       }
     ],
-    "src": "0:595:10"
+    "src": "0:595:17"
   },
   "legacyAST": {
     "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/ownership/IOwnable.sol",
     "exportedSymbols": {
       "IOwnable": [
-        868
+        1573
       ]
     },
-    "id": 869,
+    "id": 1574,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 857,
+        "id": 1562,
         "literals": [
           "solidity",
           "^",
@@ -208,7 +208,7 @@
           ".23"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:10"
+        "src": "0:24:17"
       },
       {
         "baseContracts": [],
@@ -216,9 +216,9 @@
         "contractKind": "contract",
         "documentation": "@title IOwnable\n@dev Interface all IOwnable contracts must implement to publically\n     verify it complies with the IOwnable contract interface",
         "fullyImplemented": false,
-        "id": 868,
+        "id": 1573,
         "linearizedBaseContracts": [
-          868
+          1573
         ],
         "name": "IOwnable",
         "nodeType": "ContractDefinition",
@@ -226,7 +226,7 @@
           {
             "body": null,
             "documentation": "@dev Returns the address of the current owner\n@return _owner Address of the current owner",
-            "id": 862,
+            "id": 1567,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -234,23 +234,23 @@
             "name": "owner",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 858,
+              "id": 1563,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "329:2:10"
+              "src": "329:2:17"
             },
             "payable": false,
             "returnParameters": {
-              "id": 861,
+              "id": 1566,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 860,
+                  "id": 1565,
                   "name": "_owner",
                   "nodeType": "VariableDeclaration",
-                  "scope": 862,
-                  "src": "353:14:10",
+                  "scope": 1567,
+                  "src": "353:14:17",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -258,10 +258,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 859,
+                    "id": 1564,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "353:7:10",
+                    "src": "353:7:17",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -271,10 +271,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "352:16:10"
+              "src": "352:16:17"
             },
-            "scope": 868,
-            "src": "315:54:10",
+            "scope": 1573,
+            "src": "315:54:17",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
@@ -282,7 +282,7 @@
           {
             "body": null,
             "documentation": "@dev Returns true for contracts that adhere to the IOwnable interface\n@return Boolean value identifying contract as implementing the IOwnable interface",
-            "id": 867,
+            "id": 1572,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -290,23 +290,23 @@
             "name": "isOwnable",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 863,
+              "id": 1568,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "562:2:10"
+              "src": "562:2:17"
             },
             "payable": false,
             "returnParameters": {
-              "id": 866,
+              "id": 1571,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 865,
+                  "id": 1570,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 867,
-                  "src": "586:4:10",
+                  "scope": 1572,
+                  "src": "586:4:17",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -314,10 +314,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 864,
+                    "id": 1569,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "586:4:10",
+                    "src": "586:4:17",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -327,26 +327,26 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "585:6:10"
+              "src": "585:6:17"
             },
-            "scope": 868,
-            "src": "544:48:10",
+            "scope": 1573,
+            "src": "544:48:17",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 869,
-        "src": "183:412:10"
+        "scope": 1574,
+        "src": "183:412:17"
       }
     ],
-    "src": "0:595:10"
+    "src": "0:595:17"
   },
   "compiler": {
     "name": "solc",
     "version": "0.4.24+commit.e67f0147.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "2.0.0",
-  "updatedAt": "2018-08-27T22:22:11.210Z"
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2018-08-28T00:10:49.563Z"
 }
