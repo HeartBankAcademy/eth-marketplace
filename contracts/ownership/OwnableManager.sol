@@ -152,4 +152,12 @@ contract OwnableManager is IOwnable {
     }
   }
   
+  /**
+  * @dev Returns true for contracts that adhere to the Ownable interface 
+  * @return Always returns true for this contract
+  */
+  function isOwnable() public pure returns (bool) {
+    return true;
+  }
+  
 }

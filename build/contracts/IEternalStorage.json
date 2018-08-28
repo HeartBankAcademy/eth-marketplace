@@ -26,14 +26,14 @@
     "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/storage/IEternalStorage.sol",
     "exportedSymbols": {
       "IEternalStorage": [
-        2008
+        1071
       ]
     },
-    "id": 2009,
+    "id": 1072,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 2002,
+        "id": 1065,
         "literals": [
           "solidity",
           "^",
@@ -41,7 +41,7 @@
           ".23"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:27"
+        "src": "0:24:16"
       },
       {
         "baseContracts": [],
@@ -49,9 +49,9 @@
         "contractKind": "contract",
         "documentation": "@title IEternalStorage\n@dev Interface all EternalStorage contracts must implement to publically\n     verify it complies with the EternalStorage contract interface",
         "fullyImplemented": false,
-        "id": 2008,
+        "id": 1071,
         "linearizedBaseContracts": [
-          2008
+          1071
         ],
         "name": "IEternalStorage",
         "nodeType": "ContractDefinition",
@@ -59,7 +59,7 @@
           {
             "body": null,
             "documentation": "@dev Returns true for contracts that adhere to the EternalStorage interface\n@return Boolean value identifying contract as implementing the EternalStorage interface",
-            "id": 2007,
+            "id": 1070,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -67,23 +67,23 @@
             "name": "isEternalStorage",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2003,
+              "id": 1066,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "440:2:27"
+              "src": "440:2:16"
             },
             "payable": false,
             "returnParameters": {
-              "id": 2006,
+              "id": 1069,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2005,
+                  "id": 1068,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2007,
-                  "src": "464:4:27",
+                  "scope": 1070,
+                  "src": "464:4:16",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -91,10 +91,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 2004,
+                    "id": 1067,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "464:4:27",
+                    "src": "464:4:16",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -104,33 +104,33 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "463:6:27"
+              "src": "463:6:16"
             },
-            "scope": 2008,
-            "src": "415:55:27",
+            "scope": 1071,
+            "src": "415:55:16",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 2009,
-        "src": "202:271:27"
+        "scope": 1072,
+        "src": "202:271:16"
       }
     ],
-    "src": "0:473:27"
+    "src": "0:473:16"
   },
   "legacyAST": {
     "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/storage/IEternalStorage.sol",
     "exportedSymbols": {
       "IEternalStorage": [
-        2008
+        1071
       ]
     },
-    "id": 2009,
+    "id": 1072,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 2002,
+        "id": 1065,
         "literals": [
           "solidity",
           "^",
@@ -138,7 +138,7 @@
           ".23"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:27"
+        "src": "0:24:16"
       },
       {
         "baseContracts": [],
@@ -146,9 +146,9 @@
         "contractKind": "contract",
         "documentation": "@title IEternalStorage\n@dev Interface all EternalStorage contracts must implement to publically\n     verify it complies with the EternalStorage contract interface",
         "fullyImplemented": false,
-        "id": 2008,
+        "id": 1071,
         "linearizedBaseContracts": [
-          2008
+          1071
         ],
         "name": "IEternalStorage",
         "nodeType": "ContractDefinition",
@@ -156,7 +156,7 @@
           {
             "body": null,
             "documentation": "@dev Returns true for contracts that adhere to the EternalStorage interface\n@return Boolean value identifying contract as implementing the EternalStorage interface",
-            "id": 2007,
+            "id": 1070,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -164,23 +164,23 @@
             "name": "isEternalStorage",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2003,
+              "id": 1066,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "440:2:27"
+              "src": "440:2:16"
             },
             "payable": false,
             "returnParameters": {
-              "id": 2006,
+              "id": 1069,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2005,
+                  "id": 1068,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2007,
-                  "src": "464:4:27",
+                  "scope": 1070,
+                  "src": "464:4:16",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -188,10 +188,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 2004,
+                    "id": 1067,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "464:4:27",
+                    "src": "464:4:16",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -201,20 +201,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "463:6:27"
+              "src": "463:6:16"
             },
-            "scope": 2008,
-            "src": "415:55:27",
+            "scope": 1071,
+            "src": "415:55:16",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 2009,
-        "src": "202:271:27"
+        "scope": 1072,
+        "src": "202:271:16"
       }
     ],
-    "src": "0:473:27"
+    "src": "0:473:16"
   },
   "compiler": {
     "name": "solc",
@@ -222,5 +222,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-08-27T21:49:03.336Z"
+  "updatedAt": "2018-08-27T23:57:17.868Z"
 }

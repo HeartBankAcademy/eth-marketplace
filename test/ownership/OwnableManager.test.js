@@ -19,6 +19,11 @@ contract('OwnableManager', async accounts => {
     await deployContracts()
   })
 
+  it('should conform to IOwnable interface', async () => {
+    const isOwnable = await ownable.isOwnable()
+    expect(isOwnable).to.equal(true)
+  })
+
   it('should be initialized with the sender as the contract owner', async () => {
     const owner = accounts[0]
     const _owner = await ownable.owner()

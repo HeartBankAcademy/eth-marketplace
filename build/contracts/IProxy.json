@@ -26,14 +26,14 @@
     "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/proxy/IProxy.sol",
     "exportedSymbols": {
       "IProxy": [
-        1775
+        838
       ]
     },
-    "id": 1776,
+    "id": 839,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1769,
+        "id": 832,
         "literals": [
           "solidity",
           "^",
@@ -41,7 +41,7 @@
           ".23"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:22"
+        "src": "0:24:11"
       },
       {
         "baseContracts": [],
@@ -49,9 +49,9 @@
         "contractKind": "contract",
         "documentation": "@title IProxy\n@dev Interface all Proxy contracts must implement to publically\n     verify it complies with the Proxy contract interface",
         "fullyImplemented": false,
-        "id": 1775,
+        "id": 838,
         "linearizedBaseContracts": [
-          1775
+          838
         ],
         "name": "IProxy",
         "nodeType": "ContractDefinition",
@@ -59,7 +59,7 @@
           {
             "body": null,
             "documentation": "@dev Returns true for contracts that adhere to the Proxy interface\n@return Boolean value identifying contract as implementing the Proxy interface",
-            "id": 1774,
+            "id": 837,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -67,23 +67,23 @@
             "name": "isProxy",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1770,
+              "id": 833,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "377:2:22"
+              "src": "377:2:11"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1773,
+              "id": 836,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1772,
+                  "id": 835,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1774,
-                  "src": "401:4:22",
+                  "scope": 837,
+                  "src": "401:4:11",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -91,10 +91,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 1771,
+                    "id": 834,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "401:4:22",
+                    "src": "401:4:11",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -104,33 +104,33 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "400:6:22"
+              "src": "400:6:11"
             },
-            "scope": 1775,
-            "src": "361:46:22",
+            "scope": 838,
+            "src": "361:46:11",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 1776,
-        "src": "175:235:22"
+        "scope": 839,
+        "src": "175:235:11"
       }
     ],
-    "src": "0:410:22"
+    "src": "0:410:11"
   },
   "legacyAST": {
     "absolutePath": "/Users/matias/Projects/consensys/eth-marketplace/contracts/proxy/IProxy.sol",
     "exportedSymbols": {
       "IProxy": [
-        1775
+        838
       ]
     },
-    "id": 1776,
+    "id": 839,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1769,
+        "id": 832,
         "literals": [
           "solidity",
           "^",
@@ -138,7 +138,7 @@
           ".23"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:22"
+        "src": "0:24:11"
       },
       {
         "baseContracts": [],
@@ -146,9 +146,9 @@
         "contractKind": "contract",
         "documentation": "@title IProxy\n@dev Interface all Proxy contracts must implement to publically\n     verify it complies with the Proxy contract interface",
         "fullyImplemented": false,
-        "id": 1775,
+        "id": 838,
         "linearizedBaseContracts": [
-          1775
+          838
         ],
         "name": "IProxy",
         "nodeType": "ContractDefinition",
@@ -156,7 +156,7 @@
           {
             "body": null,
             "documentation": "@dev Returns true for contracts that adhere to the Proxy interface\n@return Boolean value identifying contract as implementing the Proxy interface",
-            "id": 1774,
+            "id": 837,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -164,23 +164,23 @@
             "name": "isProxy",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1770,
+              "id": 833,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "377:2:22"
+              "src": "377:2:11"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1773,
+              "id": 836,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1772,
+                  "id": 835,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1774,
-                  "src": "401:4:22",
+                  "scope": 837,
+                  "src": "401:4:11",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -188,10 +188,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 1771,
+                    "id": 834,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "401:4:22",
+                    "src": "401:4:11",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -201,20 +201,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "400:6:22"
+              "src": "400:6:11"
             },
-            "scope": 1775,
-            "src": "361:46:22",
+            "scope": 838,
+            "src": "361:46:11",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 1776,
-        "src": "175:235:22"
+        "scope": 839,
+        "src": "175:235:11"
       }
     ],
-    "src": "0:410:22"
+    "src": "0:410:11"
   },
   "compiler": {
     "name": "solc",
@@ -222,5 +222,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-08-27T21:49:03.333Z"
+  "updatedAt": "2018-08-27T23:57:17.867Z"
 }
