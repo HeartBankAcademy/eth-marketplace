@@ -1093,7 +1093,56 @@
     "name": "solc",
     "version": "0.4.24+commit.e67f0147.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "5777": {
+      "events": {
+        "0xbc7cd75a20ee27fd9adebab32041f755214dbc6bffa90cc0225b39da2e5c2d3b": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "_implementation",
+              "type": "address"
+            }
+          ],
+          "name": "Upgraded",
+          "type": "event"
+        },
+        "0x9e87fac88ff661f02d44f95383c817fece4bce600a3dab7a54406878b965e752": {
+          "anonymous": false,
+          "inputs": [],
+          "name": "Paused",
+          "type": "event"
+        },
+        "0xa45f47fdea8a1efdd9029a5691c7f759c32b7c698632b563573e155625d16933": {
+          "anonymous": false,
+          "inputs": [],
+          "name": "Unpaused",
+          "type": "event"
+        },
+        "0xd9c4a08818b5e0b58c0856ec8285d83c51f0654438a200ef0f9e0e968f583ca9": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "_oldAddress",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "_newAddress",
+              "type": "address"
+            }
+          ],
+          "name": "ACLUpdated",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x891ac35fd7f98da266aa4b0e6811725036eb50de",
+      "transactionHash": "0x4c6221f76d5f4fd5e1028a4b7b9fe59aad42f87c023018fe9b382a543f25c799"
+    }
+  },
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-08-28T00:22:10.364Z"
+  "updatedAt": "2018-08-28T01:44:45.477Z"
 }

@@ -80,6 +80,8 @@
     "whatwg-fetch": "1.0.0"
   },
   "dependencies": {
+    "drizzle": "^1.2.3",
+    "drizzle-react": "^1.2.0",
     "keccak": "^1.4.0",
     "normalize.css": "^8.0.0",
     "openzeppelin-solidity": "^1.9.0",
@@ -96,7 +98,8 @@
     "test:gas": "GAS_REPORTER=true npm run test:eth",
     "lint": "eslint ./src",
     "lint:eth": "solium --dir ./contracts",
-    "coverage:eth": "SOLIDITY_COVERAGE=true ./node_modules/.bin/solidity-coverage"
+    "coverage:eth": "SOLIDITY_COVERAGE=true ./node_modules/.bin/solidity-coverage",
+    "deploy:eth": "truffle migrate"
   },
   "jest": {
     "collectCoverageFrom": [

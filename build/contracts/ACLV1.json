@@ -4066,7 +4066,49 @@
     "name": "solc",
     "version": "0.4.24+commit.e67f0147.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "5777": {
+      "events": {
+        "0x9f83351d7067410bb7c79ef094e09407af666cec86e4c5d13474144b195d00bc": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "_oldAddress",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_newAddress",
+              "type": "address"
+            }
+          ],
+          "name": "ProductOwnerUpdated",
+          "type": "event"
+        },
+        "0xeadbbcd289747ecc98af25e8a89485e7182680fe5dfc0d547a6383470b54728e": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "_authorizedAddress",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_hasAccess",
+              "type": "bool"
+            }
+          ],
+          "name": "AuthorizedAccount",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x3f398c6064ab24c905c346a9d139c740f7eaa654",
+      "transactionHash": "0xb8065096dda2013c0b2fb7eb9edcb6293960fa92111ad5725b91d2c35a2ab6b6"
+    }
+  },
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-08-27T22:28:38.343Z"
+  "updatedAt": "2018-08-28T01:44:45.466Z"
 }
