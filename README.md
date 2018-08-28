@@ -22,6 +22,7 @@ This project implements an online marketplace that operates on the blockchain
 * Reentrancy attacks are prevented in all value-transfering transactions
 
 👉 [See design pattern decisions](design_pattern_decisions.md)
+
 👉 [See avoiding common attacks](avoiding_common_attacks.md)
 
 ## User Interace
@@ -37,6 +38,7 @@ npm run dev
 ## Testing
 
 Project features a complete testing suite with 100% code coverage
+
 👉 [See coverage reports here](https://mseijas.github.io/eth-marketplace/)
 
 To run test locally use the following command:
@@ -64,3 +66,9 @@ And to perform a migration script use:
 ```
 npm run deploy:eth
 ```
+
+## Deployed Addresses
+
+Example contracts have been deployed to the Rinkeby network
+
+👉 [See deployed addressess here](deployed_addresses.md)
