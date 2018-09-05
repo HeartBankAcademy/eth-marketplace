@@ -25,6 +25,15 @@ This project implements an online marketplace that operates on the blockchain
 
 👉 [See avoiding common attacks](avoiding_common_attacks.md)
 
+
+## Getting Started
+
+In order to get started install the project dependencies by running:
+
+```
+npm install
+```
+
 ## User Interace
 
 ⚠️ The web user interface of the project is still a work in progress (unfortunately)
